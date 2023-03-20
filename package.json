@@ -1,0 +1,34 @@
+{
+	"name": "tronox",
+	"version": "0.1.1",
+	"description": "Basis for developing SAP MII projects with SAP UI5",
+	"private": true,
+	"keywords": [
+		"btt",
+		"sapmii",
+		"ui5",
+		"openui5",
+		"sapui5"
+	],
+	"main": "webapp/index.html",
+	"scripts": {
+		"start": "ui5 serve"
+	},
+	"devDependencies": {
+		"@babel/eslint-parser": "7.14.7",
+		"@sap/eslint-plugin-ui5-jsdocs": "2.0.5",
+		"@sap/generator-fiori": "^1.9.1",
+		"@sap/ux-ui5-tooling": "1",
+		"@sapui5/ts-types": "~1.108.0",
+		"@ui5/cli": "^2.14.1",
+		"eslint": "7.32.0",
+		"eslint-plugin-fiori-custom": "2.2.1",
+		"yo": "^4.3.1"
+	},
+	"ui5": {
+		"dependencies": [
+			"@sap/ux-ui5-tooling"
+		]
+	},
+	"sapuxLayer": "CUSTOMER_BASE"
+}
