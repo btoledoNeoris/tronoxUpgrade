@@ -24,7 +24,7 @@
           </GenericTile>
     
           <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>materialTitle}"
-            subheader="{i18n>materialDescription}" press="">
+            subheader="{i18n>materialDescription}" press=".onNavToMaterial">
             <TileContent>
                 <ImageContent 
                   class="customIcon sapMImageContent sapMTcInnerMarker" 
@@ -33,7 +33,7 @@
             </TileContent>
           </GenericTile>
           <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>characteristicsTitle}"
-            subheader="{i18n>characteristicsDescription}" press="">
+            subheader="{i18n>characteristicsDescription}" press=".onNavToCharacteristic">
             <TileContent>
                 <ImageContent 
                   class="customIcon sapMImageContent sapMTcInnerMarker" 
@@ -43,7 +43,7 @@
           </GenericTile>
     
           <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>spcRuleTitle}"
-            subheader="{i18n>spcRuleDescription}" press="">
+            subheader="{i18n>spcRuleDescription}" press=".onNavToRule">
             <TileContent>
                 <ImageContent 
                   class="customIcon sapMImageContent sapMTcInnerMarker" 
@@ -52,7 +52,7 @@
             </TileContent>
           </GenericTile>
           <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>spcActionCatalogTitle}"
-            subheader="{i18n>spcActionCatalogDescription}" press="">
+            subheader="{i18n>spcActionCatalogDescription}" press=".onNavToActionCatalog">
             <TileContent>
                 <ImageContent 
                   class="customIcon sapMImageContent sapMTcInnerMarker" 
@@ -66,14 +66,14 @@
     <Panel expandable="false" headerText="{i18n>qualityDescription}" width="auto" class="sapUiResponsiveMargin">
       <content>
         <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>usageDecisionsTitle}"
-          subheader="{i18n>usageDecisionsDescription}" press="">
+          subheader="{i18n>usageDecisionsDescription}" press=".onNavToUsage">
           <TileContent>
               <ImageContent class="customIcon" src="sap-icon://validate" description="Icon"/>
           </TileContent>
         </GenericTile>
   
         <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>spcStatisticsReportTitle}"
-          subheader="{i18n>spcStatisticsReportDescription}" press="">
+          subheader="{i18n>spcStatisticsReportDescription}" press=".onNavToStatistic">
           <TileContent>
               <ImageContent 
                 class="customIcon" 
@@ -83,7 +83,7 @@
         </GenericTile>
   
         <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>spcAlarmsTitle}"
-          subheader="{i18n>spcAlarmsDescription}" press="">
+          subheader="{i18n>spcAlarmsDescription}" press=".onNavToAlarm">
           <TileContent>
               <ImageContent 
                 class="customIcon" 
@@ -92,7 +92,7 @@
           </TileContent>
         </GenericTile>
         <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>spcDashboardTitle}"
-          subheader="{i18n>spcDashboardDescription}" press="">
+          subheader="{i18n>spcDashboardDescription}" press=".onNavToDashboard">
           <TileContent>
               <ImageContent 
                 class="customIcon" 
@@ -102,7 +102,7 @@
         </GenericTile>
   
         <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>createLotBatchTitle}"
-          subheader="{i18n>createLotBatchDescription}" press="">
+          subheader="{i18n>createLotBatchDescription}" press=".onNavToLotBatch">
           <TileContent>
               <ImageContent 
                 class="customIcon sapMImageContent sapMTcInnerMarker" 
@@ -111,7 +111,7 @@
           </TileContent>
         </GenericTile>
         <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>resultsRecordingTitle}"
-          subheader="{i18n>resultsRecordingDescription}" press="">
+          subheader="{i18n>resultsRecordingDescription}" press=".onNavToResultRecording">
           <TileContent>
               <ImageContent 
                 class="customIcon sapMImageContent sapMTcInnerMarker" 
@@ -121,7 +121,7 @@
         </GenericTile>
 
         <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>bulkRecordingTitle}"
-          subheader="{i18n>bulkRecordingDescription}" press="">
+          subheader="{i18n>bulkRecordingDescription}" press=".onNavToBulkRecording">
           <TileContent>
               <ImageContent 
                 class="customIcon sapMImageContent sapMTcInnerMarker" 
@@ -130,7 +130,7 @@
           </TileContent>
         </GenericTile>
         <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>sampleTurnaroundDashboardTitle}"
-          subheader="{i18n>sampleTurnaroundDashboardDescription}" press="">
+          subheader="{i18n>sampleTurnaroundDashboardDescription}" press=".onNavToSampleDashboard">
           <TileContent>
               <ImageContent 
                 class="customIcon sapMImageContent sapMTcInnerMarker" 

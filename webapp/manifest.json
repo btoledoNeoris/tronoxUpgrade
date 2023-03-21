@@ -98,6 +98,66 @@
                     "pattern": "inspection",
 				    "name": "inspectionPanel",
 				    "target": "inspection"
+                },
+                {
+                    "pattern": "material",
+				    "name": "materialPanel",
+				    "target": "material"
+                },
+                {
+                    "pattern": "characteristic",
+				    "name": "characteristicPanel",
+				    "target": "characteristic"
+                },
+                {
+                    "pattern": "rule",
+				    "name": "rulePanel",
+				    "target": "rule"
+                },
+                {
+                    "pattern": "actionCatalog",
+				    "name": "actionCatalogPanel",
+				    "target": "actionCatalog"
+                },
+                {
+                    "pattern": "usage",
+				    "name": "usagePanel",
+				    "target": "usage"
+                },
+                {
+                    "pattern": "statistic",
+				    "name": "statisticPanel",
+				    "target": "statistic"
+                },
+                {
+                    "pattern": "alarm",
+				    "name": "alarmPanel",
+				    "target": "alarm"
+                },
+                {
+                    "pattern": "dashboard",
+				    "name": "dashboardPanel",
+				    "target": "dashboard"
+                },
+                {
+                    "pattern": "lotBatch",
+				    "name": "lotBatchPanel",
+				    "target": "lotBatch"
+                },
+                {
+                    "pattern": "resultRecording",
+				    "name": "resultRecordingPanel",
+				    "target": "resultRecording"
+                },
+                {
+                    "pattern": "bulkRecording",
+				    "name": "bulkRecordingPanel",
+				    "target": "bulkRecording"
+                },
+                {
+                    "pattern": "sampleDashboard",
+				    "name": "sampleDashboardPanel",
+				    "target": "sampleDashboard"
                 }
            ],
            "targets": {
@@ -121,6 +181,78 @@
                  "id": "inspectionPanel",
                  "path": "tronox.view.configurations.inspections",
                  "name": "InspectionPanel",
+                 "level" : 2
+              },
+              "material": {
+                 "id": "materialPanel",
+                 "path": "tronox.view.configurations.materials",
+                 "name": "MaterialPanel",
+                 "level" : 2
+              },
+              "characteristic": {
+                 "id": "characteristicPanel",
+                 "path": "tronox.view.configurations.characteristics",
+                 "name": "CharacteristicPanel",
+                 "level" : 2
+              },
+              "rule": {
+                 "id": "rulePanel",
+                 "path": "tronox.view.configurations.rule",
+                 "name": "RulePanel",
+                 "level" : 2
+              },
+              "actionCatalog": {
+                 "id": "actionCatalogPanel",
+                 "path": "tronox.view.configurations.actionCatalog",
+                 "name": "ActionCatalogPanel",
+                 "level" : 2
+              },
+              "usage": {
+                 "id": "usagePanel",
+                 "path": "tronox.view.quality.usage",
+                 "name": "UsagePanel",
+                 "level" : 2
+              },
+              "statistic": {
+                 "id": "statisticPanel",
+                 "path": "tronox.view.quality.statistics",
+                 "name": "StatisticPanel",
+                 "level" : 2
+              },
+              "alarm": {
+                 "id": "alarmPanel",
+                 "path": "tronox.view.quality.alarms",
+                 "name": "AlarmPanel",
+                 "level" : 2
+              },
+              "dashboard": {
+                 "id": "dashboardPanel",
+                 "path": "tronox.view.quality.dashboard",
+                 "name": "dashboardPanel",
+                 "level" : 2
+              },
+              "lotBatch": {
+                 "id": "lotBatchPanel",
+                 "path": "tronox.view.quality.lotBatch",
+                 "name": "LotBatchPanel",
+                 "level" : 2
+              },
+              "resultRecording": {
+                 "id": "resultRecordingPanel",
+                 "path": "tronox.view.quality.resultRecording",
+                 "name": "ResultRecordingPanel",
+                 "level" : 2
+              },
+              "bulkRecording": {
+                 "id": "bulkRecordingPanel",
+                 "path": "tronox.view.quality.bulkRecording",
+                 "name": "BulkRecordingPanel",
+                 "level" : 2
+              },
+              "sampleDashboard": {
+                 "id": "sampleDashboardPanel",
+                 "path": "tronox.view.quality.sampleDashboard",
+                 "name": "SampleDashboardPanel",
                  "level" : 2
               }
            }
