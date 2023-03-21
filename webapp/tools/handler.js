@@ -7,7 +7,7 @@ sap.ui.define([
 
 	return {
 		getData: function (serverMII, request) {
-			sap.ui.core.BusyIndicator.show();
+			// sap.ui.core.BusyIndicator.show();
 			return new Promise(function (resolve, reject) {
 				var url = serverMII;
 
@@ -15,14 +15,14 @@ sap.ui.define([
 					type: "POST",
 					url: url,
 					data: request,
-					contentType: "application/x-www-form-urlencoded",
+                    contentType: "application/x-www-form-urlencoded",
 					success: function (response) {
-						sap.ui.core.BusyIndicator.hide();
+						// sap.ui.core.BusyIndicator.hide();
 						resolve(response);
 					},
 					error: function (XHR, textStatus, errorThrown) {
 						try {
-							throw new Error("Error al cargar datos: " + errorThrown);
+							throw new Error("Error al cargar datos: " + XHR);
 						} catch (oException) {
 							resolve(oException);
 						}

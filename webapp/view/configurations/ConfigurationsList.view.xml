@@ -1,0 +1,35 @@
+<mvc:View
+	controllerName="tronox.controller.configurations.ConfigurationsList"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+  xmlns:core="sap.ui.core"
+  xmlns:tnt="sap.tnt"
+  >
+	<Page
+		id="configurationsListPage"
+		title="{i18n>configurationDescription}"
+		showNavButton="true"
+		navButtonPress=".onNavBack"
+		class="sapUiResponsiveContentPadding"
+    showHeader="true"
+    enableScrolling="true"
+  >
+    <tnt:ToolHeader>
+      <Label id="idPlant" class="sapUiTinyMarginBegin sapUiTinyMarginEnd tileLayout" text="Plant: 1100" labelFor="wkInput" />
+      <tnt:ToolHeaderUtilitySeparator />
+      <ToolbarSpacer>
+        <layoutData>
+          <OverflowToolbarLayoutData minWidth="20px" />
+        </layoutData>
+      </ToolbarSpacer>
+      <Label class="sapUiTinyMarginEnd tileLayout" text="WorkCenter: " labelFor="wkInput" />
+      <ComboBox items="{ path: '/', sorter: { path: 'text' } }" change="onChange" >
+        <core:Item key="{ID_WORK_CENTE}" text="{ID_WORK_CENTE} - {DS_WORK_CENTE}" />
+      </ComboBox>
+    </tnt:ToolHeader>
+    
+    <content>
+
+		</content>
+	</Page>
+</mvc:View>

@@ -1,4 +1,4 @@
-specVersion: '2.0'
+specVersion: '2.5'
 metadata:
   name: tronox
 type: application
@@ -29,5 +29,5 @@ server:
       afterMiddleware: fiori-tools-appreload
       configuration:
         component: tronox
-        ui5Theme: sap_belize_plus
+        ui5Theme: sap_belize
 

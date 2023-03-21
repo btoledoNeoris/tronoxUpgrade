@@ -1,0 +1,144 @@
+<mvc:View 
+  controllerName="tronox.controller.Home" 
+  xmlns:mvc="sap.ui.core.mvc" 
+  xmlns="sap.m" 
+  displayBlock="true">
+  <Page title="{i18n>title}" class="sapUiResponsiveContentPadding">
+    <Panel expandable="false" headerText="{i18n>configurationDescription}" width="auto" class="sapUiResponsiveMargin">
+      <content>
+          <!-- <Button id="displayNotFoundBtn" text="{i18n>NotFound}" press=".onDisplayNotFound" class="sapUiTinyMarginEnd"/> -->
+          <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>workcenterTitle}"
+            subheader="{i18n>workcenterDescription}" press=".onNavToWorkcenters">
+            <TileContent>
+                <ImageContent src="sap-icon://settings" description="Icon"/>
+            </TileContent>
+          </GenericTile> 
+          <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>inspectionPlansTitle}"
+            subheader="{i18n>inspectionPlansDescription}" press=".onNavToInspection">
+            <TileContent>
+                <ImageContent 
+                  class="customIcon sapMImageContent sapMTcInnerMarker" 
+                  src="sap-icon://display" 
+                  description="Icon"/>
+            </TileContent>
+          </GenericTile>
+    
+          <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>materialTitle}"
+            subheader="{i18n>materialDescription}" press="">
+            <TileContent>
+                <ImageContent 
+                  class="customIcon sapMImageContent sapMTcInnerMarker" 
+                  src="sap-icon://sap-box" 
+                  description="Icon"/>
+            </TileContent>
+          </GenericTile>
+          <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>characteristicsTitle}"
+            subheader="{i18n>characteristicsDescription}" press="">
+            <TileContent>
+                <ImageContent 
+                  class="customIcon sapMImageContent sapMTcInnerMarker" 
+                  src="sap-icon://order-status" 
+                  description="Icon"/>
+            </TileContent>
+          </GenericTile>
+    
+          <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>spcRuleTitle}"
+            subheader="{i18n>spcRuleDescription}" press="">
+            <TileContent>
+                <ImageContent 
+                  class="customIcon sapMImageContent sapMTcInnerMarker" 
+                  src="sap-icon://activities" 
+                  description="Icon"/>
+            </TileContent>
+          </GenericTile>
+          <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>spcActionCatalogTitle}"
+            subheader="{i18n>spcActionCatalogDescription}" press="">
+            <TileContent>
+                <ImageContent 
+                  class="customIcon sapMImageContent sapMTcInnerMarker" 
+                  src="sap-icon://quality-issue" 
+                  description="Icon"/>
+            </TileContent>
+          </GenericTile>
+      </content>
+    </Panel>
+
+    <Panel expandable="false" headerText="{i18n>qualityDescription}" width="auto" class="sapUiResponsiveMargin">
+      <content>
+        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>usageDecisionsTitle}"
+          subheader="{i18n>usageDecisionsDescription}" press="">
+          <TileContent>
+              <ImageContent class="customIcon" src="sap-icon://validate" description="Icon"/>
+          </TileContent>
+        </GenericTile>
+  
+        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>spcStatisticsReportTitle}"
+          subheader="{i18n>spcStatisticsReportDescription}" press="">
+          <TileContent>
+              <ImageContent 
+                class="customIcon" 
+                src="sap-icon://vertical-stacked-chart" 
+                description="Icon"/>
+          </TileContent>
+        </GenericTile>
+  
+        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>spcAlarmsTitle}"
+          subheader="{i18n>spcAlarmsDescription}" press="">
+          <TileContent>
+              <ImageContent 
+                class="customIcon" 
+                src="sap-icon://alert" 
+                description="Icon"/>
+          </TileContent>
+        </GenericTile>
+        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>spcDashboardTitle}"
+          subheader="{i18n>spcDashboardDescription}" press="">
+          <TileContent>
+              <ImageContent 
+                class="customIcon" 
+                src="sap-icon://bbyd-dashboard" 
+                description="Icon"/>
+          </TileContent>
+        </GenericTile>
+  
+        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>createLotBatchTitle}"
+          subheader="{i18n>createLotBatchDescription}" press="">
+          <TileContent>
+              <ImageContent 
+                class="customIcon sapMImageContent sapMTcInnerMarker" 
+                src="sap-icon://product" 
+                description="Icon"/>
+          </TileContent>
+        </GenericTile>
+        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>resultsRecordingTitle}"
+          subheader="{i18n>resultsRecordingDescription}" press="">
+          <TileContent>
+              <ImageContent 
+                class="customIcon sapMImageContent sapMTcInnerMarker" 
+                src="sap-icon://electronic-medical-record" 
+                description="Icon"/>
+          </TileContent>
+        </GenericTile>
+
+        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>bulkRecordingTitle}"
+          subheader="{i18n>bulkRecordingDescription}" press="">
+          <TileContent>
+              <ImageContent 
+                class="customIcon sapMImageContent sapMTcInnerMarker" 
+                src="sap-icon://sap-box" 
+                description="Icon"/>
+          </TileContent>
+        </GenericTile>
+        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>sampleTurnaroundDashboardTitle}"
+          subheader="{i18n>sampleTurnaroundDashboardDescription}" press="">
+          <TileContent>
+              <ImageContent 
+                class="customIcon sapMImageContent sapMTcInnerMarker" 
+                src="sap-icon://trip-report" 
+                description="Icon"/>
+          </TileContent>
+        </GenericTile>
+      </content>
+    </Panel>
+  </Page>
+</mvc:View>

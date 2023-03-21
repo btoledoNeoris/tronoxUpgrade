@@ -1,13 +1,12 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller",
-    "../tools/build"
-], function (Controller,serverMII) {
+    "tronox/controller/LayerController",
+], function (LayerController,serverMII) {
 	"use strict";
 
-	return Controller.extend("tronox.controller.App", {
+	return LayerController.extend("tronox.controller.App", {
 
 		onInit: function () {
-            console.log(serverMII.get())
+            
 		}
 	});
 

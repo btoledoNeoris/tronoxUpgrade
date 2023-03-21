@@ -1,6 +1,6 @@
 {
 	"name": "tronox",
-	"version": "0.1.1",
+	"version": "0.0.1",
 	"description": "Basis for developing SAP MII projects with SAP UI5",
 	"private": true,
 	"keywords": [
@@ -17,7 +17,7 @@
 	"devDependencies": {
 		"@babel/eslint-parser": "7.14.7",
 		"@sap/eslint-plugin-ui5-jsdocs": "2.0.5",
-		"@sap/generator-fiori": "^1.9.1",
+		"@sap/generator-fiori": "^1.9.2",
 		"@sap/ux-ui5-tooling": "1",
 		"@sapui5/ts-types": "~1.108.0",
 		"@ui5/cli": "^2.14.1",

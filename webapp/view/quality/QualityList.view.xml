@@ -1,0 +1,15 @@
+<mvc:View
+	controllerName="tronox.controller.quality.QualityList"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page
+		id="qualitysListPage"
+		title="{i18n>qualityListTitle}"
+		showNavButton="true"
+		navButtonPress=".onNavBack"
+		class="sapUiResponsiveContentPadding">
+		<content>
+			<!-- <List id="configurationsList" headerText="{i18n>ListOfAllEmployees}" items="{/Employees}"></List> -->
+		</content>
+	</Page>
+</mvc:View>

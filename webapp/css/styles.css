@@ -1,1 +1,9 @@
 /* Enter your custom styles here */
+
+.customIcon {
+   font-size: 3.75rem;
+}
+
+.tileLayout {
+	float: left;
+}

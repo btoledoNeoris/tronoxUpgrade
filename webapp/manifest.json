@@ -13,7 +13,7 @@
         "sourceTemplate": {
             "id": "@sap/generator-fiori:basic",
             "version": "1.8.4",
-            "toolsId": "neomii"
+            "toolsId": "0aa39fd2-b0ec-4fab-84b8-a6a3977a1018"
         }
 	},
     "sap.ui": {
@@ -30,10 +30,7 @@
           "desktop": true,
           "tablet": true,
           "phone": true
-        },
-        "supportedThemes": [
-            "sap_belize"
-        ]
+        }
       },
 	"sap.ui5": {
 		"flexEnabled": true,
@@ -51,9 +48,14 @@
         "resources": {
 			"css": [
 				{
-					"uri": ""
+					"uri": "css/style.css"
 				}
-			]
+			],
+            "js": [
+                {
+                    "uri": "library/repository.js"
+                }
+            ]
 		},
 		"models": {
 			"i18n": {
@@ -67,6 +69,62 @@
 				"uri": ""
 			}
 		},
+        "routing": {
+           "config": {
+              "routerClass": "sap.m.routing.Router",
+              "type": "View",
+              "viewType": "XML",
+              "path": "tronox.view",
+              "controlId": "app",
+              "controlAggregation": "pages",
+              "transition": "slide",
+              "bypassed": {
+                "target": "notFound"
+              },
+              "async": true
+           },
+           "routes": [
+                {
+                    "pattern": "",
+                    "name": "appHome",
+                    "target": "home"
+                },
+                {
+                    "pattern": "workcenters",
+				    "name": "workcenterPanel",
+				    "target": "workcenters"
+                },
+                {
+                    "pattern": "inspection",
+				    "name": "inspectionPanel",
+				    "target": "inspection"
+                }
+           ],
+           "targets": {
+              "home": {
+                 "id": "home",
+                 "name": "Home",
+                 "level" : 1
+              },
+              "notFound": {
+                 "id": "notFound",
+                 "name": "NotFound",
+                 "transition": "show"
+              },
+              "workcenters": {
+                 "id": "workcenterPanel",
+                 "path": "tronox.view.configurations.workcenters",
+                 "name": "WorkcenterPanel",
+                 "level" : 2
+              },
+              "inspection": {
+                 "id": "inspectionPanel",
+                 "path": "tronox.view.configurations.inspections",
+                 "name": "InspectionPanel",
+                 "level" : 2
+              }
+           }
+        },
         "rootView": {
 			"viewName": "tronox.view.App",
 			"type": "XML",

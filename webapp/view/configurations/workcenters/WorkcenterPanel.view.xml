@@ -1,0 +1,110 @@
+<mvc:View
+	controllerName="tronox.controller.configurations.workcenters.WorkcenterPanel"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+  xmlns:core="sap.ui.core"
+  xmlns:tnt="sap.tnt"
+	xmlns:smartForm="sap.ui.comp.smartform"
+	xmlns:smartField="sap.ui.comp.smartfield"
+  >
+	<Page
+		id="configurationsListPage"
+		title="{i18n>configurationDescription} | {i18n>workcenterTitle}"
+		showNavButton="true"
+		navButtonPress=".onNavBack"
+		class="sapUiResponsiveContentPadding"
+    showHeader="true"
+    enableScrolling="true"
+  >
+    <tnt:ToolHeader>
+      <Label id="idPlant" class="sapUiTinyMarginBegin sapUiTinyMarginEnd tileLayout" text="Plant: 1100" labelFor="wkInput" />
+      <tnt:ToolHeaderUtilitySeparator />
+      <ToolbarSpacer>
+        <layoutData>
+          <OverflowToolbarLayoutData minWidth="90px" />
+        </layoutData>
+      </ToolbarSpacer>
+      <Label class="sapUiTinyMarginEnd tileLayout" text="WorkCenter: " labelFor="wkInput" />
+      <ComboBox items="{ path: '/', sorter: { path: 'text' } }" change="onChange" width="350px">
+        <core:Item key="{ID_WORK_CENTE}" text="{ID_WORK_CENTE} | {DS_WORK_CENTE}" />
+      </ComboBox>
+    </tnt:ToolHeader>
+    
+    <content>
+      <smartForm:SmartForm 
+        id="smartForm"
+        editTogglable="true" editToggled="handleEditToggled"
+        validationMode="Async"
+        title="{i18n>workcentersubTitle}"
+        >
+        <smartForm:Group label="Hierarchy Tree Form">
+          <smartForm:GroupElement label="Group Parent">
+            <smartField:SmartField textLabel="Group Parent" value="{Base}" />
+          </smartForm:GroupElement>
+
+          <smartForm:GroupElement label="Group ID">
+            <smartField:SmartField textLabel="Group ID" value="{Base}" />
+          </smartForm:GroupElement>
+
+          <smartForm:GroupElement label="Group">
+            <smartField:SmartField textLabel="Group" value="{Base}" />
+          </smartForm:GroupElement>
+
+          <smartForm:GroupElement label="Group Type">
+            <smartField:SmartField textLabel="Group Type" value="{Base}" />
+          </smartForm:GroupElement>
+
+          <smartForm:GroupElement label="Work Center">
+            <smartField:SmartField textLabel="Work Center" value="{Base}" />
+          </smartForm:GroupElement>
+
+          <smartForm:GroupElement label="Order">
+            <smartField:SmartField textLabel="Order" value="{Base}" />
+          </smartForm:GroupElement>
+        </smartForm:Group>
+      </smartForm:SmartForm>
+
+      <Toolbar>
+        <ToolbarSpacer/>
+        <Button text="Add New Level | 0" press="onPress">
+        </Button>
+        <ToolbarSpacer/>
+      </Toolbar>
+
+      <smartForm:SmartForm id="smartformWc"
+        editTogglable="false" title="Work Centers" editable="true"
+        validationMode="Async"
+        editToggled="handleEditToggled">
+      </smartForm:SmartForm>
+
+      <smartForm:SmartForm id="smartformWcForm"
+        editTogglable="false" title="Work Centers Form" editable="true"
+        validationMode="Async"
+        editToggled="handleEditToggled">
+        <smartForm:layout>
+				  <smartForm:ColumnLayout columnsM="2" columnsL="3" columnsXL="4"/>
+        </smartForm:layout>
+        <smartForm:Group>
+          <smartForm:GroupElement label="ID">
+            <smartField:SmartField value="{ID}" importance="High" />
+          </smartForm:GroupElement>
+          <smartForm:GroupElement label="Work Centers">
+            <smartField:SmartField value="{Work Centers}" />
+          </smartForm:GroupElement>
+        </smartForm:Group>
+        <smartForm:Group>
+          <smartForm:GroupElement label="Description">
+            <smartField:SmartField value="{Name}" importance="Medium"/>
+          </smartForm:GroupElement>
+          <smartForm:GroupElement label="Active">
+            <!-- <smartField:SmartField value="{Status}" /> -->
+            <RadioButtonGroup id="idActive" valueState="Information">
+              <RadioButton text="Yes" selected="true" />
+              <RadioButton text="No" />
+            </RadioButtonGroup>
+          </smartForm:GroupElement>
+        </smartForm:Group>
+		  </smartForm:SmartForm>
+		</content>
+	</Page>
+</mvc:View>
