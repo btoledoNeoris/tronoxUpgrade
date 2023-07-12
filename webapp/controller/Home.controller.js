@@ -54,13 +54,6 @@ sap.ui.define([
 		onNavToSampleDashboard : function (){
 			this.getRouter().navTo("sampleDashboardPanel");
 		}
-
-		// onNavToConfigurations : function (){
-		// 	this.getRouter().navTo("configurationsGrid");
-		// },
-		// onNavToQuality : function (){
-		// 	this.getRouter().navTo("qualityList");
-		// }
 	});
 
 });

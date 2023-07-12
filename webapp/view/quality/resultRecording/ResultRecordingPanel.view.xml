@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="tronox.controller.configurations.inspections.InspectionPanel"
+	controllerName="tronox.controller.quality.resultRecording.ResultRecordingPanel"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
   xmlns:core="sap.ui.core"
@@ -11,7 +11,7 @@
   >
 	<Page
 		id="configurationsListPage"
-		title="{i18n>configurationDescription} | {i18n>inspectionPlansTitle}"
+		title="{i18n>qualityDescription} | {i18n>resultsRecordingTitle}"
 		showNavButton="true"
 		navButtonPress=".onNavBack"
 		class="sapUiResponsiveContentPadding"

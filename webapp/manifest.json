@@ -1,5 +1,6 @@
 {
 	"_version": "1.48.0",
+    "start_url": "index.html",
 	"sap.app": {
 		"id": "tronox",
 		"type": "application",
@@ -9,12 +10,8 @@
         },
         "title": "{{appTitle}}",
         "description": "{{appDescription}}",
-        "resources": "resources.json",
-        "sourceTemplate": {
-            "id": "@sap/generator-fiori:basic",
-            "version": "1.8.4",
-            "toolsId": "0aa39fd2-b0ec-4fab-84b8-a6a3977a1018"
-        }
+        "resources": "resources.json"
+
 	},
     "sap.ui": {
         "technology": "UI5",
@@ -30,12 +27,15 @@
           "desktop": true,
           "tablet": true,
           "phone": true
-        }
+        },
+        "supportedThemes": [
+          "sap_belize_plus"
+        ]
       },
 	"sap.ui5": {
 		"flexEnabled": true,
         "dependencies": {
-            "minUI5Version": "1.111.0",
+            "minUI5Version": "1.115.0",
             "libs": {
                 "sap.m": {},
                 "sap.ushell": {}

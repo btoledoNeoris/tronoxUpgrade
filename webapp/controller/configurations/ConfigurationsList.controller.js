@@ -17,7 +17,9 @@ function (LayerController,JSONModel,MessageToast,serverMII) {
         },
         getPlant: function() {
             let plant = '1100';
-            let url = serverMII.getEnv() == "LOCAL" ? '../../localServices/configurations/PlantByUserSelectQuery.json' : serverMII.get() + getTrx.getPlantByUserSelectQuery;
+            let url = serverMII.getEnv() == "LOCAL"
+                ? '../../localServices/configurations/PlantByUserSelectQuery.json'
+                : serverMII.get() + getTrx.getPlantByUserSelectQuery;
             var data = [];
 
             var oModel = new JSONModel(url);

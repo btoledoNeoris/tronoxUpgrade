@@ -20,7 +20,7 @@
 		"@sap/generator-fiori": "^1.9.2",
 		"@sap/ux-ui5-tooling": "1",
 		"@sapui5/ts-types": "~1.108.0",
-		"@ui5/cli": "^2.14.1",
+		"@ui5/cli": "^2.14.19",
 		"eslint": "7.32.0",
 		"eslint-plugin-fiori-custom": "2.2.1",
 		"yo": "^4.3.1"
