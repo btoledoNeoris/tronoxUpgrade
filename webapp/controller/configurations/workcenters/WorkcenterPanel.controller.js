@@ -1,126 +1,154 @@
 sap.ui.define([
-	'tronox/controller/LayerController',
-	"sap/ui/model/json/JSONModel",
-	'sap/m/MessageToast',
-	"../../../tools/handler",
-	'sap/ui/core/Fragment',
-],
-	function (LayerController, JSONModel, MessageToast, handler, Fragment) {
-		"use strict";
-        var idPlnt;
-		return LayerController.extend("tronox.controller.configurations.workcenters.WorkcenterPanel", {
-			onInit: async function () {
-                let title = await this.getPlant();
-				this.getWcenter();
-                let setPLant = this.byId("idPlant");
-                setPLant.setText(title);
-				this._formFragments = {};
-				// this._showFormFragment("Display");
-			},
-            onAfterRendering: function() {
+    'tronox/controller/LayerController',
+    "sap/ui/model/json/JSONModel",
+    "../../../tools/handler",
+    'sap/ui/core/Fragment',
+    'sap/m/MessageToast'
+  ],
+    function (LayerController, JSONModel, handler, Fragment, MessageToast) {
+      "use strict";
 
-            },
-			onChange: function (oEvent) {
-				console.log(oEvent.getParameters())
-				// MessageToast.show("change event fired! \n Selected Item id: " + oEvent.getParameters().id);
-			},
-			getPlant: async function () {
-                let getPlant = '../../localServices/configurations/PlantByUserSelectQuery.json';
-                let parameters = {};
-                try{
-                    // const data = await handler.requestData(oServices.getPlant, parameters);
-                    const data = await handler.requestData(getPlant, parameters);
-                    const [textPlant,idPlnt] = [data[0].Row[0].DS_PLANT,data[0].Row[0].ID_PLANT];
-                    console.log(textPlant)
-                    return textPlant;
-                }catch(err){
-                    console.error(err);
-                }
-			},
-			getWcenter: async function () {
-				let getWorkcenterTree = '../../localServices/configurations/WorkCenterDetailSelectQuery.json';
-                let parameters = {};
-                try{
-                    // const data = await handler.requestData(oServices.getWorkcenterTree, parameters);
-                    const data = await handler.requestData(getWorkcenterTree, parameters);
-                    console.log({data})
-                }catch(err){
-                    console.error(error);
-                }
-			},
-			onOpenDialog: function () {
+      return LayerController.extend("tronox.controller.configurations.workcenters.WorkcenterPanel", {
+        onInit: function () {
+          this.getWcenter();
+          this.getTree();
+          this._loadDetailsFragment();
+        },
+        onAfterRendering: async function() {
+          let title = await this.getPlant();
+          let setPLant = this.byId("idPlant");
+          setPLant.setText(title);
+          this.getSelWorkcenter();
+          this.getWorkcenters();
+        },
+        getPlant: async function () {
+          let getPlant = '../../localServices/configurations/PlantByUserSelectQuery.json';
+          let parameters = {};
+          try{
+            const data = await handler.requestData(getPlant, parameters);
+            const [textPlant, idPlnt] = [data[0].Row[0].DS_PLANT, data[0].Row[0].ID_PLANT];
+            return textPlant;
+          }catch(err){
+            console.error(err);
+          }
+        },
+        getWcenter: async function () {
+          let getWorkcenterTree = '../../localServices/configurations/WorkCenterDetailSelectQuery.json';
+          let parameters = {};
+          try{
+            const data = await handler.requestData(getWorkcenterTree, parameters);
+          }catch(err){
+            console.error(err);
+          }
+        },
+        getTree: async function(){
+          let getTree = '../../localServices/configurations/workcenters/WorkcentersLevels.json';
+          let parameters = {};
+          const oModel = new JSONModel();
 
-				// create dialog lazily
-				if (!this.pDialog) {
-					this.pDialog = this.loadFragment({
-						name: "tronox.view.configurations.workcenters.HelloDialog"
-					});
-				}
-				this.pDialog.then(function (oDialog) {
-					oDialog.open();
-				});
-			},
+          try{
+            const data = await handler.requestData(getTree, parameters);
+            oModel.setData(data[0].Row);
 
-			onCloseDialog: function () {
-				// note: We don't need to chain to the pDialog promise, since this event-handler
-				// is only called from within the loaded dialog itself.
-				this.byId("helloDialog").close();
-			},
+            this.getView().setModel(oModel);
 
-			handleEditPress: function () {
+          }catch(err){
+            console.error(err);
+          }
+        },
+        _loadDetailsFragment: async function() {
+          if (!this.oDetailsFragment) {
+            try {
+              this.oDetailsFragment = await Fragment.load({
+                id: "myFragment",
+                name: "tronox.view.configurations.workcenters.FormDetails",
+                controller: this
+              });
+            } catch (error) {
+              console.error(error);
+            }
+          }
+        },
+        onRowSelectionChange: function(oEvent) {
+          var oSelectedItem = oEvent.getParameter("rowContext").getObject();
+          var oModel = this.getView().getModel();
 
-				//Clone the data
-				this._oSupplier = Object.assign({}, this.getView().getModel().getData().SupplierCollection[0]);
-				this._toggleButtonsAndView(true);
+          oModel.setProperty("/selectedItem", oSelectedItem);
 
-			},
+          var oFlexibleColumnLayout = this.byId("flexibleColumnLayout");
 
-			handleCancelPress: function () {
+          var oMidColumnPage = new sap.m.Page({
+            content: [this.oDetailsFragment]
+          });
 
-				//Restore the data
-				var oModel = this.getView().getModel();
-				var oData = oModel.getData();
+          oFlexibleColumnLayout.removeAllMidColumnPages();
+          oFlexibleColumnLayout.addMidColumnPage(oMidColumnPage);
+          oFlexibleColumnLayout.setLayout(sap.f.LayoutType.TwoColumnsMidExpanded);
+        },
+        async getDataAndUpdateModel({ defaultObject, transactionHandler, parameters, modelProperty }) {
+          const oModel = this.getView().getModel();
 
-				oData.SupplierCollection[0] = this._oSupplier;
+          try {
+            const data = await handler.requestData(transactionHandler, parameters);
+            if (!data[0] || !data[0].Row || !Array.isArray(data[0].Row) || data[0].Row.length === 0) {
+              console.error('No data.');
+              MessageToast.show("No data.");
+              oModel.setProperty(modelProperty, [defaultObject]);
 
-				oModel.setData(oData);
-				this._toggleButtonsAndView(false);
+              return;
+            }
+            console.log(data)
+            const arrayData = [defaultObject, ...data[0].Row];
+            oModel.setProperty(modelProperty, arrayData);
+          } catch (error) {
+            console.error(error);
+          }
+        },
+        getSelWorkcenter: async function () {
+          let getSelectedWorkcenters = '../../localServices/configurations/workcenters/WorkcenterTable.json';
+          await this.getDataAndUpdateModel({
+            defaultObject: { ID: "-1", DESCRIPTION: "Seleccione" },
+            transactionHandler: getSelectedWorkcenters,
+            parameters: {},
+            modelProperty: "/wcs"
+          });
+        },
+        getWorkcenters: async function () {
+            let getSelectedWorkcenters = '../../localServices/configurations/workcenters/WorkcenterTable.json';
+            let parameters = {};
+            const oModel = new JSONModel();
+            try{
+                const data = await handler.requestData(getSelectedWorkcenters, parameters);
+                oModel.setData(data[0].Row);
+                console.log({data})
+                const oTable = this.getView().byId("table");
+                oTable.setModel(oModel);
 
-			},
+              }catch(err){
+                console.error(err);
+              }
+          },
+        onAdd: function(){
+          MessageToast.show(this.getView().getModel("i18n").getResourceBundle().getText("MessageAdd"))
+        },
+        onUpdate: function(){
+          MessageToast.show(this.getView().getModel("i18n").getResourceBundle().getText("MessageUpdate"))
+        },
 
-			handleSavePress: function () {
+        onDelete: function(){
+          MessageToast.show(this.getView().getModel("i18n").getResourceBundle().getText("MessageDelete"))
+        },
 
-				this._toggleButtonsAndView(false);
+        onCancel: function() {
+          var oFlexibleColumnLayout = this.byId("flexibleColumnLayout");
+          oFlexibleColumnLayout.setLayout(sap.f.LayoutType.OneColumn);
+        },
 
-			},
-
-			_getFormFragment: function (sFragmentName) {
-				console.log({ sFragmentName })
-				var pFormFragment = this._formFragments[sFragmentName];
-				var oView = this.getView();
-				console.log({ pFormFragment })
-				if (!pFormFragment) {
-					pFormFragment = Fragment.load({
-						id: oView.getId(),
-						name: "tronox.view.configurations.workcenters." + sFragmentName
-					});
-					this._formFragments[sFragmentName] = pFormFragment;
-				}
-
-				return pFormFragment;
-			},
-
-			_showFormFragment: function (sFragmentName) {
-				var oPage = this.byId("configurationsListPage");
-
-				// oPage.removeAllContent();
-				this._getFormFragment(sFragmentName).then(function (oVBox) {
-					oPage.insertContent(oVBox);
-				});
-			}
-
-
-
-
-		});
-	});
+        onExit: function() {
+          if (this._oDetailsFragment) {
+            this._oDetailsFragment.destroy();
+            this._oDetailsFragment = null;
+          }
+        },
+      });
+    });

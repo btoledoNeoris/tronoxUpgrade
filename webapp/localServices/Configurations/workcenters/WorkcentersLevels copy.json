@@ -1,0 +1,179 @@
+{ "Rowsets" : {
+	"DateCreated" : "2023-03-21T00:06:54", "Version" : "15.0 SP6 Patch 0 (Jan 21, 2016)", "StartDate" : "2023-03-20T23:06:54-0500", "EndDate" : "2023-03-21T00:06:54-0500", "CachedTime" : "",
+	"Rowset" : [
+	{
+        "Columns" : {
+		"Column" : [
+		{ "Name" : "DS_PLANT", "SourceColumn" : "DS_PLANT", "Description" : "DS_PLANT", "SQLDataType" : -9, "MinRange" : 1.0, "MaxRange" : 1.0 },
+		{ "Name" : "ID_PLANT", "SourceColumn" : "ID_PLANT", "Description" : "ID_PLANT", "SQLDataType" : 12, "MinRange" : 1.0, "MaxRange" : 1.0 } ] },
+    	"Row" : [
+            {
+                "text": "General",
+                "ref": "sap-icon://attachment-audio",
+                "nodes":[
+                    {
+                        "text": "General Meeting",
+                        "ref": "sap-icon://attachment-html"
+                    },
+                    {
+                        "text": "Plant 1 Meeting",
+                        "ref": "sap-icon://attachment-html"
+                    },
+                    {
+                        "text": "Plant 2 Meeting",
+                        "ref": "sap-icon://attachment-html"
+                    },
+                    {
+                        "text": "Maintenance Meeting",
+                        "ref": "sap-icon://attachment-html"
+                    }
+                ]
+            },
+            {
+                "text": "Operations",
+                "ref": "sap-icon://attachment-e-pub",
+                "nodes":[
+                    {
+                        "text": "Base Plant",
+                        "ref": "sap-icon://attachment-html",
+                        "nodes":[
+                            {
+                                "text": "Area 1",
+                                "ref": "sap-icon://attachment-text-file"
+                            },
+                            {
+                                "text": "Area 2",
+                                "ref": "sap-icon://attachment-text-file"
+                            }
+                        ]
+                    },
+                    {
+                        "text": "Finishing Plant",
+                        "ref": "sap-icon://attachment-html",
+                        "nodes":[
+                            {
+                                "text": "Area 3 Train 1",
+                                "ref": "sap-icon://attachment-text-file"
+                            },
+                            {
+                                "text": "Area 4 Train 2",
+                                "ref": "sap-icon://attachment-text-file"
+                            },
+                            {
+                                "text": "Area 4",
+                                "ref": "sap-icon://attachment-text-file"
+                            },
+                            {
+                                "text": "Area 4 Slurry",
+                                "ref": "sap-icon://attachment-text-file"
+                            },
+                            {
+                                "text": "Area 5",
+                                "ref": "sap-icon://attachment-text-file"
+                            }
+                        ]
+                    },
+                    {
+                        "text": "Maintenance",
+                        "ref": "sap-icon://attachment-html",
+                        "nodes":[
+                            {
+                                "text": "R&I",
+                                "ref": "sap-icon://attachment-text-file"
+                            }
+                        ]
+                    },
+                    {
+                        "text": "Lab",
+                        "ref": "sap-icon://attachment-html",
+                        "nodes":[
+                            {
+                                "text": "QC Lab",
+                                "ref": "sap-icon://attachment-text-file"
+                            }
+                        ]
+                    },
+                    {
+                        "text": "Waste and water treatment",
+                        "ref": "sap-icon://attachment-photo",
+                        "nodes":[
+                            {
+                                "text": "2-1",
+                                "ref": "sap-icon://attachment-text-file",
+                                "nodes":[
+                                    {
+                                        "text": "101NPDES",
+                                        "ref": "sap-icon://attachment-video"
+                                      },
+                                      {
+                                        "text": "101OUTFALL",
+                                        "ref": "sap-icon://attachment-video"
+                                      },
+                                      {
+                                        "text": "201OUTFALL",
+                                        "ref": "sap-icon://attachment-video"
+                                      },
+                                      {
+                                        "text": "PND009",
+                                        "ref": "sap-icon://attachment-video"
+                                      },
+                                      {
+                                        "text": "PND011",
+                                        "ref": "sap-icon://attachment-video"
+                                      },
+                                      {
+                                        "text": "PND014",
+                                        "ref": "sap-icon://attachment-video"
+                                      },
+                                      {
+                                        "text": "F0707- A1 Tailings",
+                                        "ref": "sap-icon://attachment-video"
+                                      },
+                                      {
+                                        "text": "F1530 - A1 Tailings",
+                                        "ref": "sap-icon://attachment-video"
+                                      },
+                                      {
+                                        "text": "F2597 - A1 Tailings",
+                                        "ref": "sap-icon://attachment-video"
+                                      },
+                                      {
+                                        "text": "WESTDITCH",
+                                        "ref": "sap-icon://attachment-video"
+                                      },
+                                      {
+                                        "text": "Filter Press",
+                                        "ref": "sap-icon://attachment-video"
+                                      }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "T&I",
+                "ref": "sap-icon://attachment-e-pub",
+                "nodes":[
+                    {
+                        "text": "T&I-Process Improvement",
+                        "ref": "sap-icon://attachment-html"
+                    },
+                    {
+                        "text": "T&I-Business Improvement",
+                        "ref": "sap-icon://attachment-html"
+                    },
+                    {
+                        "text": "T&I-Asset Improvement",
+                        "ref": "sap-icon://attachment-html"
+                    },
+                    {
+                        "text": "T&I-OE&R",
+                        "ref": "sap-icon://attachment-html"
+                    }
+                ]
+            }
+        ]
+    } ]
+}
+}

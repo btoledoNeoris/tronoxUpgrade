@@ -1,90 +1,84 @@
-<mvc:View
-	controllerName="tronox.controller.configurations.workcenters.WorkcenterPanel"
-	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc"
-  xmlns:core="sap.ui.core"
+<mvc:View controllerName="tronox.controller.configurations.workcenters.WorkcenterPanel"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc"
   xmlns:tnt="sap.tnt"
-  xmlns:l="sap.ui.layout"
-	xmlns:f="sap.ui.layout.form"
-	xmlns:smartForm="sap.ui.comp.smartform"
-	xmlns:smartField="sap.ui.comp.smartfield"
-  >
-	<Page
-		id="configurationsListPage"
-		title="{i18n>configurationDescription} | {i18n>workcenterTitle}"
-		showNavButton="true"
-		navButtonPress=".onNavBack"
-		class="sapUiResponsiveContentPadding"
-    showHeader="true"
-    enableScrolling="true"
-  >
+  xmlns:f="sap.f"
+  xmlns:t="sap.ui.table"
+  xmlns:layout="sap.ui.layout"
+  xmlns:form="sap.ui.layout.form"
+  xmlns:smartTable="sap.ui.comp.smarttable" 
+  xmlns:smartFilterBar="sap.ui.comp.smartfilterbar">
+  <Page 
+    id="configurationsListPage" 
+    title="{i18n>configurationDescription} | {i18n>workcenterTitle}" 
+    showNavButton="true" 
+    navButtonPress=".onNavBack" class="sapUiResponsiveContentPadding sapUiSizeCompact" 
+    showHeader="true" 
+    enableScrolling="true">
     <tnt:ToolHeader>
       <Label id="idPlant" class="sapUiTinyMarginBegin sapUiTinyMarginEnd tileLayout" text="" labelFor="wkInput" />
       <tnt:ToolHeaderUtilitySeparator />
       <ToolbarSpacer/>
-      <Label class="sapUiTinyMarginEnd tileLayout" text="WorkCenter: " labelFor="wkInput" />
-      <ComboBox items="{ path: '/', sorter: { path: 'text' } }" change="onChange" width="250px">
-        <core:Item key="{ID_WORK_CENTE}" text="{ID_WORK_CENTE} | {DS_WORK_CENTE}" />
-      </ComboBox>
     </tnt:ToolHeader>
+    <f:DynamicPage>
+      <f:title>
+				<f:DynamicPageTitle>
+					<f:heading>
+						<Title text="{i18n>configurationTitlePrincipal}"/>
+					</f:heading>
+				</f:DynamicPageTitle>
+			</f:title>
+      <f:content>
+        <f:FlexibleColumnLayout id="flexibleColumnLayout" defaultTwoColumnLayout="true">
+          <f:beginColumnPages>
+            <t:TreeTable 
+              id="Tree" 
+              rows="{path: '/', parameters: {arrayNames:['nodes']}}" 
+              selectionMode="Single" 
+              enableSelectAll="false" 
+              rowSelectionChange=".onRowSelectionChange">
+              <t:columns>
+                <t:Column>
+                  <Label text="Workcenters" />
+                  <t:template>
+                    <Text text="{workcenter} {text}" />
+                  </t:template>
+                </t:Column>
+              </t:columns>
+            </t:TreeTable>
+          </f:beginColumnPages>
+          <f:midColumnPages>    
+          </f:midColumnPages>
+        </f:FlexibleColumnLayout>
+      </f:content>
+    </f:DynamicPage>
+    <content>
+      <ScrollContainer height="400px" vertical="true">
+        <Table id="table" items="{/}" growing="true" growingThreshold="35" sticky="ColumnHeaders" selectionChange=".onRowSecSelectionChange">
+          <columns>
+            <Column>
+              <Text text="ID"/>
+            </Column>
+            <Column>
+              <Text text="Workcenter"/>
+            </Column>
+            <Column>
+              <Text text="Description"/>
+            </Column>
+          </columns>
+          <items>
+            <ColumnListItem>
+              <cells>
+                <Text text="{ID}"/>
+                <Text text="{CD_WORK_CENTE}"/>
+                <Text text="{DS_WORK_CENTE}"/>
+              </cells>
+            </ColumnListItem>
+          </items>
+        </Table>
+      </ScrollContainer>
+    </content>
     
-    <content>     
-      <!-- <Bar>
-				<contentRight>
-					<Button id="edit" text="Edit" enabled="false" press="handleEditPress" />
-					<Button id="save" text="Save" type="Emphasized" visible="false" press="handleSavePress" />
-					<Button id="cancel" text="Cancel" visible="false" press="handleCancelPress" />
-				</contentRight>
-			</Bar> -->
-
-      <VBox class="sapUiSmallMargin">
-        <f:SimpleForm id="Change"
-          editable="true"
-          layout="ResponsiveGridLayout"
-          title="{i18n>workcentersubTitle}"
-          labelSpanXL="3"
-          labelSpanL="3"
-          labelSpanM="3"
-          labelSpanS="12"
-          adjustLabelSpan="false"
-          emptySpanXL="4"
-          emptySpanL="4"
-          emptySpanM="4"
-          emptySpanS="0"
-          columnsXL="1"
-          columnsL="1"
-          columnsM="1"
-          singleContainerFullSize="false" >
-          <f:content>
-            <Label text="Group Parent" />
-            <Input id="GroupParent" value="{GroupParent}" />
-            <Label text="Group" />
-            <Input id="Group" value="{Group}">
-            </Input>
-            <Label text="Group ID/Type" />
-            <Input id="GroupID" value="{GroupID}">
-              <layoutData>
-                <l:GridData span="XL1 L2 M2 S4" />
-              </layoutData>
-            </Input>
-            <Input value="{GroupType}" />
-            <Label text="Work Center" />
-            <Select id="workcenter" selectedKey="{workcenter}">
-              <items>
-                <core:Item text="Level 1" key="Level 1"/>
-                <core:Item text="Level 2" key="Level 2"/>
-                <core:Item text="Level 3" key="Level 3"/>
-              </items>
-            </Select>
-            <Label text="Order" />
-            <Input value="{Order}" />
-          </f:content>
-        </f:SimpleForm>
-
-					<Button id="save" text="Save" type="Emphasized" press="handleSavePress" />
-					<Button id="cancel" text="Cancel" press="handleCancelPress" />        
-      </VBox>
-
-		</content>
-	</Page>
+    
+  </Page>
 </mvc:View>

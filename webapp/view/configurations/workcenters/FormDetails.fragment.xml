@@ -1,0 +1,60 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout">
+  <f:SimpleForm
+    id="DetailsForm"
+    editable="true"
+    layout="ResponsiveGridLayout"
+    title="{i18n>workcentersubTitle}"
+    labelSpanXL="3"
+    labelSpanL="3"
+    labelSpanM="3"
+    labelSpanS="12"
+    adjustLabelSpan="false"
+    emptySpanXL="4"
+    emptySpanL="4"
+    emptySpanM="4"
+    emptySpanS="0"
+    columnsXL="1"
+    columnsL="1"
+    columnsM="1"
+    singleContainerFullSize="false"
+    width="100%"
+    visible="{= !!${/selectedItem}}"
+  >
+    <f:title>
+      <core:Title text="{/selectedItem/workcenter} {/selectedItem/text}" level="H2" />
+    </f:title>
+    <f:content>
+      <Label text="Group Parent" />
+      <Input id="GroupParent" value="{/selectedItem/gParent}" />
+      <Label text="Group" />
+      <Input id="Group" value="{/selectedItem/gId}" />
+      <Label text="Group ID/Type" />
+      <Input id="GroupID" value="Level {/selectedItem/ordr} {/selectedItem/level}">
+        <layoutData>
+          <l:GridData span="XL1 L2 M2 S4" />
+        </layoutData>
+      </Input>
+      <Label text="Order" />
+      <Input id="Order" value="{/selectedItem/order}">
+        <layoutData>
+          <l:GridData span="XL1 L1 M1 S1" />
+        </layoutData>
+      </Input>
+      <Label text="Work Center" />
+      <Select id="cmbWc" selectedItem="true" selectedKey="{/selectedWc}" items="{/wcs}">
+        <core:Item key="{ID}" text="{DESCRIPTION}" />
+      </Select>
+    </f:content>
+  </f:SimpleForm>
+
+  <Toolbar width="100%">
+    <content>
+      <FlexBox>
+        <Button text="{i18n>buttonAdd} - {/selectedItem/lvl} {/selectedItem/level}" press=".onAdd" type="Emphasized"/>
+        <Button text="{i18n>buttonUpdate}" press=".onUpdate" type="Accept" />
+        <Button text="{i18n>buttonDelete}" press=".onDelete" type="Reject"/>
+        <Button text="{i18n>buttonCancel}" press=".onCancel" />
+      </FlexBox>
+    </content>
+  </Toolbar>
+</core:FragmentDefinition>

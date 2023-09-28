@@ -5,6 +5,8 @@ var oServices = {
 
     //commons
     getPlant: urlBaseXqt('building'),
+    getTree: urlBaseXqt('modify'),
+    getSelectedWorkcenters: urlBaseXqt('modify'), //change type
     //configurations
     getWorkcenterTree: urlBaseXqt('Tronox/Configuration/Xacute/WorkCenterTreeXacuteQuery'),
     getWorkcenterId: urlBaseXqt('Tronox/Configuration/Xacute/WorkCenterIDXacuteQuery'),

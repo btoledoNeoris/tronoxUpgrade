@@ -1,0 +1,55 @@
+<core:FragmentDefinition 
+  xmlns="sap.m" 
+  xmlns:core="sap.ui.core" 
+  xmlns:smartTable="sap.ui.comp.smarttable" 
+  xmlns:smartFilterBar="sap.ui.comp.smartfilterbar">
+  <smartTable:SmartTable
+    id="smartTable"
+    tableType="ResponsiveTable"
+    smartFilterId="filterBar"
+    enableAutoBinding="true"
+    useVariantManagement="true"
+    header="Table Header"
+    showRowCount="true"
+    class="sapUiResponsiveContentPadding"
+  >
+    <smartTable:table>
+      <Table id="table" growing="true" growingThreshold="20">
+        <columns>
+          <Column>
+            <header>
+              <Text text="ID"/>
+            </header>
+            <template>
+              <Text text="{ID}"/>
+            </template>
+          </Column>
+          <Column>
+            <header>
+              <Text text="CD_WORK_CENTE"/>
+            </header>
+            <template>
+              <Text text="{CD_WORK_CENTE}"/>
+            </template>
+          </Column>
+          <Column>
+            <header>
+              <Text text="DS_WORK_CENTE"/>
+            </header>
+            <template>
+              <Text text="{DS_WORK_CENTE}"/>
+            </template>
+          </Column>
+          <Column>
+            <header>
+              <Text text="DESCRIPTION"/>
+            </header>
+            <template>
+              <Text text="{DESCRIPTION}"/>
+            </template>
+          </Column>
+        </columns>
+      </Table>
+    </smartTable:table>
+  </smartTable:SmartTable>
+</core:FragmentDefinition>
