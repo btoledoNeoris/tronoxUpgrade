@@ -1,5 +1,6 @@
 DECLARE @FL_SHOWALL	BIT = 0
 
+
 --limit showing all lots to bottom level workcenter groups or when a material filter is specified
 SET @FL_SHOWALL = CASE WHEN (SELECT COUNT(ID_GROUP) FROM [WORK_CENTER_GROUP] WHERE ID_GROUP_PAREN = '[Param.4]') = 0 THEN 1 ELSE 0 END;
 SET @FL_SHOWALL = CASE WHEN '[Param.1]' = '1100' AND ('[Param.4]' = 'BAGHOPPR' OR '[Param.4]' = 'HAM_LAB_') THEN 0 ELSE @FL_SHOWALL END;
