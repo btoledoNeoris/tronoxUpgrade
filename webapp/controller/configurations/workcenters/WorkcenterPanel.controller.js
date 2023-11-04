@@ -20,6 +20,7 @@ sap.ui.define([
           setPLant.setText(title);
           this.getSelWorkcenter();
           this.getWorkcenters();
+          
         },
         getPlant: async function () {
           let getPlant = '../../localServices/configurations/PlantByUserSelectQuery.json';
@@ -57,33 +58,48 @@ sap.ui.define([
           }
         },
         _loadDetailsFragment: async function() {
-          if (!this.oDetailsFragment) {
-            try {
-              this.oDetailsFragment = await Fragment.load({
-                id: "myFragment",
-                name: "tronox.view.configurations.workcenters.FormDetails",
-                controller: this
-              });
-            } catch (error) {
-              console.error(error);
+            if (!this.oDetailsFragment) {
+                try {
+                    this.oDetailsFragment = await Fragment.load({
+                        id: "myFragment",
+                        name: "tronox.view.configurations.workcenters.FormDetails",
+                        controller: this
+                    });
+                } catch (error) {
+                    console.error(error);
+                }
+
+                this._resetSelectedItem();
+                this._updateFlexibleColumnLayout(sap.f.LayoutType.TwoColumnsMidExpanded);
+                   
             }
-          }
         },
         onRowSelectionChange: function(oEvent) {
-          var oSelectedItem = oEvent.getParameter("rowContext").getObject();
-          var oModel = this.getView().getModel();
+            var oSelectedItem = oEvent.getParameter("rowContext").getObject();
+            var oModel = this.getView().getModel();
 
-          oModel.setProperty("/selectedItem", oSelectedItem);
+            oModel.setProperty("/selectedItem", oSelectedItem);
 
-          var oFlexibleColumnLayout = this.byId("flexibleColumnLayout");
+            this._updateFlexibleColumnLayout(sap.f.LayoutType.TwoColumnsMidExpanded);
+        },
+        _resetSelectedItem: function() {
+            var oModel = this.getView().getModel();
+            oModel.setProperty("/selectedItem", { text:"",order:"",level:"",gParent:"",gId:"" });
+        },
+        _updateFlexibleColumnLayout: function(layoutType) {
+            var oFlexibleColumnLayout = this.byId("flexibleColumnLayout");
+            var i18nModel = this.getView().getModel("i18n");
+            var oMidColumnPage = new sap.m.Page({
+                content: [this.oDetailsFragment],
+                showHeader: true,
+                customHeader: new sap.m.Bar({
+                    contentMiddle: [new sap.m.Label({ text: i18nModel.getProperty("workcenterConfigurationTitle") })]
+                })
+            });
 
-          var oMidColumnPage = new sap.m.Page({
-            content: [this.oDetailsFragment]
-          });
-
-          oFlexibleColumnLayout.removeAllMidColumnPages();
-          oFlexibleColumnLayout.addMidColumnPage(oMidColumnPage);
-          oFlexibleColumnLayout.setLayout(sap.f.LayoutType.TwoColumnsMidExpanded);
+            oFlexibleColumnLayout.removeAllMidColumnPages();
+            oFlexibleColumnLayout.addMidColumnPage(oMidColumnPage);
+            oFlexibleColumnLayout.setLayout(layoutType);
         },
         async getDataAndUpdateModel({ defaultObject, transactionHandler, parameters, modelProperty }) {
           const oModel = this.getView().getModel();

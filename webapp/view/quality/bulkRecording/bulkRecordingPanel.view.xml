@@ -3,12 +3,9 @@
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
   xmlns:core="sap.ui.core"
-  xmlns:tnt="sap.tnt"
-	xmlns:smartForm="sap.ui.comp.smartform"
-	xmlns:smartField="sap.ui.comp.smartfield"
-  xmlns:fiori="sap.ui.webc.fiori"
-  xmlns:l="sap.ui.layout"
-  >
+  xmlns:fb="sap.ui.comp.filterbar"
+   xmlns:t="sap.ui.table"
+	displayBlock="true">
 	<Page
 		id="configurationsListPage"
 		title="{i18n>qualityDescription} | {i18n>bulkRecordingTitle}"
@@ -18,150 +15,260 @@
     showHeader="true"
     enableScrolling="true"
   >
-    <tnt:ToolHeader>
-      <Label id="idPlant" class="sapUiTinyMarginBegin sapUiTinyMarginEnd tileLayout" text="Plant: 1100" labelFor="wkInput" />
-      <tnt:ToolHeaderUtilitySeparator />
-      <ToolbarSpacer>
-        <layoutData>
-          <OverflowToolbarLayoutData minWidth="50px" />
-        </layoutData>
-      </ToolbarSpacer>
-      <Label class="sapUiTinyMarginEnd tileLayout" text="Work Center Group: " labelFor="wkInput" />
-      <ComboBox items="{ path: '/', sorter: { path: 'text' } }" change="onChange" width="350px">
-        <core:Item key="{ID_WORK_CENTE}" text="{ID_WORK_CENTE} | {DS_WORK_CENTE}" />
-      </ComboBox>
-      <ToolbarSpacer>
-        <layoutData>
-          <OverflowToolbarLayoutData minWidth="90px" />
-        </layoutData>
-      </ToolbarSpacer>
-      <Label class="sapUiTinyMarginEnd tileLayout" text="Material:    " />
-      <ToolbarSpacer>
-        <layoutData>
-          <OverflowToolbarLayoutData minWidth="90px" />
-        </layoutData>
-      </ToolbarSpacer>
-    </tnt:ToolHeader>
-
-    <Panel expandable="true" headerText="Operations" width="auto" class="sapUiResponsiveMargin">
-      <content>
+    <content>
+      <fb:FilterBar 
+        id="filBarId" 
+        search="onSearch" 
+        showRestoreButton="false" 
+        showClearButton="true" 
+        showFilterConfiguration="false"
+        useToolbar="false" 
+        showGoOnFB="true"
+      >
+      <fb:filterGroupItems>
+        <fb:FilterGroupItem name="workcenter" label="{i18n>workCenter}" groupName="main" visibleInFilterBar="true">
+          <fb:control>
+            <MultiComboBox selectionChange="" items="{ path: '/wcs',templateShareable: true }">
+              <core:Item key="-1" text="Seleccionar..."/>
+            </MultiComboBox>
+          </fb:control>
+        </fb:FilterGroupItem>
         
-      </content>
-    </Panel>
+        <fb:FilterGroupItem name="material" label="{i18n>material}" groupName="main" visibleInFilterBar="true">
+          <fb:control>
+            <MultiComboBox selectionChange="" items="{ path: '/mtsd',templateShareable: true }">
+              <core:Item key="-1" text="Seleccionar..."/>
+            </MultiComboBox>
+          </fb:control>
+        </fb:FilterGroupItem>
 
-    <Panel expandable="false" headerText="Form" width="auto" class="sapUiResponsiveMargin">
-      <content>
-        <l:HorizontalLayout class="sapUiContentPadding">
-          <Label text = "Valid From" labelFor="DP1"/>
-          <DatePicker
-            id="DP1"
-            placeholder="Enter Date"
-            value="2023-03-21"
-            change="handleChange"
-            class="sapUiSmallMarginBottom"/>
-          <Label text="Valid Till:" labelFor="DP2"/>
-          <DatePicker
-            id="DP2"
-            value="2023-03-26"
-            formatPattern="long"
-            change="handleChange"
-            class="sapUiSmallMarginBottom"/>
-        </l:HorizontalLayout>
-        <smartForm:SmartForm id="smartformWcForm"
-          editTogglable="false" editable="true"
-          validationMode="Async"
-          editToggled="handleEditToggled">
-          <smartForm:layout>
-            <smartForm:ColumnLayout columnsM="2" columnsL="3" columnsXL="4"/>
-          </smartForm:layout>
-          <smartForm:Group>
-            <smartForm:GroupElement label="Plant">
-              <smartField:SmartField value="{1100}" importance="High"/>
-            </smartForm:GroupElement>
-            <smartForm:GroupElement label="OP Nr">
-              <smartField:SmartField value="{Work Centers}" />
-            </smartForm:GroupElement>
-          </smartForm:Group>
-          <smartForm:Group>
-            <smartForm:GroupElement label="Material">
-              <smartField:SmartField value="{Name}" importance="Medium"/>
-            </smartForm:GroupElement>
-            <smartForm:GroupElement label="Operation">
-              <smartField:SmartField value="{Name}" importance="Medium"/>
-            </smartForm:GroupElement>
-          </smartForm:Group>
-          <smartForm:Group>
-            <smartForm:GroupElement label="Work Center">
-              <smartField:SmartField value="{Name}" importance="Medium"/>
-            </smartForm:GroupElement>
-          </smartForm:Group>
-        </smartForm:SmartForm>
-      </content>
-    </Panel>
+        <fb:FilterGroupItem name="batch" label="{i18n>batch}" groupName="main" visibleInFilterBar="true">
+          <fb:control>
+            <MultiComboBox selectionChange="" items="{ path: '/batchs',templateShareable: true }">
+              <core:Item key="-1" text="Seleccionar..."/>
+            </MultiComboBox>
+          </fb:control>
+        </fb:FilterGroupItem>
 
-    <Panel expandable="true" headerText="Characteristics" width="auto" class="sapUiResponsiveMargin">
-      <content>
-        
-      </content>
-    </Panel>
+        <fb:FilterGroupItem name="dateInit" label="{i18n>dateStart}" groupName="main" visibleInFilterBar="true">
+          <fb:control>
+            <DateTimePicker
+              placeholder="{i18n>placeDate}"
+              change="handleChange"
+              class="sapUiSmallMarginEnd"/>
+          </fb:control>
+        </fb:FilterGroupItem>
 
-    <Panel expandable="false" headerText="Form" width="auto" class="sapUiResponsiveMargin">
-      <content>
-        <smartForm:SmartForm id="smartformWForm"
-          editTogglable="false" editable="true"
-          validationMode="Async"
-          editToggled="handleEditToggled">
-          <smartForm:layout>
-            <smartForm:ColumnLayout columnsM="2" columnsL="3" columnsXL="4"/>
-          </smartForm:layout>
-          <smartForm:Group>
-            <smartForm:GroupElement label="Char Nr.">
-              <smartField:SmartField value="{1100}" importance="High"/>
-            </smartForm:GroupElement>
-            <smartForm:GroupElement label="Spec Low">
-              <smartField:SmartField value="{Work Centers}" />
-            </smartForm:GroupElement>
-            <smartForm:GroupElement label="Unit">
-              <smartField:SmartField value="{Work Centers}" />
-            </smartForm:GroupElement>
-          </smartForm:Group>
-          <smartForm:Group>
-            <smartForm:GroupElement label="Characteristic">
-              <smartField:SmartField value="{value}" text="{text}" importance="Medium"/>
-            </smartForm:GroupElement>
-            <smartForm:GroupElement label="Target">
-              <smartField:SmartField value="{Name}" importance="Medium"/>
-            </smartForm:GroupElement>
-            <smartForm:GroupElement label="Version">
-              <smartField:SmartField value="{Name}" importance="Medium"/>
-            </smartForm:GroupElement>
-          </smartForm:Group>
-          <smartForm:Group>
-            <smartForm:GroupElement label="Characteristic Type">
-              <!-- <smartField:SmartField value="{Name}" importance="Medium"/> -->
-              <ComboBox items="{ path: '/', sorter: { path: 'text' } }" change="onChange" width="350px">
-                <core:Item key="1" text="Numeric" />
-              </ComboBox>
-            </smartForm:GroupElement>
-            <smartForm:GroupElement label="Spec High">
-              <smartField:SmartField value="{Name}" importance="Medium"/>
-            </smartForm:GroupElement>
-            <smartForm:GroupElement label="Sort">
-              <smartField:SmartField value="{Name}" importance="Medium"/>
-            </smartForm:GroupElement>
-          </smartForm:Group>
-          <smartForm:Group>
-            <smartForm:GroupElement label="Catalog Set">
-              <smartField:SmartField value="{Name}" importance="Medium"/>
-            </smartForm:GroupElement>
-          </smartForm:Group>
-          <smartForm:Group>
-            <smartForm:GroupElement label="Formula">
-              <smartField:SmartField value="{Name}" importance="Medium"/>
-            </smartForm:GroupElement>
-          </smartForm:Group>
-        </smartForm:SmartForm>
-      </content>
-    </Panel>
+        <fb:FilterGroupItem name="dateEnd" label="{i18n>dateEnd}" groupName="main" visibleInFilterBar="true">
+          <fb:control>
+            <DateTimePicker
+              placeholder="{i18n>placeDate}"
+              change="handleChange"
+              class="sapUiSmallMarginEnd"/>
+          </fb:control>
+        </fb:FilterGroupItem>
+      </fb:filterGroupItems>
+
+      </fb:FilterBar>
+      <VBox renderType="Bare">
+        <VBox>
+          <t:TreeTable 
+            id="Tree" 
+            rows="{path: '/table'}" 
+            selectionMode="Single" 
+            enableSelectAll="false" 
+            ariaLabelledBy="title"
+            class=""
+            visibleRowCount="15"
+            selectionBehavior="RowOnly" 
+            rowSelectionChange="onRowSelection"
+          >
+              <t:extension>
+                <OverflowToolbar class="">
+                  <ToolbarSpacer />
+                    <Title text="{i18n>titleTablebulkRecording}" class="sapMTitleStyleH3" />
+                  <ToolbarSpacer />
+                </OverflowToolbar>
+              </t:extension>
+              <t:columns>
+                <t:Column hAlign="Center" width="5rem">
+                  <Text text="{i18n>colInspectionLot}" class="" />
+                    <t:template>
+                      <Text text="{inspectionLot}" />
+                    </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="6rem">
+                  <Text text="{i18n>material}" class="" />
+                  <t:template>
+                    <Text text="{material}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="5rem">
+                  <Text text="{i18n>batch}" class="" />
+                  <t:template>
+                    <Text text="{batch}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="6rem">
+                  <Text text="{i18n>workCenter}" class="" />
+                  <t:template>
+                    <Text text="{workCenter}"/>
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="6rem">
+                  <Text text="{i18n>colInspectionLot}" class="" />
+                  <t:template>
+                    <Text text="{colInspectionLot}"/>
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="6rem">
+                  <Text text="{i18n>colInspectionPoi}" class="" />
+                  <t:template>
+                    <Text text="{colInspectionPoi}"/>
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="4rem">
+                  <Text text="{i18n>colSampleID}" class="" />
+                  <t:template>
+                    <Text text="{colSampleID}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="5rem">
+                  <Text text="{i18n>colCem1}" class="" />
+                  <t:template>
+                    <Text text="{colCem1}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="4rem">
+                  <Text text="{i18n>ph}" class="" />
+                  <t:template>
+                    <Text text="{ph}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="5rem">
+                  <Text text="{i18n>colCem2}" class="" />
+                  <t:template>
+                    <Text text="{colCem2}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="6rem">
+                  <Text text="{i18>colSpecResis}" class="" />
+                  <t:template>
+                    <Text text="{colSpecResis}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="6rem">
+                  <Text text="{i18>colSolids}" class="" />
+                  <t:template>
+                    <Text text="{colSolids}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="6rem">
+                  <Text text="{i18>colBright}" class="" />
+                  <t:template>
+                    <Text text="{colBright}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="6rem">
+                  <Text text="{i18>colDen}" class="" />
+                  <t:template>
+                    <Text text="{colDen}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="6rem">
+                  <Text text="{i18>colColor}" class="" />
+                  <t:template>
+                    <Text text="{colColor}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="6rem">
+                  <Text text="{i18>colSFM}" class="" />
+                  <t:template>
+                    <Text text="{colSFM}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="6rem">
+                  <Text text="{i18>colTare}" class="" />
+                  <t:template>
+                    <Text text="{colTare}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="6rem">
+                  <Text text="{i18>colFinal}" class="" />
+                  <t:template>
+                    <Text text="{colFinal}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="6rem">
+                  <Text text="{i18>colTare2}" class="" />
+                  <t:template>
+                    <Text text="{colTare2}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="6rem">
+                  <Text text="{i18>colFinal2}" class="" />
+                  <t:template>
+                    <Text text="{colFinal2}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="6rem">
+                  <Text text="{i18>colTio}" class="" />
+                  <t:template>
+                    <Text text="{colTio}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="6rem">
+                  <Text text="{i18>colMesh}" class="" />
+                  <t:template>
+                    <Text text="{colMesh}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="6rem">
+                  <Text text="{i18>colAl}" class="" />
+                  <t:template>
+                    <Text text="{colAl}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="6rem">
+                  <Text text="{i18>colSi}" class="" />
+                  <t:template>
+                    <Text text="{colSi}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="6rem">
+                  <Text text="{i18>colVis}" class="" />
+                  <t:template>
+                    <Text text="{colVis}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="6rem">
+                  <Text text="{i18>colBIS}" class="" />
+                  <t:template>
+                    <Text text="{colBIS}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="6rem">
+                  <Text text="{i18>colP2}" class="" />
+                  <t:template>
+                    <Text text="{colP2}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="6rem">
+                  <Text text="{i18>colLatex}" class="" />
+                  <t:template>
+                    <Text text="{colLatex}" />
+                  </t:template>
+                </t:Column>
+                <t:Column hAlign="Center" width="6rem">
+                  <Text text="{i18>colSAM}" class="" />
+                  <t:template>
+                    <Text text="{colSAM}" />
+                  </t:template>
+                </t:Column>
+              </t:columns>
+          </t:TreeTable>
+        </VBox>
+      </VBox>
+    </content>
 	</Page>
 </mvc:View>

@@ -2,8 +2,8 @@
   controllerName="tronox.controller.App" 
   xmlns:mvc="sap.ui.core.mvc" 
   xmlns="sap.m" 
-  displayBlock="true">
-    <Shell>
-      <App id="app"/>
+  displayBlock="false">
+    <Shell appWidthLimited="false">
+      <App id="app" />
     </Shell>
 </mvc:View>

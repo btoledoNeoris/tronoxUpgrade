@@ -2,7 +2,7 @@
   xmlns:mvc="sap.ui.core.mvc"
   xmlns="sap.m" displayBlock="true">
   <Page title="{i18n>title}" class="sapUiResponsiveContentPadding">
-    <Panel expandable="false" headerText="{i18n>configurationDescription}" width="auto" class="sapUiResponsiveMargin">
+    <Panel expandable="false" headerText="{i18n>configurationDescription}"  class="sapUiResponsiveMargin">
       <content>
         <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>workcenterTitle}" subheader="{i18n>workcenterDescription}" press=".onNavToWorkcenters">
           <TileContent>

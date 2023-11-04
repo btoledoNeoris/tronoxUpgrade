@@ -32,7 +32,6 @@ function (LayerController,JSONModel,MessageToast,serverMII) {
                 oModel.setData(data);
                 console.log(oModel)
                 // this.getView().setModel(oModel);
-
             }.bind(this))
 
         },

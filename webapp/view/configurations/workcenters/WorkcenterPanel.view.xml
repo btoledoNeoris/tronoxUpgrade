@@ -4,79 +4,49 @@
   xmlns:tnt="sap.tnt"
   xmlns:f="sap.f"
   xmlns:t="sap.ui.table"
-  xmlns:layout="sap.ui.layout"
-  xmlns:form="sap.ui.layout.form"
-  xmlns:smartTable="sap.ui.comp.smarttable" 
-  xmlns:smartFilterBar="sap.ui.comp.smartfilterbar">
+  xmlns:fm="sap.ui.layout.form" 
+  xmlns:l="sap.ui.layout">
   <Page 
     id="configurationsListPage" 
-    title="{i18n>configurationDescription} | {i18n>workcenterTitle}" 
+    title="{i18n>configurationDescription} | {i18n>workcenterTitle} > {i18n>configurationTitlePrincipal}" 
     showNavButton="true" 
     navButtonPress=".onNavBack" class="sapUiResponsiveContentPadding sapUiSizeCompact" 
     showHeader="true" 
     enableScrolling="true">
     <tnt:ToolHeader>
-      <Label id="idPlant" class="sapUiTinyMarginBegin sapUiTinyMarginEnd tileLayout" text="" labelFor="wkInput" />
-      <tnt:ToolHeaderUtilitySeparator />
-      <ToolbarSpacer/>
+      <Label id="idPlant" class="sapUiTinyMarginEnd tileLayout" text="" labelFor="wkInput" textAlign="End"/>
     </tnt:ToolHeader>
-    <f:DynamicPage>
-      <f:title>
-				<f:DynamicPageTitle>
-					<f:heading>
-						<Title text="{i18n>configurationTitlePrincipal}"/>
-					</f:heading>
-				</f:DynamicPageTitle>
-			</f:title>
-      <f:content>
-        <f:FlexibleColumnLayout id="flexibleColumnLayout" defaultTwoColumnLayout="true">
-          <f:beginColumnPages>
-            <t:TreeTable 
-              id="Tree" 
-              rows="{path: '/', parameters: {arrayNames:['nodes']}}" 
-              selectionMode="Single" 
-              enableSelectAll="false" 
-              rowSelectionChange=".onRowSelectionChange">
-              <t:columns>
-                <t:Column>
-                  <Label text="Workcenters" />
-                  <t:template>
-                    <Text text="{workcenter} {text}" />
-                  </t:template>
-                </t:Column>
-              </t:columns>
-            </t:TreeTable>
-          </f:beginColumnPages>
-          <f:midColumnPages>    
-          </f:midColumnPages>
-        </f:FlexibleColumnLayout>
-      </f:content>
-    </f:DynamicPage>
     <content>
-      <ScrollContainer height="400px" vertical="true">
-        <Table id="table" items="{/}" growing="true" growingThreshold="35" sticky="ColumnHeaders" selectionChange=".onRowSecSelectionChange">
-          <columns>
-            <Column>
-              <Text text="ID"/>
-            </Column>
-            <Column>
-              <Text text="Workcenter"/>
-            </Column>
-            <Column>
-              <Text text="Description"/>
-            </Column>
-          </columns>
-          <items>
-            <ColumnListItem>
-              <cells>
-                <Text text="{ID}"/>
-                <Text text="{CD_WORK_CENTE}"/>
-                <Text text="{DS_WORK_CENTE}"/>
-              </cells>
-            </ColumnListItem>
-          </items>
-        </Table>
-      </ScrollContainer>
+      <f:DynamicPage>
+        <f:content>
+          <f:FlexibleColumnLayout 
+            id="flexibleColumnLayout" 
+            layout="TwoColumnsMidExpanded"
+            showHeader="false">
+            <f:beginColumnPages>
+              <t:TreeTable 
+                id="Tree" 
+                rows="{path: '/', parameters: {arrayNames:['nodes']}}" 
+                selectionMode="Single" 
+                enableSelectAll="false" 
+                visibleRowCount="15"
+                selectionBehavior="RowOnly" 
+                rowSelectionChange="onRowSelectionChange">
+                <t:columns>
+                  <t:Column>
+                    <Label text="Workcenters" />
+                    <t:template>
+                      <Text text="{workcenter} {text}" />
+                    </t:template>
+                  </t:Column>
+                </t:columns>
+              </t:TreeTable>
+            </f:beginColumnPages>
+            <f:midColumnPages>    
+            </f:midColumnPages>
+          </f:FlexibleColumnLayout>
+        </f:content>
+      </f:DynamicPage>
     </content>
     
     
