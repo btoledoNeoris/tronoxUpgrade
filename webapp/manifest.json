@@ -53,7 +53,7 @@
 			],
             "js": [
                 {
-                    "uri": "library/repository.js"
+                    "uri": "js/Transactions.js"
                 }
             ]
 		},
