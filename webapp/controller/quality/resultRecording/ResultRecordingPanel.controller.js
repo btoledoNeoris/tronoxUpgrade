@@ -2,7 +2,7 @@ sap.ui.define([
 	'tronox/controller/LayerController',
     'sap/m/MessageBox',
     'sap/m/MessageToast',
-	"../../../tools/handler",
+	'../../../tools/handler',
 ],
 function (LayerController,MessageBox,MessageToast,handler) {
 	"use strict";
@@ -45,7 +45,7 @@ function (LayerController,MessageBox,MessageToast,handler) {
                 let getData = '../../localServices/quality/ResultsRecording.json';
                 // const data = await handler.requestData(oTransactions.getEventsDetailsByArea, parameters);
                
-                const data = await handler.requestData(getData, parameters);;
+                const data = await handler.requestData(getData, parameters);
                 if (data[0]?.Row?.length === 0) {
                     MessageToast.show(this.getI18nText("messageError"), { duration: 2000 });
                     console.error(this.getI18nText("messageError"));
