@@ -1,6 +1,7 @@
 <mvc:View
 	controllerName="tronox.controller.quality.resultRecording.ResultRecordingPanel"
 	xmlns="sap.m"
+  xmlns:fb="sap.ui.comp.filterbar"
 	xmlns:mvc="sap.ui.core.mvc"
   xmlns:core="sap.ui.core"
   xmlns:tnt="sap.tnt"
@@ -19,149 +20,88 @@
     enableScrolling="true"
   >
     <tnt:ToolHeader>
-      <Label id="idPlant" class="sapUiTinyMarginBegin sapUiTinyMarginEnd tileLayout" text="Plant: 1100" labelFor="wkInput" />
+      <Label class="sapUiTinyMarginBegin sapUiTinyMarginEnd tileLayout" text="{i18n>Plant}" labelFor="wkInput" />
       <tnt:ToolHeaderUtilitySeparator />
       <ToolbarSpacer>
         <layoutData>
           <OverflowToolbarLayoutData minWidth="50px" />
         </layoutData>
       </ToolbarSpacer>
-      <Label class="sapUiTinyMarginEnd tileLayout" text="Work Center Group: " labelFor="wkInput" />
+      <Label class="sapUiTinyMarginEnd tileLayout" text="Work Center: " />
       <ComboBox items="{ path: '/', sorter: { path: 'text' } }" change="onChange" width="350px">
         <core:Item key="{ID_WORK_CENTE}" text="{ID_WORK_CENTE} | {DS_WORK_CENTE}" />
       </ComboBox>
-      <ToolbarSpacer>
-        <layoutData>
-          <OverflowToolbarLayoutData minWidth="90px" />
-        </layoutData>
-      </ToolbarSpacer>
-      <Label class="sapUiTinyMarginEnd tileLayout" text="Material:    " />
-      <ToolbarSpacer>
-        <layoutData>
-          <OverflowToolbarLayoutData minWidth="90px" />
-        </layoutData>
-      </ToolbarSpacer>
     </tnt:ToolHeader>
 
-    <Panel expandable="true" headerText="Operations" width="auto" class="sapUiResponsiveMargin">
-      <content>
-        
-      </content>
-    </Panel>
+    <content>
+      <fb:FilterBar 
+        id="filBarId" 
+        search="onSearch" 
+        showRestoreButton="false" 
+        showClearButton="true" 
+        showFilterConfiguration="false"
+        useToolbar="false" 
+        showGoOnFB="true"
+      >
+      <fb:filterGroupItems>          
+        <fb:FilterGroupItem name="material" label="{i18n>material}" groupName="main" visibleInFilterBar="true">
+          <fb:control>
+            <MultiComboBox id="materialComboBox" selectionChange="onMaterialComboBoxChange" items="{ path: '/mtsd',templateShareable: true }"> 
+              <core:Item key="-1" text="Seleccionar..."/>
+            </MultiComboBox>
+          </fb:control>
+        </fb:FilterGroupItem>
+      
+        <fb:FilterGroupItem name="materialInput" label="{i18n>material}" groupName="main" visibleInFilterBar="true">
+          <fb:control>
+            <Label text="{i18n>materialInput}" labelFor="input-material" />
+            <Input id="input-material" valueChange="onMaterialInputChange" />
+          </fb:control>
+        </fb:FilterGroupItem>
+      
+        <fb:FilterGroupItem name="batch" label="{i18n>batch}" groupName="main" visibleInFilterBar="true">
+          <fb:control>
+            <MultiComboBox id="batchComboBox" selectionChange="onBatchComboBoxChange" items="{ path: '/batchs',templateShareable: true }">
+              <core:Item key="-1" text="Seleccionar..."/>
+            </MultiComboBox>
+          </fb:control>
+        </fb:FilterGroupItem>
+      
+        <fb:FilterGroupItem name="batchInput" label="{i18n>batch}" groupName="main" visibleInFilterBar="true">
+          <fb:control>
+            <Label text="{i18n>batchInput}" labelFor="input-batch" />
+            <Input id="input-batch" valueChange="onBatchInputChange" />
+          </fb:control>
+        </fb:FilterGroupItem>
+      
+        <fb:FilterGroupItem name="dateInit" label="{i18n>dateStart}" groupName="main" visibleInFilterBar="true">
+          <fb:control>
+            <DateTimePicker
+              placeholder="{i18n>placeDate}"
+              id="dateInit" 
+              change="onDateInitChange"
+              class="sapUiSmallMarginEnd"
+              value="{/dateInit}"                
+              />
+          </fb:control>
+        </fb:FilterGroupItem>
+      
+        <fb:FilterGroupItem name="dateEnd" label="{i18n>dateEnd}" groupName="main" visibleInFilterBar="true">
+          <fb:control>
+            <DateTimePicker
+              placeholder="{i18n>placeDate}"
+              id="dateEnd" 
+              change="onDateEndChange"
+              class="sapUiSmallMarginEnd"
+              value="{/dateEnd}"    
+              />
+          </fb:control>
+        </fb:FilterGroupItem>
+      </fb:filterGroupItems>
+      
 
-    <Panel expandable="false" headerText="Form" width="auto" class="sapUiResponsiveMargin">
-      <content>
-        <l:HorizontalLayout class="sapUiContentPadding">
-          <Label text = "Valid From" labelFor="DP1"/>
-          <DatePicker
-            id="DP1"
-            placeholder="Enter Date"
-            value="2023-03-21"
-            change="handleChange"
-            class="sapUiSmallMarginBottom"/>
-          <Label text="Valid Till:" labelFor="DP2"/>
-          <DatePicker
-            id="DP2"
-            value="2023-03-26"
-            formatPattern="long"
-            change="handleChange"
-            class="sapUiSmallMarginBottom"/>
-        </l:HorizontalLayout>
-        <smartForm:SmartForm id="smartformWcForm"
-          editTogglable="false" editable="true"
-          validationMode="Async"
-          editToggled="handleEditToggled">
-          <smartForm:layout>
-            <smartForm:ColumnLayout columnsM="2" columnsL="3" columnsXL="4"/>
-          </smartForm:layout>
-          <smartForm:Group>
-            <smartForm:GroupElement label="Plant">
-              <smartField:SmartField value="{1100}" importance="High"/>
-            </smartForm:GroupElement>
-            <smartForm:GroupElement label="OP Nr">
-              <smartField:SmartField value="{Work Centers}" />
-            </smartForm:GroupElement>
-          </smartForm:Group>
-          <smartForm:Group>
-            <smartForm:GroupElement label="Material">
-              <smartField:SmartField value="{Name}" importance="Medium"/>
-            </smartForm:GroupElement>
-            <smartForm:GroupElement label="Operation">
-              <smartField:SmartField value="{Name}" importance="Medium"/>
-            </smartForm:GroupElement>
-          </smartForm:Group>
-          <smartForm:Group>
-            <smartForm:GroupElement label="Work Center">
-              <smartField:SmartField value="{Name}" importance="Medium"/>
-            </smartForm:GroupElement>
-          </smartForm:Group>
-        </smartForm:SmartForm>
-      </content>
-    </Panel>
-
-    <Panel expandable="true" headerText="Characteristics" width="auto" class="sapUiResponsiveMargin">
-      <content>
-        
-      </content>
-    </Panel>
-
-    <Panel expandable="false" headerText="Form" width="auto" class="sapUiResponsiveMargin">
-      <content>
-        <smartForm:SmartForm id="smartformWForm"
-          editTogglable="false" editable="true"
-          validationMode="Async"
-          editToggled="handleEditToggled">
-          <smartForm:layout>
-            <smartForm:ColumnLayout columnsM="2" columnsL="3" columnsXL="4"/>
-          </smartForm:layout>
-          <smartForm:Group>
-            <smartForm:GroupElement label="Char Nr.">
-              <smartField:SmartField value="{1100}" importance="High"/>
-            </smartForm:GroupElement>
-            <smartForm:GroupElement label="Spec Low">
-              <smartField:SmartField value="{Work Centers}" />
-            </smartForm:GroupElement>
-            <smartForm:GroupElement label="Unit">
-              <smartField:SmartField value="{Work Centers}" />
-            </smartForm:GroupElement>
-          </smartForm:Group>
-          <smartForm:Group>
-            <smartForm:GroupElement label="Characteristic">
-              <smartField:SmartField value="{value}" text="{text}" importance="Medium"/>
-            </smartForm:GroupElement>
-            <smartForm:GroupElement label="Target">
-              <smartField:SmartField value="{Name}" importance="Medium"/>
-            </smartForm:GroupElement>
-            <smartForm:GroupElement label="Version">
-              <smartField:SmartField value="{Name}" importance="Medium"/>
-            </smartForm:GroupElement>
-          </smartForm:Group>
-          <smartForm:Group>
-            <smartForm:GroupElement label="Characteristic Type">
-              <!-- <smartField:SmartField value="{Name}" importance="Medium"/> -->
-              <ComboBox items="{ path: '/', sorter: { path: 'text' } }" change="onChange" width="350px">
-                <core:Item key="1" text="Numeric" />
-              </ComboBox>
-            </smartForm:GroupElement>
-            <smartForm:GroupElement label="Spec High">
-              <smartField:SmartField value="{Name}" importance="Medium"/>
-            </smartForm:GroupElement>
-            <smartForm:GroupElement label="Sort">
-              <smartField:SmartField value="{Name}" importance="Medium"/>
-            </smartForm:GroupElement>
-          </smartForm:Group>
-          <smartForm:Group>
-            <smartForm:GroupElement label="Catalog Set">
-              <smartField:SmartField value="{Name}" importance="Medium"/>
-            </smartForm:GroupElement>
-          </smartForm:Group>
-          <smartForm:Group>
-            <smartForm:GroupElement label="Formula">
-              <smartField:SmartField value="{Name}" importance="Medium"/>
-            </smartForm:GroupElement>
-          </smartForm:Group>
-        </smartForm:SmartForm>
-      </content>
-    </Panel>
+      </fb:FilterBar>
+    </content>  
+    
 	</Page>
 </mvc:View>

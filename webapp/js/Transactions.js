@@ -15,5 +15,8 @@ var oServices = {
     getCharacteristicActions: urlBaseXqt('Tronox/Configuration/Xacute/CharacteristicActionsXacuteQuery'),
     getInsPlanActions: urlBaseXqt('Tronox/Configuration/Xacute/InspectionPlanActionsXacuteQuery'),
     getMaterialActions: urlBaseXqt('Tronox/Configuration/Xacute/MaterialActionsXacuteQuery'),
-    getSPCRuleActions: urlBaseXqt('Tronox/Configuration/Xacute/SPCRuleActionsXacuteQuery')
+    getSPCRuleActions: urlBaseXqt('Tronox/Configuration/Xacute/SPCRuleActionsXacuteQuery'),
+
+    //quality
+    getResultsRecording:urlBaseXqt('Tronox/Configuration/Xacute/WorkCenterTreeXacuteQuery')
 };
