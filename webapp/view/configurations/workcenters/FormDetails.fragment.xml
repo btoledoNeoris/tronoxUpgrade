@@ -1,5 +1,5 @@
+<!-- This XML code defines a SAPUI5 fragment that contains a SimpleForm with editable fields for displaying and modifying details of a work center. The form includes labels and input fields for Group Parent, Group, Group ID/Type, Order, and Work Center. It also includes buttons for adding, updating, deleting, and canceling changes. The visibility of the form is bound to the existence of a selected item. -->
 <core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout">
-  <!-- <VBox class="sapUiSmallMargin"> -->
     <f:SimpleForm
       id="DetailsForm"
       editable="true"
@@ -23,6 +23,7 @@
       <f:title>
         <core:Title text="{/selectedItem/workcenter} {/selectedItem/text}" level="H2" />
       </f:title>
+
       <f:content>
         <Label text="Group Parent" />
         <Input id="GroupParent" value="{/selectedItem/gParent}" />
@@ -44,17 +45,13 @@
         <Select id="cmbWc" selectedItem="true" selectedKey="{/selectedWc}" items="{/wcs}">
           <core:Item key="{ID}" text="{DESCRIPTION}" />
         </Select>
+        <core:Title text=""/>
+        <FlexBox alignItems="Center" justifyContent="SpaceAround">
+          <Button text="{i18n>buttonAdd} - {/selectedItem/lvl} {/selectedItem/level}" press=".onAdd" type="Emphasized"/>
+          <Button text="{i18n>buttonUpdate}" press="" type="Accept" />
+          <Button text="{i18n>buttonDelete}" press="" type="Reject"/>
+          <Button text="{i18n>buttonCancel}" press="" />
+        </FlexBox>
       </f:content>
     </f:SimpleForm>
-  <!-- </VBox> -->
-  <!-- <Toolbar width="100%">
-    <content>
-      <FlexBox>
-        <Button text="{i18n>buttonAdd} - {/selectedItem/lvl} {/selectedItem/level}" press=".onAdd" type="Emphasized"/>
-        <Button text="{i18n>buttonUpdate}" press="" type="Accept" />
-        <Button text="{i18n>buttonDelete}" press="" type="Reject"/>
-        <Button text="{i18n>buttonCancel}" press="" />
-      </FlexBox>
-    </content>
-  </Toolbar> -->
 </core:FragmentDefinition>

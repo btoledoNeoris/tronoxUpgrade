@@ -20,7 +20,7 @@ sap.ui.define([
           setPLant.setText(title);
           this.getSelWorkcenter();
           this.getWorkcenters();
-          
+
         },
         getPlant: async function () {
           let getPlant = '../../localServices/configurations/PlantByUserSelectQuery.json';
@@ -68,10 +68,8 @@ sap.ui.define([
                 } catch (error) {
                     console.error(error);
                 }
-
                 this._resetSelectedItem();
                 this._updateFlexibleColumnLayout(sap.f.LayoutType.TwoColumnsMidExpanded);
-                   
             }
         },
         onRowSelectionChange: function(oEvent) {
@@ -143,23 +141,20 @@ sap.ui.define([
               }catch(err){
                 console.error(err);
               }
-          },
+        },
         onAdd: function(){
           MessageToast.show(this.getView().getModel("i18n").getResourceBundle().getText("MessageAdd"))
         },
         onUpdate: function(){
           MessageToast.show(this.getView().getModel("i18n").getResourceBundle().getText("MessageUpdate"))
         },
-
         onDelete: function(){
           MessageToast.show(this.getView().getModel("i18n").getResourceBundle().getText("MessageDelete"))
         },
-
         onCancel: function() {
           var oFlexibleColumnLayout = this.byId("flexibleColumnLayout");
           oFlexibleColumnLayout.setLayout(sap.f.LayoutType.OneColumn);
         },
-
         onExit: function() {
           if (this._oDetailsFragment) {
             this._oDetailsFragment.destroy();

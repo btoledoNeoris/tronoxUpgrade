@@ -22,7 +22,7 @@
           <f:FlexibleColumnLayout 
             id="flexibleColumnLayout" 
             layout="TwoColumnsMidExpanded"
-            showHeader="false">
+            >
             <f:beginColumnPages>
               <t:TreeTable 
                 id="Tree" 
@@ -47,8 +47,6 @@
           </f:FlexibleColumnLayout>
         </f:content>
       </f:DynamicPage>
-    </content>
-    
-    
+    </content>    
   </Page>
 </mvc:View>
