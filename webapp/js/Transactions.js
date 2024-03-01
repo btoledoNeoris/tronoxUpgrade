@@ -18,5 +18,5 @@ var oServices = {
     getSPCRuleActions: urlBaseXqt('Tronox/Configuration/Xacute/SPCRuleActionsXacuteQuery'),
 
     //quality
-    getResultsRecording:urlBaseXqt('Tronox/Configuration/Xacute/WorkCenterTreeXacuteQuery')
+    getResultsRecording:urlBaseXqt('Tronox/Quality/Xacute/RecordResultsXacuteQuery')
 };

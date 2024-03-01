@@ -7,3 +7,6 @@
 .tileLayout {
 	float: left;
 }
+.customCellBackground {
+    background-color: #FFD700; 
+}

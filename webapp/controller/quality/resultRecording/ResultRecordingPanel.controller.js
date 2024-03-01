@@ -1,15 +1,24 @@
 sap.ui.define([
 	'tronox/controller/LayerController',
-    'sap/m/MessageBox',
+	'tronox/model/quality/modelResultRecording',
     'sap/m/MessageToast',
 	'../../../tools/handler',
+    'sap/ui/model/json/JSONModel',
+    'sap/viz/ui5/controls/VizFrame',
+    'sap/viz/ui5/data/FlattenedDataset',
+    'sap/m/Dialog',
+    'sap/m/Button',
 ],
-function (LayerController,MessageBox,MessageToast,handler) {
+function (LayerController,modelResultRecording,MessageToast,handler,JSONModel,VizFrame,FlattenedDataset,Dialog,Button) {
 	"use strict";
 	return LayerController.extend("tronox.controller.configurations.workcenters.WorkcenterPanel", {
         PLANT: "1100",
         WORKCENTER: "LAB_____",
+
 		onInit: function () {
+            var oModel = new JSONModel();
+            oModel.setData({ table: [] });
+            this.getView().setModel(oModel);
             this.getWcenter();
 		},
         getI18nText: function(sKey) {
@@ -18,44 +27,61 @@ function (LayerController,MessageBox,MessageToast,handler) {
         },
         onChange: function(oEvent){
             console.log("oC")
-            // MessageToast.show("change event fired! \n Selected Item id: " + oEvent.getParameters().id);
         },
         getWcenter: function() {
             console.log("WC")
         },
-        onSearch: async function(){
+        onCDInspePointListChange: function(sValue) {
+            var aItems = sValue ? sValue.split("||").map(function(item) {
+                return { key: item };
+            }) : [];
+
+            var oModel = new JSONModel({ items: aItems });
+            this.getView().setModel(oModel, "itemsModel");
+        },
+        createComboBoxItems: function(sId, oContext) {
+            var sValue = oContext.getProperty("CD_INSPE_POINT_LIST");
+            var aItems = sValue.split("||");
+            return aItems.map(function(item) {
+                return new sap.ui.core.Item({
+                    key: item,
+                    text: item
+                });
+            });
+        },
+        onSearch1: async function(){
             const oView = this.getView();
             const oModel = this.getView().getModel();
             const Plant = this.PLANT;
             const WorkCenter = this.WORKCENTER;
-            const sMaterialComboBox = this.byId("materialComboBox").getValue();
-            const sMaterialInput = oView.byId("input-material").getValue();
-            const Material = sMaterialInput ? sMaterialInput : sMaterialComboBox;
-            const sBatchComboBox = oView.byId("batchComboBox").getValue();
-            const sBatchInput = oView.byId("input-batch").getValue();
-            const BatchCode = sBatchInput ? sBatchInput : sBatchComboBox;
+            const Material = oView.byId("materialComboBox").getValue();
+            const BatchCode = oView.byId("batchComboBox").getValue();
             const StartDate = oView.byId("dateInit").getValue();
             const EndDate = oView.byId("dateEnd").getValue();
 
-            const parameters = { Plant, WorkCenter, Material, BatchCode, StartDate, EndDate };
+            const parameters = { Action:"SELECT", Plant, WorkCenter, Material, BatchCode, StartDate, EndDate };
             console.log({ parameters })
-            console.log(oServices.getResultsRecording)
             try {
                 this.getView().setBusy(true);
-                let getData = '../../localServices/quality/ResultsRecording.json';
-                // const data = await handler.requestData(oTransactions.getEventsDetailsByArea, parameters);
-               
-                const data = await handler.requestData(getData, parameters);
+                const data = await modelResultRecording.loadReportResult(parameters);
+                console.log({data})
                 if (data[0]?.Row?.length === 0) {
                     MessageToast.show(this.getI18nText("messageError"), { duration: 2000 });
                     console.error(this.getI18nText("messageError"));
                 } else {
                     console.log(data)
-                    oModel.setProperty("/table", []);
-                    console.log(oModel.getProperty("/table"));
+                    let item = (data[0]?.Row).map(itm=> {
+                        console.log(itm)
+                        console.log(itm.CD_INSPE_POINT_LIST)
+
+                        if(itm.CD_INSPE_POINT_LIST) {
+                            console.log("itm")
+                        }
+                    })
+
+                    oModel.setProperty("/table", data[0]?.Row || []);
                 }
             } catch (error) {
-                oModel.setProperty("/table", []);
                 MessageToast.show(this.getI18nText("messageError"), { duration: 2000 });
                 console.error(error);
                 this.getView().setBusy(false);
@@ -63,6 +89,182 @@ function (LayerController,MessageBox,MessageToast,handler) {
                 this.getView().setBusy(false);
             }
 
-        }
-	});
+        },
+        onSearch: async function() {
+            const oView = this.getView();
+            const oModel = this.getView().getModel();
+            const Plant = this.PLANT;
+            const WorkCenter = this.WORKCENTER;
+            const Material = oView.byId("materialComboBox").getValue();
+            const BatchCode = oView.byId("batchComboBox").getValue();
+            const StartDate = oView.byId("dateInit").getValue();
+            const EndDate = oView.byId("dateEnd").getValue();
+
+            const parameters = { Action: "SELECT", Plant, WorkCenter, Material, BatchCode, StartDate, EndDate };
+            console.log({ parameters })
+            try {
+                this.getView().setBusy(true);
+                const data = await modelResultRecording.loadReportResult(parameters);
+                console.log({ data })
+                if (data[0]?.Row?.length === 0) {
+                    MessageToast.show(this.getI18nText("messageError"), { duration: 2000 });
+                    console.error(this.getI18nText("messageError"));
+                } else {
+                    console.log(data[0]?.Row)
+                    console.log(data[1]?.Row)
+                    let adjustedData = data[0]?.Row.map(row => {
+                        const idInspePointList = row.ID_INSPE_POINT_LIST.split("||");
+                        const cdInspePointList = row.CD_INSPE_POINT_LIST.split("||");
+                        const splitItems = idInspePointList.map((item, index) => {
+                            return {
+                                key: item,
+                                text: cdInspePointList[index] || '---'
+                            };
+                        });
+
+                        let selectedKey = splitItems.length > 0 ? splitItems[0].key : "";
+
+                        return {
+                            ...row,
+                            CD_INSPE_POINT_LIST_ITEMS: splitItems,
+                            SelectedKey: selectedKey
+                        };
+                    });
+                    oModel.setProperty("/table", adjustedData || []);
+                    oModel.setProperty("/tableSec", data[1]?.Row || []);
+
+                }
+            } catch (error) {
+                MessageToast.show(this.getI18nText("messageError"), { duration: 2000 });
+                console.error(error);
+                this.getView().setBusy(false);
+            } finally {
+                this.getView().setBusy(false);
+            }
+        },
+        onShowChart: async function(oEvent) {
+            const oView = this.getView();
+            // const sTitle = oEvent.getSource()._oTitle.getText();
+            const oModel = oView.getModel();
+            const oVizFrame = new VizFrame({
+                uiConfig: { applicationSet: "fiori" },
+                vizType: "line",
+                dataset: new FlattenedDataset({
+                    dimensions: [
+                        { name: "Date", value: "{DATE}" },
+                        { name: "Line", value: "{LINE}" }
+                    ],
+                    measures: [
+                        { name: "Minutes" }
+                    ],
+                    data: {
+                        path: "/datas",
+                        sort: { key: "Line", descending: false }
+                    }
+                }),
+                feeds: [{
+                    uid: "valueAxis",
+                    type: "Measure",
+                    values: ["Minutes"]
+                }, {
+                    uid: "categoryAxis",
+                    type: "Dimension",
+                    values: ["Date"]
+                }, {
+                    uid: "color",
+                    type: "Dimension",
+                    values: ["Line"]
+                }],
+                vizProperties: {
+                    title: { text: "" },
+                    plotArea: {
+                        dataLabel: {
+                            visible: true
+                        }
+                    },
+                    tooltip: {
+                        visible: true,
+                        customData: [
+                            {
+                                type: "dimension",
+                                name: "Line",
+                                value: "{LINE}"
+                            },
+                            {
+                                type: "measure",
+                                name: "Minutes",
+                            }
+                        ]
+                    }
+                },
+            });
+
+
+            try {
+                this.getView().setBusy(true);
+                // const data = await handler.requestData(oTransactions.getEventGraph, {});
+                const data = {};
+                const datas = data[0]?.Row || [];
+                const oLoad = new JSONModel({ datas });
+                oVizFrame.setVizProperties({ title: { text: "" } });
+                oVizFrame.setModel(oLoad);
+            } catch (error) {
+                console.error(error);
+            } finally {
+                this.getView().setBusy(false);
+            }
+
+            const oDialog = new Dialog({
+                contentWidth: "80%",
+                contentHeight: "80%",
+                content: [oVizFrame],
+                beginButton: new Button({ text: "Close",press: () => oDialog.close() })
+            });
+
+            oView.addDependent(oDialog);
+            oVizFrame.setWidth("100%");
+            oDialog.open();
+        },
+        onComboBoxSelectionChange: function(oEvent) {
+            var oSelectedItem = oEvent.getParameter("value");
+            var oSelectedKey = oEvent.getSource().getSelectedKey();
+            if (!oSelectedItem) { return }
+
+            var oContext = oEvent.getSource().getBindingContext();
+            var selectedLot = oEvent.getSource().getBindingContext().getObject().ID_INSPE_LOT;
+            console.log({selectedLot,oSelectedKey})
+
+            var oModel = this.getView().getModel();
+            var tableDetails = oModel.getProperty("/tableSec");
+
+            var matchingItems = tableDetails.filter(item => {
+                return item.ID_INSPE_LOT === selectedLot && item.ID_INSPE_POINT === oSelectedKey;
+            });
+
+            var resultsMapping = {};
+
+            if (matchingItems.length > 0) {
+                matchingItems.forEach(item => {
+                    resultsMapping[item.ID_CHARA_MASTE] = item.DS_RESUL;
+                });
+
+                oContext.getModel().setProperty(oContext.getPath() + "/resultsMapping", resultsMapping);
+            } else {
+                MessageToast.show(this.getI18nText("messageErrorSel"), { duration: 2000 });
+            }
+        },
+        getDynamicResult: function(sResult) {
+            if(!sResult) { return }
+            if (sResult === "---") { return ""}
+            var number = parseFloat(sResult);
+            if (!isNaN(number) && typeof number !== 'string') {
+                return number.toFixed(2);
+            } else { return sResult }
+        },
+        getStyle: function(sColor) {
+            console.log("getStyle", sColor);
+            // return `background-color: ${sColor};`;
+            return "background-color:" + sColor + ";";
+        },
+    });
 });
