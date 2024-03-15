@@ -1,0 +1,707 @@
+{
+    "Rowsets": {
+        "DateCreated": "2024-03-15T01:09:39",
+        "Version": "15.0 SP6 Patch 0 (Jan 21, 2016)",
+        "StartDate": "2024-03-15T00:09:38-0500",
+        "EndDate": "2024-03-15T01:09:38-0500",
+        "CachedTime": "",
+        "Rowset": [
+            {
+                "Columns": {
+                    "Column": [
+                        {
+                            "Name": "DS_MATER",
+                            "SourceColumn": "DS_MATER",
+                            "Description": "DS_MATER",
+                            "SQLDataType": -9,
+                            "MinRange": 1.0,
+                            "MaxRange": 1.0
+                        },
+                        {
+                            "Name": "ID_MATER",
+                            "SourceColumn": "ID_MATER",
+                            "Description": "ID_MATER",
+                            "SQLDataType": 12,
+                            "MinRange": 1.0,
+                            "MaxRange": 1.0
+                        }
+                    ]
+                },
+                "Row": [
+                    {
+                        "DS_MATER": "101NPDES - 101 NPDES",
+                        "ID_MATER": "101NPDES"
+                    },
+                    {
+                        "DS_MATER": "201NPDES - 201 NPDES",
+                        "ID_MATER": "201NPDES"
+                    },
+                    {
+                        "DS_MATER": "813SECSTD - Grade 813 Secondary Standard",
+                        "ID_MATER": "813SECSTD"
+                    },
+                    {
+                        "DS_MATER": "826SECSTD - Grade 826 Secondary Standard",
+                        "ID_MATER": "826SECSTD"
+                    },
+                    {
+                        "DS_MATER": "828SECSTD - Grade 828 Secondary Standard",
+                        "ID_MATER": "828SECSTD"
+                    },
+                    {
+                        "DS_MATER": "A2_SUMP - Raw pigment, A2 sumps",
+                        "ID_MATER": "A2_SUMP"
+                    },
+                    {
+                        "DS_MATER": "A3_FLTREC - filtrate recovery, for ore yield",
+                        "ID_MATER": "A3_FLTREC"
+                    },
+                    {
+                        "DS_MATER": "A3_SLOPS - Slops  Not grade specific",
+                        "ID_MATER": "A3_SLOPS"
+                    },
+                    {
+                        "DS_MATER": "A3_TRT_IP - generic IP pigment",
+                        "ID_MATER": "A3_TRT_IP"
+                    },
+                    {
+                        "DS_MATER": "ACID_HCL - Acid from scrubbers",
+                        "ID_MATER": "ACID_HCL"
+                    },
+                    {
+                        "DS_MATER": "CAUSTIC_IP - Caustic from scrubbers",
+                        "ID_MATER": "CAUSTIC_IP"
+                    },
+                    {
+                        "DS_MATER": "CHL_CENTRIFUGE - Centrifuge",
+                        "ID_MATER": "CHL_CENTRIFUGE"
+                    },
+                    {
+                        "DS_MATER": "CHL_COMPR - Frick compressor",
+                        "ID_MATER": "CHL_COMPR"
+                    },
+                    {
+                        "DS_MATER": "CHL_FILT - CHL filters and CFG",
+                        "ID_MATER": "CHL_FILT"
+                    },
+                    {
+                        "DS_MATER": "CHL_LIQ - CHL process liquor",
+                        "ID_MATER": "CHL_LIQ"
+                    },
+                    {
+                        "DS_MATER": "CHL_LIQ_COMP - Composite sample for month end",
+                        "ID_MATER": "CHL_LIQ_COMP"
+                    },
+                    {
+                        "DS_MATER": "CLXBED - Chlorinator bed sample",
+                        "ID_MATER": "CLXBED"
+                    },
+                    {
+                        "DS_MATER": "EAST/WEST ORE COMP - East & West Ore Silo Composite",
+                        "ID_MATER": "EAST/WEST ORE COMP"
+                    },
+                    {
+                        "DS_MATER": "H2O_COOLTWR - Water  Chillers.",
+                        "ID_MATER": "H2O_COOLTWR"
+                    },
+                    {
+                        "DS_MATER": "H2O_PROC - Water. Treated, boilers, wells",
+                        "ID_MATER": "H2O_PROC"
+                    },
+                    {
+                        "DS_MATER": "H2O_WWT - Water, ponds and ditches",
+                        "ID_MATER": "H2O_WWT"
+                    },
+                    {
+                        "DS_MATER": "MULTIVERTER - Multiverter",
+                        "ID_MATER": "MULTIVERTER"
+                    },
+                    {
+                        "DS_MATER": "NACL00 - SODIUM CHLORATE - CRYSTAL BULK",
+                        "ID_MATER": "NACL00"
+                    },
+                    {
+                        "DS_MATER": "NACL59 - SODIUM CHLORATE - CRYSTAL IN 600LB DRUMS",
+                        "ID_MATER": "NACL59"
+                    },
+                    {
+                        "DS_MATER": "NACL74 - SODIUM CHLORATE - CRYSTAL IN 1200LB SS",
+                        "ID_MATER": "NACL74"
+                    },
+                    {
+                        "DS_MATER": "NACL83 - SODIUM CHLORATE - CRYSTAL IN 2200LB SS",
+                        "ID_MATER": "NACL83"
+                    },
+                    {
+                        "DS_MATER": "NACLSOL4600 - SODIUM CHLORATE - SOLUTION 46% BULK",
+                        "ID_MATER": "NACLSOL4600"
+                    },
+                    {
+                        "DS_MATER": "ORE_SILO - Ore silo",
+                        "ID_MATER": "ORE_SILO"
+                    },
+                    {
+                        "DS_MATER": "ORE_SRD - Ore recovery",
+                        "ID_MATER": "ORE_SRD"
+                    },
+                    {
+                        "DS_MATER": "S1000078 - CHEM PET COKE CALCINED 4.0% SULFUR MAX",
+                        "ID_MATER": "S1000078"
+                    },
+                    {
+                        "DS_MATER": "S1000099 - CHEM TOLUENE NITRATION GRADE BULK",
+                        "ID_MATER": "S1000099"
+                    },
+                    {
+                        "DS_MATER": "S1000180 - SAND SILICA SCOUR SAND BULK",
+                        "ID_MATER": "S1000180"
+                    },
+                    {
+                        "DS_MATER": "S1000237 - TIORE BLENDED ORE",
+                        "ID_MATER": "S1000237"
+                    },
+                    {
+                        "DS_MATER": "SYNTHRUTILE - Synthetic Rutile",
+                        "ID_MATER": "SYNTHRUTILE"
+                    },
+                    {
+                        "DS_MATER": "T3301 - 3301  - Chlorate Storage Tank",
+                        "ID_MATER": "T3301"
+                    },
+                    {
+                        "DS_MATER": "T3302 - 3302  - Chlorate Storage Tank",
+                        "ID_MATER": "T3302"
+                    },
+                    {
+                        "DS_MATER": "T3303 - 3303  - Chlorate Storage Tank",
+                        "ID_MATER": "T3303"
+                    },
+                    {
+                        "DS_MATER": "T3304 - 3304  - Chlorate Storage Tank",
+                        "ID_MATER": "T3304"
+                    },
+                    {
+                        "DS_MATER": "T3305 - 3305  - Chlorate Storage Tank",
+                        "ID_MATER": "T3305"
+                    },
+                    {
+                        "DS_MATER": "T3306 - 3306  - Chlorate Storage Tank",
+                        "ID_MATER": "T3306"
+                    },
+                    {
+                        "DS_MATER": "T8_CRD_IP - Pigment development grade",
+                        "ID_MATER": "T8_CRD_IP"
+                    },
+                    {
+                        "DS_MATER": "T8_CRD_RP - Raw pigment development grade",
+                        "ID_MATER": "T8_CRD_RP"
+                    },
+                    {
+                        "DS_MATER": "T8_SLURRY - Pigment slurry, disp and storage",
+                        "ID_MATER": "T8_SLURRY"
+                    },
+                    {
+                        "DS_MATER": "T800E_IP - Pigment in process",
+                        "ID_MATER": "T800E_IP"
+                    },
+                    {
+                        "DS_MATER": "T800E_RP - Pigment, raw",
+                        "ID_MATER": "T800E_RP"
+                    },
+                    {
+                        "DS_MATER": "T800E20 - CR-800E 50 LB PAPER BAG",
+                        "ID_MATER": "T800E20"
+                    },
+                    {
+                        "DS_MATER": "T800E30 - CR-800E 25KG PAPER BAG",
+                        "ID_MATER": "T800E30"
+                    },
+                    {
+                        "DS_MATER": "T800E84 - CR-800E 500 KG (A/S) SUPER SACK",
+                        "ID_MATER": "T800E84"
+                    },
+                    {
+                        "DS_MATER": "T800E89 - CR-800E 1000 KG SUPER SACK",
+                        "ID_MATER": "T800E89"
+                    },
+                    {
+                        "DS_MATER": "T8100_IP - Pigment in process",
+                        "ID_MATER": "T8100_IP"
+                    },
+                    {
+                        "DS_MATER": "T8100_RP - Pigment, raw",
+                        "ID_MATER": "T8100_RP"
+                    },
+                    {
+                        "DS_MATER": "T810071 - 8100 IN 1400 LB SACK",
+                        "ID_MATER": "T810071"
+                    },
+                    {
+                        "DS_MATER": "T810092 - 8100 IN 1167 LB SUPER SACK",
+                        "ID_MATER": "T810092"
+                    },
+                    {
+                        "DS_MATER": "T8100SILOPIGMT - T8100 Pigment in Silo",
+                        "ID_MATER": "T8100SILOPIGMT"
+                    },
+                    {
+                        "DS_MATER": "T8101SL - 8101 SLURRY",
+                        "ID_MATER": "T8101SL"
+                    },
+                    {
+                        "DS_MATER": "T8101SL_IP - Finished pigment slurry",
+                        "ID_MATER": "T8101SL_IP"
+                    },
+                    {
+                        "DS_MATER": "T813_IP - Pigment in process",
+                        "ID_MATER": "T813_IP"
+                    },
+                    {
+                        "DS_MATER": "T813_RP - Pigment, raw",
+                        "ID_MATER": "T813_RP"
+                    },
+                    {
+                        "DS_MATER": "T81315 - CR-813 20 KG PAPER BAG",
+                        "ID_MATER": "T81315"
+                    },
+                    {
+                        "DS_MATER": "T81320 - CR-813 50 LB PAPER BAG",
+                        "ID_MATER": "T81320"
+                    },
+                    {
+                        "DS_MATER": "T81330 - CR-813 25 KG PAPER BAG",
+                        "ID_MATER": "T81330"
+                    },
+                    {
+                        "DS_MATER": "T81381 - CR-813 1600 LB X 1 SUPER SACK",
+                        "ID_MATER": "T81381"
+                    },
+                    {
+                        "DS_MATER": "T81384 - CR-813 500 kg Super Sack",
+                        "ID_MATER": "T81384"
+                    },
+                    {
+                        "DS_MATER": "T81385 - CR-813 1000 LB X 1 SUPER SACK",
+                        "ID_MATER": "T81385"
+                    },
+                    {
+                        "DS_MATER": "T81388 - CR-813 2000 LB SUPER SACK",
+                        "ID_MATER": "T81388"
+                    },
+                    {
+                        "DS_MATER": "T813SILOPIGMT - T813 Pigment in Silo",
+                        "ID_MATER": "T813SILOPIGMT"
+                    },
+                    {
+                        "DS_MATER": "T813SL - TiONA 813 SLURRY",
+                        "ID_MATER": "T813SL"
+                    },
+                    {
+                        "DS_MATER": "T813SL_IP - Finished pigment slurry",
+                        "ID_MATER": "T813SL_IP"
+                    },
+                    {
+                        "DS_MATER": "T8140_IP - Pigment in process",
+                        "ID_MATER": "T8140_IP"
+                    },
+                    {
+                        "DS_MATER": "T8140_RP - Pigment, raw",
+                        "ID_MATER": "T8140_RP"
+                    },
+                    {
+                        "DS_MATER": "T814015 - 8140 in  20 kg bags",
+                        "ID_MATER": "T814015"
+                    },
+                    {
+                        "DS_MATER": "T814084 - 8140 in  500 kg super sack",
+                        "ID_MATER": "T814084"
+                    },
+                    {
+                        "DS_MATER": "T814088 - 8140 IN 2000 LB SUPER SACK",
+                        "ID_MATER": "T814088"
+                    },
+                    {
+                        "DS_MATER": "T8140SILOPIGMT - T8140 Pigment in Silo",
+                        "ID_MATER": "T8140SILOPIGMT"
+                    },
+                    {
+                        "DS_MATER": "T8141SL - TiONA 8141 SLURRY",
+                        "ID_MATER": "T8141SL"
+                    },
+                    {
+                        "DS_MATER": "T8141SL_IP - Finished pigment slurry",
+                        "ID_MATER": "T8141SL_IP"
+                    },
+                    {
+                        "DS_MATER": "T822_IP - Pigment in process",
+                        "ID_MATER": "T822_IP"
+                    },
+                    {
+                        "DS_MATER": "T822_RP - Pigment, raw",
+                        "ID_MATER": "T822_RP"
+                    },
+                    {
+                        "DS_MATER": "T82220 - CR-822 50 LB PAPER BAG",
+                        "ID_MATER": "T82220"
+                    },
+                    {
+                        "DS_MATER": "T82225 - CR-822 50 LB PLASTIC BAG",
+                        "ID_MATER": "T82225"
+                    },
+                    {
+                        "DS_MATER": "T82230 - CR-822 25 KG PAPER BAG",
+                        "ID_MATER": "T82230"
+                    },
+                    {
+                        "DS_MATER": "T82284 - CR-822 500 kg Super Sack",
+                        "ID_MATER": "T82284"
+                    },
+                    {
+                        "DS_MATER": "T82285 - CR-822 1000 LB SUPER SACK",
+                        "ID_MATER": "T82285"
+                    },
+                    {
+                        "DS_MATER": "T82288 - CR-822 2000 LB SUPER SACK",
+                        "ID_MATER": "T82288"
+                    },
+                    {
+                        "DS_MATER": "T82289 - CR-822 1000 KG (A/S) SUPER SACK",
+                        "ID_MATER": "T82289"
+                    },
+                    {
+                        "DS_MATER": "T826_IP - Pigment in process",
+                        "ID_MATER": "T826_IP"
+                    },
+                    {
+                        "DS_MATER": "T826_RP - Pigment, raw",
+                        "ID_MATER": "T826_RP"
+                    },
+                    {
+                        "DS_MATER": "T82620 - CR-826 50 LB PAPER BAG",
+                        "ID_MATER": "T82620"
+                    },
+                    {
+                        "DS_MATER": "T82625 - **do not use**",
+                        "ID_MATER": "T82625"
+                    },
+                    {
+                        "DS_MATER": "T82630 - CR-826 25 KG PAPER BAG",
+                        "ID_MATER": "T82630"
+                    },
+                    {
+                        "DS_MATER": "T82684 - CR-826 500 KG (A/S) SUPER SACK",
+                        "ID_MATER": "T82684"
+                    },
+                    {
+                        "DS_MATER": "T82685 - CR-826 1000 LB SUPER SACK",
+                        "ID_MATER": "T82685"
+                    },
+                    {
+                        "DS_MATER": "T82688 - CR-826 2000 LB SUPER SACK",
+                        "ID_MATER": "T82688"
+                    },
+                    {
+                        "DS_MATER": "T82689 - CR-826 IN 1000KG BAG",
+                        "ID_MATER": "T82689"
+                    },
+                    {
+                        "DS_MATER": "T826S-02 - TiONA 826S-02 SLURRY",
+                        "ID_MATER": "T826S-02"
+                    },
+                    {
+                        "DS_MATER": "T826SILOPIGMT - T826 Pigment in Silo",
+                        "ID_MATER": "T826SILOPIGMT"
+                    },
+                    {
+                        "DS_MATER": "T826SL - CR-826 SLURRY",
+                        "ID_MATER": "T826SL"
+                    },
+                    {
+                        "DS_MATER": "T826SL_IP - Finished pigment slurry",
+                        "ID_MATER": "T826SL_IP"
+                    },
+                    {
+                        "DS_MATER": "T828_IP - Pigment in process",
+                        "ID_MATER": "T828_IP"
+                    },
+                    {
+                        "DS_MATER": "T828_RP - Pigment, raw",
+                        "ID_MATER": "T828_RP"
+                    },
+                    {
+                        "DS_MATER": "T82820 - CR-828 50 LB PAPER BAG",
+                        "ID_MATER": "T82820"
+                    },
+                    {
+                        "DS_MATER": "T82830 - CR-828 25 KG PAPER BAG",
+                        "ID_MATER": "T82830"
+                    },
+                    {
+                        "DS_MATER": "T82884 - CR-828 500 KG (A/S) SACK",
+                        "ID_MATER": "T82884"
+                    },
+                    {
+                        "DS_MATER": "T82884C - TIONA 828 500 KG TYPE C SUPER SACK",
+                        "ID_MATER": "T82884C"
+                    },
+                    {
+                        "DS_MATER": "T82885 - CR-828 1000 LB SUPER SACK",
+                        "ID_MATER": "T82885"
+                    },
+                    {
+                        "DS_MATER": "T82888 - CR-828 2000 LB SUPER SACK",
+                        "ID_MATER": "T82888"
+                    },
+                    {
+                        "DS_MATER": "T82889 - CR-828 1000 KG (A/S) SUPER SACK",
+                        "ID_MATER": "T82889"
+                    },
+                    {
+                        "DS_MATER": "T828E_IP - Pigment in process",
+                        "ID_MATER": "T828E_IP"
+                    },
+                    {
+                        "DS_MATER": "T828E_RP - Pigment, raw",
+                        "ID_MATER": "T828E_RP"
+                    },
+                    {
+                        "DS_MATER": "T828E30 - CR-828E in 25 KG PAPER BAG",
+                        "ID_MATER": "T828E30"
+                    },
+                    {
+                        "DS_MATER": "T828E84 - CR-828E 500 KG (A/S) SACK",
+                        "ID_MATER": "T828E84"
+                    },
+                    {
+                        "DS_MATER": "T828E89 - CR-828E 1000 KG (A/S) SUPER SACK",
+                        "ID_MATER": "T828E89"
+                    },
+                    {
+                        "DS_MATER": "T834_IP - Pigment in process",
+                        "ID_MATER": "T834_IP"
+                    },
+                    {
+                        "DS_MATER": "T834_RP - Pigment, raw",
+                        "ID_MATER": "T834_RP"
+                    },
+                    {
+                        "DS_MATER": "T83425 - CR-834 50 LB PLASTIC BAG",
+                        "ID_MATER": "T83425"
+                    },
+                    {
+                        "DS_MATER": "T83430 - CR-834 25 KG PAPER BAG",
+                        "ID_MATER": "T83430"
+                    },
+                    {
+                        "DS_MATER": "T83484 - CR-834 500 KG (A/S) SACK",
+                        "ID_MATER": "T83484"
+                    },
+                    {
+                        "DS_MATER": "T83485 - CR-834 1000 LB SUPER SACK",
+                        "ID_MATER": "T83485"
+                    },
+                    {
+                        "DS_MATER": "T83488 - CR-834 2000 LB SUPER SACK",
+                        "ID_MATER": "T83488"
+                    },
+                    {
+                        "DS_MATER": "T83489 - CR-834 1000 KG (A/S) SUPER SACK",
+                        "ID_MATER": "T83489"
+                    },
+                    {
+                        "DS_MATER": "T880_IP - Pigment in process",
+                        "ID_MATER": "T880_IP"
+                    },
+                    {
+                        "DS_MATER": "T880_RP - Pigment, raw",
+                        "ID_MATER": "T880_RP"
+                    },
+                    {
+                        "DS_MATER": "T8800_IP - Pigment in process",
+                        "ID_MATER": "T8800_IP"
+                    },
+                    {
+                        "DS_MATER": "T8800_RP - Pigment, raw",
+                        "ID_MATER": "T8800_RP"
+                    },
+                    {
+                        "DS_MATER": "T880084 - 8800 500kg bag",
+                        "ID_MATER": "T880084"
+                    },
+                    {
+                        "DS_MATER": "T880089 - 8800 1000kg Bag",
+                        "ID_MATER": "T880089"
+                    },
+                    {
+                        "DS_MATER": "T88020 - CR-880 50 LB PAPER BAG",
+                        "ID_MATER": "T88020"
+                    },
+                    {
+                        "DS_MATER": "T88030 - CR-880 25 KG PAPER BAG",
+                        "ID_MATER": "T88030"
+                    },
+                    {
+                        "DS_MATER": "T88084 - CR-880 500 KG (A/S) SACK",
+                        "ID_MATER": "T88084"
+                    },
+                    {
+                        "DS_MATER": "T88085 - CR-880 1000 LB SUPER SACK",
+                        "ID_MATER": "T88085"
+                    },
+                    {
+                        "DS_MATER": "T88088 - CR-880 2000 LB SUPER SACK",
+                        "ID_MATER": "T88088"
+                    },
+                    {
+                        "DS_MATER": "T88089 - CR-880 1000 KG (B A/S) SUPER SACK",
+                        "ID_MATER": "T88089"
+                    },
+                    {
+                        "DS_MATER": "T8870_IP - Pigment in process",
+                        "ID_MATER": "T8870_IP"
+                    },
+                    {
+                        "DS_MATER": "T8870_RP - Pigment, raw",
+                        "ID_MATER": "T8870_RP"
+                    },
+                    {
+                        "DS_MATER": "T887084 - 8870 in 500kg bag",
+                        "ID_MATER": "T887084"
+                    },
+                    {
+                        "DS_MATER": "T887089 - 8870 in 1000kg bag",
+                        "ID_MATER": "T887089"
+                    },
+                    {
+                        "DS_MATER": "T8950_IP - Pigment in process",
+                        "ID_MATER": "T8950_IP"
+                    },
+                    {
+                        "DS_MATER": "T8950_RP - Pigment, raw",
+                        "ID_MATER": "T8950_RP"
+                    },
+                    {
+                        "DS_MATER": "T895088 - 8950 in 2000 LB SUPER SACK",
+                        "ID_MATER": "T895088"
+                    },
+                    {
+                        "DS_MATER": "T8950SILOPIGMT - T8950 Pigment in Silo",
+                        "ID_MATER": "T8950SILOPIGMT"
+                    },
+                    {
+                        "DS_MATER": "T8951SL - TiONA 8951 SLURRY",
+                        "ID_MATER": "T8951SL"
+                    },
+                    {
+                        "DS_MATER": "T8951SL_IP - Finished pigment slurry",
+                        "ID_MATER": "T8951SL_IP"
+                    },
+                    {
+                        "DS_MATER": "TAILS_A1 - Tailings to ponds",
+                        "ID_MATER": "TAILS_A1"
+                    },
+                    {
+                        "DS_MATER": "TAILS_SR - Tailings to ponds",
+                        "ID_MATER": "TAILS_SR"
+                    },
+                    {
+                        "DS_MATER": "TI81315 - TiONA 813 20 KG PAPER BAG",
+                        "ID_MATER": "TI81315"
+                    },
+                    {
+                        "DS_MATER": "TI81384 - TiONA 813 500KG Super Sack",
+                        "ID_MATER": "TI81384"
+                    },
+                    {
+                        "DS_MATER": "TI814015 - TiONA 8140 in  20 kg bags",
+                        "ID_MATER": "TI814015"
+                    },
+                    {
+                        "DS_MATER": "TI814084 - TiONA 8140 in  500KG super sack",
+                        "ID_MATER": "TI814084"
+                    },
+                    {
+                        "DS_MATER": "TI82230 - TiONA 822 25KG PAPER BAG",
+                        "ID_MATER": "TI82230"
+                    },
+                    {
+                        "DS_MATER": "TI82284 - TiONA 822 500KG Super Sack",
+                        "ID_MATER": "TI82284"
+                    },
+                    {
+                        "DS_MATER": "TI82289 - TiONA 822 1000KG (A/S) SUPER SACK",
+                        "ID_MATER": "TI82289"
+                    },
+                    {
+                        "DS_MATER": "TI82630 - TiONA 826 25KG PAPER BAG",
+                        "ID_MATER": "TI82630"
+                    },
+                    {
+                        "DS_MATER": "TI82684 - TiONA 826 500KG (A/S) SUPER SACK",
+                        "ID_MATER": "TI82684"
+                    },
+                    {
+                        "DS_MATER": "TI82689 - TiONA 826 IN 1000KG BAG",
+                        "ID_MATER": "TI82689"
+                    },
+                    {
+                        "DS_MATER": "TI82830 - TiONA 828 25KG PAPER BAG",
+                        "ID_MATER": "TI82830"
+                    },
+                    {
+                        "DS_MATER": "TI82884 - TiONA 828 500KG (A/S) SACK",
+                        "ID_MATER": "TI82884"
+                    },
+                    {
+                        "DS_MATER": "TI82889 - TiONA 828 1000KG (A/S) SUPER SACK",
+                        "ID_MATER": "TI82889"
+                    },
+                    {
+                        "DS_MATER": "TI828E30 - TiONA 828E in 25KG PAPER BAG",
+                        "ID_MATER": "TI828E30"
+                    },
+                    {
+                        "DS_MATER": "TI828E84 - TiONA 828E 500KG (A/S) SACK",
+                        "ID_MATER": "TI828E84"
+                    },
+                    {
+                        "DS_MATER": "TI828E89 - TiONA 828E 1000KG (A/S) SUPER SACK",
+                        "ID_MATER": "TI828E89"
+                    },
+                    {
+                        "DS_MATER": "TI83430 - TiONA 834 25KG PAPER BAG",
+                        "ID_MATER": "TI83430"
+                    },
+                    {
+                        "DS_MATER": "TI83484 - TiONA 834 500KG (A/S) SACK",
+                        "ID_MATER": "TI83484"
+                    },
+                    {
+                        "DS_MATER": "TI83489 - TiONA 834 1000KG (A/S) SUPER SACK",
+                        "ID_MATER": "TI83489"
+                    },
+                    {
+                        "DS_MATER": "TI88030 - TiONA 880 25KG PAPER BAG",
+                        "ID_MATER": "TI88030"
+                    },
+                    {
+                        "DS_MATER": "TI88084 - TiONA 880 500KG (A/S) SACK",
+                        "ID_MATER": "TI88084"
+                    },
+                    {
+                        "DS_MATER": "TI88089 - TiONA 880 1000KG (B A/S) SUPER SACK",
+                        "ID_MATER": "TI88089"
+                    },
+                    {
+                        "DS_MATER": "TI887089 - TiONA 8870 in 1000kg bag",
+                        "ID_MATER": "TI887089"
+                    },
+                    {
+                        "DS_MATER": "TICL4_IP - TiCl4, crude and finished",
+                        "ID_MATER": "TICL4_IP"
+                    }
+                ]
+            }
+        ]
+    }
+}

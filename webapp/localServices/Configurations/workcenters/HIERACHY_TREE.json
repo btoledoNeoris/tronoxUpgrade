@@ -1,0 +1,1443 @@
+{
+    "Rowsets": {
+        "DateCreated": "2024-03-15T00:52:30",
+        "Version": "15.0 SP6 Patch 0 (Jan 21, 2016)",
+        "StartDate": "2024-03-14T23:52:30-0500",
+        "EndDate": "2024-03-15T00:52:30-0500",
+        "CachedTime": "",
+        "Rowset": [
+            {
+                "Columns": {
+                    "Column": [
+                        {
+                            "Name": "LEVEL_1",
+                            "SourceColumn": "LEVEL_1",
+                            "Description": "",
+                            "SQLDataType": 1,
+                            "MinRange": 1.0,
+                            "MaxRange": 1.0
+                        },
+                        {
+                            "Name": "LEVEL_2",
+                            "SourceColumn": "LEVEL_2",
+                            "Description": "",
+                            "SQLDataType": 1,
+                            "MinRange": 1.0,
+                            "MaxRange": 1.0
+                        },
+                        {
+                            "Name": "LEVEL_3",
+                            "SourceColumn": "LEVEL_3",
+                            "Description": "",
+                            "SQLDataType": 1,
+                            "MinRange": 1.0,
+                            "MaxRange": 1.0
+                        },
+                        {
+                            "Name": "LEVEL_4",
+                            "SourceColumn": "LEVEL_4",
+                            "Description": "",
+                            "SQLDataType": 1,
+                            "MinRange": 1.0,
+                            "MaxRange": 1.0
+                        }
+                    ]
+                },
+                "Row": [
+                    {
+                        "LEVEL_1": "General",
+                        "LEVEL_2": "",
+                        "LEVEL_3": "H_GENERL|---|0|Level 0|1|Level 1|---|---|0|1",
+                        "LEVEL_4": ""
+                    },
+                    {
+                        "LEVEL_1": "General Meeting",
+                        "LEVEL_2": "General",
+                        "LEVEL_3": "H_MEET|H_GENERL|1|Level 1|2|Level 2|General|---|1|1",
+                        "LEVEL_4": "H_GENERL|---|0|Level 0|1|Level 1|---|---|0|1"
+                    },
+                    {
+                        "LEVEL_1": "Plant 1 Meeting",
+                        "LEVEL_2": "General",
+                        "LEVEL_3": "H_MEET1|H_GENERL|1|Level 1|2|Level 2|General|---|1|2",
+                        "LEVEL_4": "H_GENERL|---|0|Level 0|1|Level 1|---|---|0|1"
+                    },
+                    {
+                        "LEVEL_1": "Plant 2 Meeting",
+                        "LEVEL_2": "General",
+                        "LEVEL_3": "H_MEET2|H_GENERL|1|Level 1|2|Level 2|General|---|1|3",
+                        "LEVEL_4": "H_GENERL|---|0|Level 0|1|Level 1|---|---|0|1"
+                    },
+                    {
+                        "LEVEL_1": "Maintenance Meeting",
+                        "LEVEL_2": "General",
+                        "LEVEL_3": "H_MEETM|H_GENERL|1|Level 1|2|Level 2|General|---|1|4",
+                        "LEVEL_4": "H_GENERL|---|0|Level 0|1|Level 1|---|---|0|1"
+                    },
+                    {
+                        "LEVEL_1": "Operations",
+                        "LEVEL_2": "",
+                        "LEVEL_3": "PIGMENTS|---|0|Level 0|1|Level 1|---|10000585|0|2",
+                        "LEVEL_4": ""
+                    },
+                    {
+                        "LEVEL_1": "Base Plant",
+                        "LEVEL_2": "Operations",
+                        "LEVEL_3": "PLN_SEC1|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|1",
+                        "LEVEL_4": "PIGMENTS|---|0|Level 0|1|Level 1|---|10000585|0|2"
+                    },
+                    {
+                        "LEVEL_1": "Area 1",
+                        "LEVEL_2": "Base Plant",
+                        "LEVEL_3": "A1______|PLN_SEC1|2|Level 2|3|Level 3|Base Plant|---|2|1",
+                        "LEVEL_4": "PLN_SEC1|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|1"
+                    },
+                    {
+                        "LEVEL_1": "Raw Materials",
+                        "LEVEL_2": "Area 1",
+                        "LEVEL_3": "RAWMAT__|A1______|3|Level 3|4|Level 4|Area 1|---|3|1",
+                        "LEVEL_4": "A1______|PLN_SEC1|2|Level 2|3|Level 3|Base Plant|---|2|1"
+                    },
+                    {
+                        "LEVEL_1": "Ore",
+                        "LEVEL_2": "Raw Materials",
+                        "LEVEL_3": "ORE1____|RAWMAT__|4|Level 4|5|Level 5|Raw Materials|---|4|1",
+                        "LEVEL_4": "RAWMAT__|A1______|3|Level 3|4|Level 4|Area 1|---||1"
+                    },
+                    {
+                        "LEVEL_1": "East and West Composite",
+                        "LEVEL_2": "Ore",
+                        "LEVEL_3": "COMP____|ORE1____|5|Level 5|6|Level 6|Ore|10000578|5|1",
+                        "LEVEL_4": "ORE1____|RAWMAT__|4|Level 4|5|Level 5|Raw Materials|---|4|1"
+                    },
+                    {
+                        "LEVEL_1": "F0104 - East",
+                        "LEVEL_2": "Ore",
+                        "LEVEL_3": "F0104___|ORE1____|5|Level 5|6|Level 6|Ore|10000504|5|2",
+                        "LEVEL_4": "ORE1____|RAWMAT__|4|Level 4|5|Level 5|Raw Materials|---|4|1"
+                    },
+                    {
+                        "LEVEL_1": "F0105 - West",
+                        "LEVEL_2": "Ore",
+                        "LEVEL_3": "F0105___|ORE1____|5|Level 5|6|Level 6|Ore|10000505|5|3",
+                        "LEVEL_4": "ORE1____|RAWMAT__|4|Level 4|5|Level 5|Raw Materials|---|4|1"
+                    },
+                    {
+                        "LEVEL_1": "Ore daily rc",
+                        "LEVEL_2": "Raw Materials",
+                        "LEVEL_3": "S1000237|RAWMAT__|4|Level 4|5|Level 5|Raw Materials|10000667|4|2",
+                        "LEVEL_4": "RAWMAT__|A1______|3|Level 3|4|Level 4|Area 1|---||1"
+                    },
+                    {
+                        "LEVEL_1": "S1000078 Coke",
+                        "LEVEL_2": "Raw Materials",
+                        "LEVEL_3": "S1000078|RAWMAT__|4|Level 4|5|Level 5|Raw Materials|10000582|4|3",
+                        "LEVEL_4": "RAWMAT__|A1______|3|Level 3|4|Level 4|Area 1|---||1"
+                    },
+                    {
+                        "LEVEL_1": "SR - Synthetic Rutile",
+                        "LEVEL_2": "Raw Materials",
+                        "LEVEL_3": "A1_SR___|RAWMAT__|4|Level 4|5|Level 5|Raw Materials|---|4|4",
+                        "LEVEL_4": "RAWMAT__|A1______|3|Level 3|4|Level 4|Area 1|---||1"
+                    },
+                    {
+                        "LEVEL_1": "SR Composite",
+                        "LEVEL_2": "SR - Synthetic Rutile",
+                        "LEVEL_3": "SR_COMP_|A1_SR___|5|Level 5|6|Level 6|SR - Synthetic Rutile|10000614|5|1",
+                        "LEVEL_4": "A1_SR___|RAWMAT__|4|Level 4|5|Level 5|Raw Materials|---|4|4"
+                    },
+                    {
+                        "LEVEL_1": "SR_702",
+                        "LEVEL_2": "SR - Synthetic Rutile",
+                        "LEVEL_3": "SR_702A_|A1_SR___|5|Level 5|6|Level 6|SR - Synthetic Rutile|10000612|5|2",
+                        "LEVEL_4": "A1_SR___|RAWMAT__|4|Level 4|5|Level 5|Raw Materials|---|4|4"
+                    },
+                    {
+                        "LEVEL_1": "SR_721",
+                        "LEVEL_2": "SR - Synthetic Rutile",
+                        "LEVEL_3": "SR_721B_|A1_SR___|5|Level 5|6|Level 6|SR - Synthetic Rutile|10000613|5|3",
+                        "LEVEL_4": "A1_SR___|RAWMAT__|4|Level 4|5|Level 5|Raw Materials|---|4|4"
+                    },
+                    {
+                        "LEVEL_1": "SR_Feed",
+                        "LEVEL_2": "SR - Synthetic Rutile",
+                        "LEVEL_3": "SR_726|A1_SR___|5|Level 5|6|Level 6|SR - Synthetic Rutile|10001163|5|4",
+                        "LEVEL_4": "A1_SR___|RAWMAT__|4|Level 4|5|Level 5|Raw Materials|---|4|4"
+                    },
+                    {
+                        "LEVEL_1": "SR_Cake",
+                        "LEVEL_2": "SR - Synthetic Rutile",
+                        "LEVEL_3": "SR_718|A1_SR___|5|Level 5|6|Level 6|SR - Synthetic Rutile|10001164|5|5",
+                        "LEVEL_4": "A1_SR___|RAWMAT__|4|Level 4|5|Level 5|Raw Materials|---|4|4"
+                    },
+                    {
+                        "LEVEL_1": "SR_Waste",
+                        "LEVEL_2": "SR - Synthetic Rutile",
+                        "LEVEL_3": "SR_710|A1_SR___|5|Level 5|6|Level 6|SR - Synthetic Rutile|10001165|5|6",
+                        "LEVEL_4": "A1_SR___|RAWMAT__|4|Level 4|5|Level 5|Raw Materials|---|4|4"
+                    },
+                    {
+                        "LEVEL_1": "Chlorinators",
+                        "LEVEL_2": "Area 1",
+                        "LEVEL_3": "CHLORINA|A1______|3|Level 3|4|Level 4|Area 1|---|3|2",
+                        "LEVEL_4": "A1______|PLN_SEC1|2|Level 2|3|Level 3|Base Plant|---|2|1"
+                    },
+                    {
+                        "LEVEL_1": "D1202",
+                        "LEVEL_2": "Chlorinators",
+                        "LEVEL_3": "D1202___|CHLORINA|4|Level 4|5|Level 5|Chlorinators|10000484|4|1",
+                        "LEVEL_4": "CHLORINA|A1______|3|Level 3|4|Level 4|Area 1|---||2"
+                    },
+                    {
+                        "LEVEL_1": "D2201",
+                        "LEVEL_2": "Chlorinators",
+                        "LEVEL_3": "D2201___|CHLORINA|4|Level 4|5|Level 5|Chlorinators|10000486|4|2",
+                        "LEVEL_4": "CHLORINA|A1______|3|Level 3|4|Level 4|Area 1|---||2"
+                    },
+                    {
+                        "LEVEL_1": "D3201",
+                        "LEVEL_2": "Chlorinators",
+                        "LEVEL_3": "D3201___|CHLORINA|4|Level 4|5|Level 5|Chlorinators|10000487|4|3",
+                        "LEVEL_4": "CHLORINA|A1______|3|Level 3|4|Level 4|Area 1|---||2"
+                    },
+                    {
+                        "LEVEL_1": "D3202",
+                        "LEVEL_2": "Chlorinators",
+                        "LEVEL_3": "D3202___|CHLORINA|4|Level 4|5|Level 5|Chlorinators|10000488|4|4",
+                        "LEVEL_4": "CHLORINA|A1______|3|Level 3|4|Level 4|Area 1|---||2"
+                    },
+                    {
+                        "LEVEL_1": "D5201",
+                        "LEVEL_2": "Chlorinators",
+                        "LEVEL_3": "D5201___|CHLORINA|4|Level 4|5|Level 5|Chlorinators|10000494|4|5",
+                        "LEVEL_4": "CHLORINA|A1______|3|Level 3|4|Level 4|Area 1|---||2"
+                    },
+                    {
+                        "LEVEL_1": "D5202",
+                        "LEVEL_2": "Chlorinators",
+                        "LEVEL_3": "D5202___|CHLORINA|4|Level 4|5|Level 5|Chlorinators|10000495|4|6",
+                        "LEVEL_4": "CHLORINA|A1______|3|Level 3|4|Level 4|Area 1|---||2"
+                    },
+                    {
+                        "LEVEL_1": "TiCl4 crude",
+                        "LEVEL_2": "Area 1",
+                        "LEVEL_3": "TICL4CRU|A1______|3|Level 3|4|Level 4|Area 1|---|3|3",
+                        "LEVEL_4": "A1______|PLN_SEC1|2|Level 2|3|Level 3|Base Plant|---|2|1"
+                    },
+                    {
+                        "LEVEL_1": "F0204",
+                        "LEVEL_2": "TiCl4 crude",
+                        "LEVEL_3": "F0204___|TICL4CRU|4|Level 4|5|Level 5|TiCl4 crude|10000506|4|1",
+                        "LEVEL_4": "TICL4CRU|A1______|3|Level 3|4|Level 4|Area 1|---||3"
+                    },
+                    {
+                        "LEVEL_1": "F0222",
+                        "LEVEL_2": "TiCl4 crude",
+                        "LEVEL_3": "F0222___|TICL4CRU|4|Level 4|5|Level 5|TiCl4 crude|10000508|4|2",
+                        "LEVEL_4": "TICL4CRU|A1______|3|Level 3|4|Level 4|Area 1|---||3"
+                    },
+                    {
+                        "LEVEL_1": "F0223",
+                        "LEVEL_2": "TiCl4 crude",
+                        "LEVEL_3": "F0223___|TICL4CRU|4|Level 4|5|Level 5|TiCl4 crude|10000509|4|3",
+                        "LEVEL_4": "TICL4CRU|A1______|3|Level 3|4|Level 4|Area 1|---||3"
+                    },
+                    {
+                        "LEVEL_1": "F0224",
+                        "LEVEL_2": "TiCl4 crude",
+                        "LEVEL_3": "F0224___|TICL4CRU|4|Level 4|5|Level 5|TiCl4 crude|10000510|4|4",
+                        "LEVEL_4": "TICL4CRU|A1______|3|Level 3|4|Level 4|Area 1|---||3"
+                    },
+                    {
+                        "LEVEL_1": "F2204",
+                        "LEVEL_2": "TiCl4 crude",
+                        "LEVEL_3": "F2204___|TICL4CRU|4|Level 4|5|Level 5|TiCl4 crude|10000523|4|5",
+                        "LEVEL_4": "TICL4CRU|A1______|3|Level 3|4|Level 4|Area 1|---||3"
+                    },
+                    {
+                        "LEVEL_1": "F2223",
+                        "LEVEL_2": "TiCl4 crude",
+                        "LEVEL_3": "F2223___|TICL4CRU|4|Level 4|5|Level 5|TiCl4 crude|10000525|4|6",
+                        "LEVEL_4": "TICL4CRU|A1______|3|Level 3|4|Level 4|Area 1|---||3"
+                    },
+                    {
+                        "LEVEL_1": "F2224",
+                        "LEVEL_2": "TiCl4 crude",
+                        "LEVEL_3": "F2224___|TICL4CRU|4|Level 4|5|Level 5|TiCl4 crude|10000526|4|7",
+                        "LEVEL_4": "TICL4CRU|A1______|3|Level 3|4|Level 4|Area 1|---||3"
+                    },
+                    {
+                        "LEVEL_1": "F5204",
+                        "LEVEL_2": "TiCl4 crude",
+                        "LEVEL_3": "F5204___|TICL4CRU|4|Level 4|5|Level 5|TiCl4 crude|10000547|4|8",
+                        "LEVEL_4": "TICL4CRU|A1______|3|Level 3|4|Level 4|Area 1|---||3"
+                    },
+                    {
+                        "LEVEL_1": "F5224",
+                        "LEVEL_2": "TiCl4 crude",
+                        "LEVEL_3": "F5224___|TICL4CRU|4|Level 4|5|Level 5|TiCl4 crude|10000549|4|9",
+                        "LEVEL_4": "TICL4CRU|A1______|3|Level 3|4|Level 4|Area 1|---||3"
+                    },
+                    {
+                        "LEVEL_1": "TICL4 Finished",
+                        "LEVEL_2": "Area 1",
+                        "LEVEL_3": "TICL4FIN|A1______|3|Level 3|4|Level 4|Area 1|---|3|4",
+                        "LEVEL_4": "A1______|PLN_SEC1|2|Level 2|3|Level 3|Base Plant|---|2|1"
+                    },
+                    {
+                        "LEVEL_1": "F0219",
+                        "LEVEL_2": "TICL4 Finished",
+                        "LEVEL_3": "F0219___|TICL4FIN|4|Level 4|5|Level 5|TICL4 Finished|10000507|4|1",
+                        "LEVEL_4": "TICL4FIN|A1______|3|Level 3|4|Level 4|Area 1|---||4"
+                    },
+                    {
+                        "LEVEL_1": "F2219",
+                        "LEVEL_2": "TICL4 Finished",
+                        "LEVEL_3": "F2219___|TICL4FIN|4|Level 4|5|Level 5|TICL4 Finished|10000524|4|2",
+                        "LEVEL_4": "TICL4FIN|A1______|3|Level 3|4|Level 4|Area 1|---||4"
+                    },
+                    {
+                        "LEVEL_1": "F5219",
+                        "LEVEL_2": "TICL4 Finished",
+                        "LEVEL_3": "F5219___|TICL4FIN|4|Level 4|5|Level 5|TICL4 Finished|10000548|4|3",
+                        "LEVEL_4": "TICL4FIN|A1______|3|Level 3|4|Level 4|Area 1|---||4"
+                    },
+                    {
+                        "LEVEL_1": "Incinerator",
+                        "LEVEL_2": "Area 1",
+                        "LEVEL_3": "INCINERA|A1______|3|Level 3|4|Level 4|Area 1|---|3|5",
+                        "LEVEL_4": "A1______|PLN_SEC1|2|Level 2|3|Level 3|Base Plant|---|2|1"
+                    },
+                    {
+                        "LEVEL_1": "B2502",
+                        "LEVEL_2": "Incinerator",
+                        "LEVEL_3": "B2502___|INCINERA|4|Level 4|5|Level 5|Incinerator|10000464|4|1",
+                        "LEVEL_4": "INCINERA|A1______|3|Level 3|4|Level 4|Area 1|---||5"
+                    },
+                    {
+                        "LEVEL_1": "B2502K",
+                        "LEVEL_2": "Incinerator",
+                        "LEVEL_3": "B2502K__|INCINERA|4|Level 4|5|Level 5|Incinerator|10000465|4|2",
+                        "LEVEL_4": "INCINERA|A1______|3|Level 3|4|Level 4|Area 1|---||5"
+                    },
+                    {
+                        "LEVEL_1": "B3502",
+                        "LEVEL_2": "Incinerator",
+                        "LEVEL_3": "B3502___|INCINERA|4|Level 4|5|Level 5|Incinerator|10000466|4|3",
+                        "LEVEL_4": "INCINERA|A1______|3|Level 3|4|Level 4|Area 1|---||5"
+                    },
+                    {
+                        "LEVEL_1": "Scrubbers",
+                        "LEVEL_2": "Area 1",
+                        "LEVEL_3": "SCRUBBER|A1______|3|Level 3|4|Level 4|Area 1|---|3|6",
+                        "LEVEL_4": "A1______|PLN_SEC1|2|Level 2|3|Level 3|Base Plant|---|2|1"
+                    },
+                    {
+                        "LEVEL_1": "D1223",
+                        "LEVEL_2": "Scrubbers",
+                        "LEVEL_3": "D1223___|SCRUBBER|4|Level 4|5|Level 5|Scrubbers|10000485|4|1",
+                        "LEVEL_4": "SCRUBBER|A1______|3|Level 3|4|Level 4|Area 1|---||6"
+                    },
+                    {
+                        "LEVEL_1": "D3223",
+                        "LEVEL_2": "Scrubbers",
+                        "LEVEL_3": "D3223___|SCRUBBER|4|Level 4|5|Level 5|Scrubbers|10000489|4|2",
+                        "LEVEL_4": "SCRUBBER|A1______|3|Level 3|4|Level 4|Area 1|---||6"
+                    },
+                    {
+                        "LEVEL_1": "D5209",
+                        "LEVEL_2": "Scrubbers",
+                        "LEVEL_3": "D5209___|SCRUBBER|4|Level 4|5|Level 5|Scrubbers|10000496|4|3",
+                        "LEVEL_4": "SCRUBBER|A1______|3|Level 3|4|Level 4|Area 1|---||6"
+                    },
+                    {
+                        "LEVEL_1": "D6452",
+                        "LEVEL_2": "Scrubbers",
+                        "LEVEL_3": "D6452___|SCRUBBER|4|Level 4|5|Level 5|Scrubbers|10000497|4|4",
+                        "LEVEL_4": "SCRUBBER|A1______|3|Level 3|4|Level 4|Area 1|---||6"
+                    },
+                    {
+                        "LEVEL_1": "Water Treatment",
+                        "LEVEL_2": "Area 1",
+                        "LEVEL_3": "A1_WWT__|A1______|3|Level 3|4|Level 4|Area 1|---|3|7",
+                        "LEVEL_4": "A1______|PLN_SEC1|2|Level 2|3|Level 3|Base Plant|---|2|1"
+                    },
+                    {
+                        "LEVEL_1": "F1506 Cooling Water",
+                        "LEVEL_2": "Water Treatment",
+                        "LEVEL_3": "F1506_01|A1_WWT__|4|Level 4|5|Level 5|Water Treatment|10000521|4|1",
+                        "LEVEL_4": "A1_WWT__|A1______|3|Level 3|4|Level 4|Area 1|---||7"
+                    },
+                    {
+                        "LEVEL_1": "Area 2",
+                        "LEVEL_2": "Base Plant",
+                        "LEVEL_3": "A2______|PLN_SEC1|2|Level 2|3|Level 3|Base Plant|---|2|2",
+                        "LEVEL_4": "PLN_SEC1|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|1"
+                    },
+                    {
+                        "LEVEL_1": "Raw materials",
+                        "LEVEL_2": "Area 2",
+                        "LEVEL_3": "RAWMAT_2|A2______|3|Level 3|4|Level 4|Area 2|---|3|1",
+                        "LEVEL_4": "A2______|PLN_SEC1|2|Level 2|3|Level 3|Base Plant|---|2|2"
+                    },
+                    {
+                        "LEVEL_1": "S1000099 Toluene",
+                        "LEVEL_2": "Raw materials",
+                        "LEVEL_3": "S1000099|RAWMAT_2|4|Level 4|5|Level 5|Raw materials|10000583|4|1",
+                        "LEVEL_4": "RAWMAT_2|A2______|3|Level 3|4|Level 4|Area 2|---||1"
+                    },
+                    {
+                        "LEVEL_1": "S1000180 Scour Sand",
+                        "LEVEL_2": "Raw materials",
+                        "LEVEL_3": "S1000180|RAWMAT_2|4|Level 4|5|Level 5|Raw materials|10000001|4|2",
+                        "LEVEL_4": "RAWMAT_2|A2______|3|Level 3|4|Level 4|Area 2|---||1"
+                    },
+                    {
+                        "LEVEL_1": "Trac101",
+                        "LEVEL_2": "Raw materials",
+                        "LEVEL_3": "TRAC101_|RAWMAT_2|4|Level 4|5|Level 5|Raw materials|---|4|3",
+                        "LEVEL_4": "RAWMAT_2|A2______|3|Level 3|4|Level 4|Area 2|---||1"
+                    },
+                    {
+                        "LEVEL_1": "A5_CHILL",
+                        "LEVEL_2": "Trac101",
+                        "LEVEL_3": "A5_CHIL1|TRAC101_|5|Level 5|6|Level 6|Trac101|10000458|5|1",
+                        "LEVEL_4": "TRAC101_|RAWMAT_2|4|Level 4|5|Level 5|Raw materials|---|4|3"
+                    },
+                    {
+                        "LEVEL_1": "D0322",
+                        "LEVEL_2": "Trac101",
+                        "LEVEL_3": "D0322__1|TRAC101_|5|Level 5|6|Level 6|Trac101|10000481|5|2",
+                        "LEVEL_4": "TRAC101_|RAWMAT_2|4|Level 4|5|Level 5|Raw materials|---|4|3"
+                    },
+                    {
+                        "LEVEL_1": "D3322",
+                        "LEVEL_2": "Trac101",
+                        "LEVEL_3": "D3322__1|TRAC101_|5|Level 5|6|Level 6|Trac101|10000490|5|3",
+                        "LEVEL_4": "TRAC101_|RAWMAT_2|4|Level 4|5|Level 5|Raw materials|---|4|3"
+                    },
+                    {
+                        "LEVEL_1": "Raw Pigment Lines",
+                        "LEVEL_2": "Area 2",
+                        "LEVEL_3": "RP_LINES|A2______|3|Level 3|4|Level 4|Area 2|---|3|2",
+                        "LEVEL_4": "A2______|PLN_SEC1|2|Level 2|3|Level 3|Base Plant|---|2|2"
+                    },
+                    {
+                        "LEVEL_1": "Line A",
+                        "LEVEL_2": "Raw Pigment Lines",
+                        "LEVEL_3": "A2_LINEA|RP_LINES|4|Level 4|5|Level 5|Raw Pigment Lines|10000572|4|1",
+                        "LEVEL_4": "RP_LINES|A2______|3|Level 3|4|Level 4|Area 2|---||2"
+                    },
+                    {
+                        "LEVEL_1": "Line B",
+                        "LEVEL_2": "Raw Pigment Lines",
+                        "LEVEL_3": "A2_LINEB|RP_LINES|4|Level 4|5|Level 5|Raw Pigment Lines|10000573|4|2",
+                        "LEVEL_4": "RP_LINES|A2______|3|Level 3|4|Level 4|Area 2|---||2"
+                    },
+                    {
+                        "LEVEL_1": "Line C",
+                        "LEVEL_2": "Raw Pigment Lines",
+                        "LEVEL_3": "A2_LINEC|RP_LINES|4|Level 4|5|Level 5|Raw Pigment Lines|10000574|4|3",
+                        "LEVEL_4": "RP_LINES|A2______|3|Level 3|4|Level 4|Area 2|---||2"
+                    },
+                    {
+                        "LEVEL_1": "Line D",
+                        "LEVEL_2": "Raw Pigment Lines",
+                        "LEVEL_3": "A2_LINED|RP_LINES|4|Level 4|5|Level 5|Raw Pigment Lines|10000575|4|4",
+                        "LEVEL_4": "RP_LINES|A2______|3|Level 3|4|Level 4|Area 2|---||2"
+                    },
+                    {
+                        "LEVEL_1": "Line E",
+                        "LEVEL_2": "Raw Pigment Lines",
+                        "LEVEL_3": "A2_LINEE|RP_LINES|4|Level 4|5|Level 5|Raw Pigment Lines|10000576|4|5",
+                        "LEVEL_4": "RP_LINES|A2______|3|Level 3|4|Level 4|Area 2|---||2"
+                    },
+                    {
+                        "LEVEL_1": "Line F",
+                        "LEVEL_2": "Raw Pigment Lines",
+                        "LEVEL_3": "A2_LINEF|RP_LINES|4|Level 4|5|Level 5|Raw Pigment Lines|10000577|4|6",
+                        "LEVEL_4": "RP_LINES|A2______|3|Level 3|4|Level 4|Area 2|---||2"
+                    },
+                    {
+                        "LEVEL_1": "Raw Pigment Export",
+                        "LEVEL_2": "Area 2",
+                        "LEVEL_3": "RP_EXPOR|A2______|3|Level 3|4|Level 4|Area 2|---|3|3",
+                        "LEVEL_4": "A2______|PLN_SEC1|2|Level 2|3|Level 3|Base Plant|---|2|2"
+                    },
+                    {
+                        "LEVEL_1": "F3445",
+                        "LEVEL_2": "Raw Pigment Export",
+                        "LEVEL_3": "F3445___|RP_EXPOR|4|Level 4|5|Level 5|Raw Pigment Export|10000538|4|1",
+                        "LEVEL_4": "RP_EXPOR|A2______|3|Level 3|4|Level 4|Area 2|---||3"
+                    },
+                    {
+                        "LEVEL_1": "F3447",
+                        "LEVEL_2": "Raw Pigment Export",
+                        "LEVEL_3": "F3447___|RP_EXPOR|4|Level 4|5|Level 5|Raw Pigment Export|10000539|4|2",
+                        "LEVEL_4": "RP_EXPOR|A2______|3|Level 3|4|Level 4|Area 2|---||3"
+                    },
+                    {
+                        "LEVEL_1": "Raw Pigment Sumps",
+                        "LEVEL_2": "Area 2",
+                        "LEVEL_3": "RP_SUMPS|A2______|3|Level 3|4|Level 4|Area 2|---|3|4",
+                        "LEVEL_4": "A2______|PLN_SEC1|2|Level 2|3|Level 3|Base Plant|---|2|2"
+                    },
+                    {
+                        "LEVEL_1": "Sump AB",
+                        "LEVEL_2": "Raw Pigment Sumps",
+                        "LEVEL_3": "RPSUMPAB|RP_SUMPS|4|Level 4|5|Level 5|Raw Pigment Sumps|10000615|4|1",
+                        "LEVEL_4": "RP_SUMPS|A2______|3|Level 3|4|Level 4|Area 2|---||4"
+                    },
+                    {
+                        "LEVEL_1": "Sump CD",
+                        "LEVEL_2": "Raw Pigment Sumps",
+                        "LEVEL_3": "RPSUMPCD|RP_SUMPS|4|Level 4|5|Level 5|Raw Pigment Sumps|10000616|4|2",
+                        "LEVEL_4": "RP_SUMPS|A2______|3|Level 3|4|Level 4|Area 2|---||4"
+                    },
+                    {
+                        "LEVEL_1": "Sump EF",
+                        "LEVEL_2": "Raw Pigment Sumps",
+                        "LEVEL_3": "RPSUMPEF|RP_SUMPS|4|Level 4|5|Level 5|Raw Pigment Sumps|10000617|4|3",
+                        "LEVEL_4": "RP_SUMPS|A2______|3|Level 3|4|Level 4|Area 2|---||4"
+                    },
+                    {
+                        "LEVEL_1": "Finishing Plant",
+                        "LEVEL_2": "Operations",
+                        "LEVEL_3": "PLN_SEC2|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|2",
+                        "LEVEL_4": "PIGMENTS|---|0|Level 0|1|Level 1|---|10000585|0|2"
+                    },
+                    {
+                        "LEVEL_1": "Area 3 Train 1",
+                        "LEVEL_2": "Finishing Plant",
+                        "LEVEL_3": "A3_T1___|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|1",
+                        "LEVEL_4": "PLN_SEC2|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|2"
+                    },
+                    {
+                        "LEVEL_1": "Storage",
+                        "LEVEL_2": "Area 3 Train 1",
+                        "LEVEL_3": "STOR_A31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---|3|1",
+                        "LEVEL_4": "A3_T1___|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|1"
+                    },
+                    {
+                        "LEVEL_1": "F0409",
+                        "LEVEL_2": "Storage",
+                        "LEVEL_3": "F0409___|STOR_A31|4|Level 4|5|Level 5|Storage|10000644|4|1",
+                        "LEVEL_4": "STOR_A31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||1"
+                    },
+                    {
+                        "LEVEL_1": "F1419",
+                        "LEVEL_2": "Storage",
+                        "LEVEL_3": "F1419___|STOR_A31|4|Level 4|5|Level 5|Storage|10000519|4|2",
+                        "LEVEL_4": "STOR_A31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||1"
+                    },
+                    {
+                        "LEVEL_1": "F1430",
+                        "LEVEL_2": "Storage",
+                        "LEVEL_3": "F1430___|STOR_A31|4|Level 4|5|Level 5|Storage|10000520|4|3",
+                        "LEVEL_4": "STOR_A31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||1"
+                    },
+                    {
+                        "LEVEL_1": "F0401",
+                        "LEVEL_2": "Storage",
+                        "LEVEL_3": "F0401___|STOR_A31|4|Level 4|5|Level 5|Storage|10000663|4|4",
+                        "LEVEL_4": "STOR_A31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||1"
+                    },
+                    {
+                        "LEVEL_1": "Milling",
+                        "LEVEL_2": "Area 3 Train 1",
+                        "LEVEL_3": "MILLNG31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---|3|2",
+                        "LEVEL_4": "A3_T1___|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|1"
+                    },
+                    {
+                        "LEVEL_1": "F0412",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "F0412___|MILLNG31|4|Level 4|5|Level 5|Milling|10000511|4|1",
+                        "LEVEL_4": "MILLNG31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||2"
+                    },
+                    {
+                        "LEVEL_1": "SM0412",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "SM0412__|MILLNG31|4|Level 4|5|Level 5|Milling|10000587|4|2",
+                        "LEVEL_4": "MILLNG31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||2"
+                    },
+                    {
+                        "LEVEL_1": "SM0413",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "SM0413__|MILLNG31|4|Level 4|5|Level 5|Milling|10000588|4|3",
+                        "LEVEL_4": "MILLNG31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||2"
+                    },
+                    {
+                        "LEVEL_1": "SM0415",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "SM0415__|MILLNG31|4|Level 4|5|Level 5|Milling|10000589|4|4",
+                        "LEVEL_4": "MILLNG31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||2"
+                    },
+                    {
+                        "LEVEL_1": "SM0416",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "SM0416__|MILLNG31|4|Level 4|5|Level 5|Milling|10000590|4|5",
+                        "LEVEL_4": "MILLNG31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||2"
+                    },
+                    {
+                        "LEVEL_1": "SM2411",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "SM2411__|MILLNG31|4|Level 4|5|Level 5|Milling|10000591|4|6",
+                        "LEVEL_4": "MILLNG31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||2"
+                    },
+                    {
+                        "LEVEL_1": "SM2412",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "SM2412__|MILLNG31|4|Level 4|5|Level 5|Milling|10000592|4|7",
+                        "LEVEL_4": "MILLNG31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||2"
+                    },
+                    {
+                        "LEVEL_1": "SM2413",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "SM2413__|MILLNG31|4|Level 4|5|Level 5|Milling|10000593|4|8",
+                        "LEVEL_4": "MILLNG31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||2"
+                    },
+                    {
+                        "LEVEL_1": "SM2414",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "SM2414__|MILLNG31|4|Level 4|5|Level 5|Milling|10000594|4|9",
+                        "LEVEL_4": "MILLNG31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||2"
+                    },
+                    {
+                        "LEVEL_1": "F0414",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "F0414A__|MILLNG31|4|Level 4|5|Level 5|Milling|10000512|4|10",
+                        "LEVEL_4": "MILLNG31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||2"
+                    },
+                    {
+                        "LEVEL_1": "Krebs",
+                        "LEVEL_2": "Area 3 Train 1",
+                        "LEVEL_3": "KREBS_31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---|3|3",
+                        "LEVEL_4": "A3_T1___|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|1"
+                    },
+                    {
+                        "LEVEL_1": "D0423",
+                        "LEVEL_2": "Krebs",
+                        "LEVEL_3": "D0423___|KREBS_31|4|Level 4|5|Level 5|Krebs|10000482|4|1",
+                        "LEVEL_4": "KREBS_31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||3"
+                    },
+                    {
+                        "LEVEL_1": "D0424",
+                        "LEVEL_2": "Krebs",
+                        "LEVEL_3": "D0424___|KREBS_31|4|Level 4|5|Level 5|Krebs|10000483|4|2",
+                        "LEVEL_4": "KREBS_31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||3"
+                    },
+                    {
+                        "LEVEL_1": "Treatment",
+                        "LEVEL_2": "Area 3 Train 1",
+                        "LEVEL_3": "TREAT_31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|10000512|3|4",
+                        "LEVEL_4": "A3_T1___|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|1"
+                    },
+                    {
+                        "LEVEL_1": "F0414",
+                        "LEVEL_2": "Treatment",
+                        "LEVEL_3": "F0414___|TREAT_31|4|Level 4|5|Level 5|Treatment|10000512|4|1",
+                        "LEVEL_4": "TREAT_31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|10000512||4"
+                    },
+                    {
+                        "LEVEL_1": "F0415",
+                        "LEVEL_2": "Treatment",
+                        "LEVEL_3": "F0415___|TREAT_31|4|Level 4|5|Level 5|Treatment|10000513|4|2",
+                        "LEVEL_4": "TREAT_31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|10000512||4"
+                    },
+                    {
+                        "LEVEL_1": "F0416",
+                        "LEVEL_2": "Treatment",
+                        "LEVEL_3": "F0416___|TREAT_31|4|Level 4|5|Level 5|Treatment|10000514|4|3",
+                        "LEVEL_4": "TREAT_31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|10000512||4"
+                    },
+                    {
+                        "LEVEL_1": "F2415",
+                        "LEVEL_2": "Treatment",
+                        "LEVEL_3": "F2415___|TREAT_31|4|Level 4|5|Level 5|Treatment|10000527|4|4",
+                        "LEVEL_4": "TREAT_31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|10000512||4"
+                    },
+                    {
+                        "LEVEL_1": "Filtration",
+                        "LEVEL_2": "Area 3 Train 1",
+                        "LEVEL_3": "FILT_A31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---|3|5",
+                        "LEVEL_4": "A3_T1___|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|1"
+                    },
+                    {
+                        "LEVEL_1": "F0418",
+                        "LEVEL_2": "Filtration",
+                        "LEVEL_3": "F0418___|FILT_A31|4|Level 4|5|Level 5|Filtration|10000515|4|1",
+                        "LEVEL_4": "FILT_A31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||5"
+                    },
+                    {
+                        "LEVEL_1": "F0423",
+                        "LEVEL_2": "Filtration",
+                        "LEVEL_3": "F0423___|FILT_A31|4|Level 4|5|Level 5|Filtration|10000516|4|2",
+                        "LEVEL_4": "FILT_A31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||5"
+                    },
+                    {
+                        "LEVEL_1": "F0424",
+                        "LEVEL_2": "Filtration",
+                        "LEVEL_3": "F0424___|FILT_A31|4|Level 4|5|Level 5|Filtration|10000517|4|3",
+                        "LEVEL_4": "FILT_A31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||5"
+                    },
+                    {
+                        "LEVEL_1": "FILTRATE",
+                        "LEVEL_2": "Filtration",
+                        "LEVEL_3": "FILTR_31|FILT_A31|4|Level 4|5|Level 5|Filtration|10000618|4|4",
+                        "LEVEL_4": "FILT_A31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||5"
+                    },
+                    {
+                        "LEVEL_1": "FILTREC",
+                        "LEVEL_2": "Filtration",
+                        "LEVEL_3": "FILTRC31|FILT_A31|4|Level 4|5|Level 5|Filtration|10000619|4|5",
+                        "LEVEL_4": "FILT_A31|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||5"
+                    },
+                    {
+                        "LEVEL_1": "Scrubbers",
+                        "LEVEL_2": "Area 3 Train 1",
+                        "LEVEL_3": "A3T1_SCR|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---|3|6",
+                        "LEVEL_4": "A3_T1___|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|1"
+                    },
+                    {
+                        "LEVEL_1": "D6452",
+                        "LEVEL_2": "Scrubbers",
+                        "LEVEL_3": "D6452__A|A3T1_SCR|4|Level 4|5|Level 5|Scrubbers|10000497|4|1",
+                        "LEVEL_4": "A3T1_SCR|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||6"
+                    },
+                    {
+                        "LEVEL_1": "Dryers",
+                        "LEVEL_2": "Area 3 Train 1",
+                        "LEVEL_3": "DRYERST1|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---|3|7",
+                        "LEVEL_4": "A3_T1___|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|1"
+                    },
+                    {
+                        "LEVEL_1": "B1403 - Tunnel Dryer",
+                        "LEVEL_2": "Dryers",
+                        "LEVEL_3": "B1403___|DRYERST1|4|Level 4|5|Level 5|Dryers|10000463|4|1",
+                        "LEVEL_4": "DRYERST1|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||7"
+                    },
+                    {
+                        "LEVEL_1": "SPFD - SpinFlashDryer",
+                        "LEVEL_2": "Dryers",
+                        "LEVEL_3": "SPFD____|DRYERST1|4|Level 4|5|Level 5|Dryers|10000629|4|2",
+                        "LEVEL_4": "DRYERST1|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||7"
+                    },
+                    {
+                        "LEVEL_1": "SFDCAKE",
+                        "LEVEL_2": "Dryers",
+                        "LEVEL_3": "SFDCAKE_|DRYERST1|4|Level 4|5|Level 5|Dryers|10000648|4|3",
+                        "LEVEL_4": "DRYERST1|A3_T1___|3|Level 3|4|Level 4|Area 3 Train 1|---||7"
+                    },
+                    {
+                        "LEVEL_1": "Area 3 Train 2",
+                        "LEVEL_2": "Finishing Plant",
+                        "LEVEL_3": "A3_T2___|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|2",
+                        "LEVEL_4": "PLN_SEC2|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|2"
+                    },
+                    {
+                        "LEVEL_1": "Storage",
+                        "LEVEL_2": "Area 3 Train 2",
+                        "LEVEL_3": "32_STOR_|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---|3|1",
+                        "LEVEL_4": "A3_T2___|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|2"
+                    },
+                    {
+                        "LEVEL_1": "F3431",
+                        "LEVEL_2": "Storage",
+                        "LEVEL_3": "F3431___|32_STOR_|4|Level 4|5|Level 5|Storage|10000534|4|1",
+                        "LEVEL_4": "32_STOR_|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||1"
+                    },
+                    {
+                        "LEVEL_1": "F3432",
+                        "LEVEL_2": "Storage",
+                        "LEVEL_3": "F3432___|32_STOR_|4|Level 4|5|Level 5|Storage|10000535|4|2",
+                        "LEVEL_4": "32_STOR_|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||1"
+                    },
+                    {
+                        "LEVEL_1": "F3437 Slops",
+                        "LEVEL_2": "Storage",
+                        "LEVEL_3": "F3437___|32_STOR_|4|Level 4|5|Level 5|Storage|10000536|4|3",
+                        "LEVEL_4": "32_STOR_|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||1"
+                    },
+                    {
+                        "LEVEL_1": "F3438 Slops",
+                        "LEVEL_2": "Storage",
+                        "LEVEL_3": "F3438___|32_STOR_|4|Level 4|5|Level 5|Storage|10000537|4|4",
+                        "LEVEL_4": "32_STOR_|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||1"
+                    },
+                    {
+                        "LEVEL_1": "F0401",
+                        "LEVEL_2": "Storage",
+                        "LEVEL_3": "F0401__2|32_STOR_|4|Level 4|5|Level 5|Storage|10000663|4|5",
+                        "LEVEL_4": "32_STOR_|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||1"
+                    },
+                    {
+                        "LEVEL_1": "Milling",
+                        "LEVEL_2": "Area 3 Train 2",
+                        "LEVEL_3": "MILLNG32|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---|3|2",
+                        "LEVEL_4": "A3_T2___|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|2"
+                    },
+                    {
+                        "LEVEL_1": "F3412",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "F3412___|MILLNG32|4|Level 4|5|Level 5|Milling|10000529|4|1",
+                        "LEVEL_4": "MILLNG32|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||2"
+                    },
+                    {
+                        "LEVEL_1": "SM3411",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "SM3411__|MILLNG32|4|Level 4|5|Level 5|Milling|10000595|4|2",
+                        "LEVEL_4": "MILLNG32|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||2"
+                    },
+                    {
+                        "LEVEL_1": "SM3412",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "SM3412__|MILLNG32|4|Level 4|5|Level 5|Milling|10000596|4|3",
+                        "LEVEL_4": "MILLNG32|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||2"
+                    },
+                    {
+                        "LEVEL_1": "SM3413",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "SM3413__|MILLNG32|4|Level 4|5|Level 5|Milling|10000597|4|4",
+                        "LEVEL_4": "MILLNG32|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||2"
+                    },
+                    {
+                        "LEVEL_1": "SM3414",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "SM3414__|MILLNG32|4|Level 4|5|Level 5|Milling|10000598|4|5",
+                        "LEVEL_4": "MILLNG32|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||2"
+                    },
+                    {
+                        "LEVEL_1": "SM3415",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "SM3415__|MILLNG32|4|Level 4|5|Level 5|Milling|10000599|4|6",
+                        "LEVEL_4": "MILLNG32|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||2"
+                    },
+                    {
+                        "LEVEL_1": "SM3416",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "SM3416__|MILLNG32|4|Level 4|5|Level 5|Milling|10000600|4|7",
+                        "LEVEL_4": "MILLNG32|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||2"
+                    },
+                    {
+                        "LEVEL_1": "SM5417",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "SM5417__|MILLNG32|4|Level 4|5|Level 5|Milling|10000601|4|8",
+                        "LEVEL_4": "MILLNG32|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||2"
+                    },
+                    {
+                        "LEVEL_1": "SM5418",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "SM5418__|MILLNG32|4|Level 4|5|Level 5|Milling|10000602|4|9",
+                        "LEVEL_4": "MILLNG32|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||2"
+                    },
+                    {
+                        "LEVEL_1": "SM5419",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "SM5419__|MILLNG32|4|Level 4|5|Level 5|Milling|10000603|4|10",
+                        "LEVEL_4": "MILLNG32|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||2"
+                    },
+                    {
+                        "LEVEL_1": "SM5420",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "SM5420__|MILLNG32|4|Level 4|5|Level 5|Milling|10000604|4|11",
+                        "LEVEL_4": "MILLNG32|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||2"
+                    },
+                    {
+                        "LEVEL_1": "SM5421",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "SM5421__|MILLNG32|4|Level 4|5|Level 5|Milling|10000605|4|12",
+                        "LEVEL_4": "MILLNG32|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||2"
+                    },
+                    {
+                        "LEVEL_1": "SM5422",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "SM5422__|MILLNG32|4|Level 4|5|Level 5|Milling|10000606|4|13",
+                        "LEVEL_4": "MILLNG32|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||2"
+                    },
+                    {
+                        "LEVEL_1": "F3414",
+                        "LEVEL_2": "Milling",
+                        "LEVEL_3": "F3414__A|MILLNG32|4|Level 4|5|Level 5|Milling|10000530|4|14",
+                        "LEVEL_4": "MILLNG32|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||2"
+                    },
+                    {
+                        "LEVEL_1": "Krebs",
+                        "LEVEL_2": "Area 3 Train 2",
+                        "LEVEL_3": "KREBS_32|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---|3|3",
+                        "LEVEL_4": "A3_T2___|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|2"
+                    },
+                    {
+                        "LEVEL_1": "D3423",
+                        "LEVEL_2": "Krebs",
+                        "LEVEL_3": "D3423___|KREBS_32|4|Level 4|5|Level 5|Krebs|10000491|4|1",
+                        "LEVEL_4": "KREBS_32|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||3"
+                    },
+                    {
+                        "LEVEL_1": "D3424",
+                        "LEVEL_2": "Krebs",
+                        "LEVEL_3": "D3424___|KREBS_32|4|Level 4|5|Level 5|Krebs|10000492|4|2",
+                        "LEVEL_4": "KREBS_32|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||3"
+                    },
+                    {
+                        "LEVEL_1": "Treatment",
+                        "LEVEL_2": "Area 3 Train 2",
+                        "LEVEL_3": "32_TREAT|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---|3|4",
+                        "LEVEL_4": "A3_T2___|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|2"
+                    },
+                    {
+                        "LEVEL_1": "F3414FD",
+                        "LEVEL_2": "Treatment",
+                        "LEVEL_3": "F3414FD_|32_TREAT|4|Level 4|5|Level 5|Treatment|10000530|4|1",
+                        "LEVEL_4": "32_TREAT|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||4"
+                    },
+                    {
+                        "LEVEL_1": "F3415",
+                        "LEVEL_2": "Treatment",
+                        "LEVEL_3": "F3415___|32_TREAT|4|Level 4|5|Level 5|Treatment|10000531|4|2",
+                        "LEVEL_4": "32_TREAT|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||4"
+                    },
+                    {
+                        "LEVEL_1": "F3416",
+                        "LEVEL_2": "Treatment",
+                        "LEVEL_3": "F3416___|32_TREAT|4|Level 4|5|Level 5|Treatment|10000532|4|3",
+                        "LEVEL_4": "32_TREAT|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||4"
+                    },
+                    {
+                        "LEVEL_1": "F5417",
+                        "LEVEL_2": "Treatment",
+                        "LEVEL_3": "F5417___|32_TREAT|4|Level 4|5|Level 5|Treatment|10000550|4|4",
+                        "LEVEL_4": "32_TREAT|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||4"
+                    },
+                    {
+                        "LEVEL_1": "Filtration",
+                        "LEVEL_2": "Area 3 Train 2",
+                        "LEVEL_3": "A32FILTR|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---|3|5",
+                        "LEVEL_4": "A3_T2___|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|2"
+                    },
+                    {
+                        "LEVEL_1": "F3418",
+                        "LEVEL_2": "Filtration",
+                        "LEVEL_3": "F3418___|A32FILTR|4|Level 4|5|Level 5|Filtration|10000533|4|1",
+                        "LEVEL_4": "A32FILTR|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||5"
+                    },
+                    {
+                        "LEVEL_1": "FILTRATE",
+                        "LEVEL_2": "Filtration",
+                        "LEVEL_3": "FILTR_32|A32FILTR|4|Level 4|5|Level 5|Filtration|10000620|4|2",
+                        "LEVEL_4": "A32FILTR|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||5"
+                    },
+                    {
+                        "LEVEL_1": "FILTREC",
+                        "LEVEL_2": "Filtration",
+                        "LEVEL_3": "FILTRC32|A32FILTR|4|Level 4|5|Level 5|Filtration|10000621|4|3",
+                        "LEVEL_4": "A32FILTR|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||5"
+                    },
+                    {
+                        "LEVEL_1": "Dryers",
+                        "LEVEL_2": "Area 3 Train 2",
+                        "LEVEL_3": "A32DRYER|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---|3|6",
+                        "LEVEL_4": "A3_T2___|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|2"
+                    },
+                    {
+                        "LEVEL_1": "F4401 Multiverter",
+                        "LEVEL_2": "Dryers",
+                        "LEVEL_3": "F4401___|A32DRYER|4|Level 4|5|Level 5|Dryers|10000540|4|1",
+                        "LEVEL_4": "A32DRYER|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||6"
+                    },
+                    {
+                        "LEVEL_1": "Spray dryer",
+                        "LEVEL_2": "Dryers",
+                        "LEVEL_3": "T2SPRDRY|A32DRYER|4|Level 4|5|Level 5|Dryers|10000622|4|2",
+                        "LEVEL_4": "A32DRYER|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||6"
+                    },
+                    {
+                        "LEVEL_1": "Scrubbers",
+                        "LEVEL_2": "Area 3 Train 2",
+                        "LEVEL_3": "32_SCRUB|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---|3|7",
+                        "LEVEL_4": "A3_T2___|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|2"
+                    },
+                    {
+                        "LEVEL_1": "D3452",
+                        "LEVEL_2": "Scrubbers",
+                        "LEVEL_3": "D3452___|32_SCRUB|4|Level 4|5|Level 5|Scrubbers|10000493|4|1",
+                        "LEVEL_4": "32_SCRUB|A3_T2___|3|Level 3|4|Level 4|Area 3 Train 2|---||7"
+                    },
+                    {
+                        "LEVEL_1": "Area 4",
+                        "LEVEL_2": "Finishing Plant",
+                        "LEVEL_3": "A4______|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|3",
+                        "LEVEL_4": "PLN_SEC2|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|2"
+                    },
+                    {
+                        "LEVEL_1": "BAGHOPPER",
+                        "LEVEL_2": "Area 4",
+                        "LEVEL_3": "BAGHOPPR|A4______|3|Level 3|4|Level 4|Area 4|10000468|3|1",
+                        "LEVEL_4": "A4______|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|3"
+                    },
+                    {
+                        "LEVEL_1": "SILOPGMT",
+                        "LEVEL_2": "Area 4",
+                        "LEVEL_3": "SILO_PIG|A4______|3|Level 3|4|Level 4|Area 4|10000647|3|2",
+                        "LEVEL_4": "A4______|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|3"
+                    },
+                    {
+                        "LEVEL_1": "Area 4 Slurry",
+                        "LEVEL_2": "Finishing Plant",
+                        "LEVEL_3": "A4_SL___|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|4",
+                        "LEVEL_4": "PLN_SEC2|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|2"
+                    },
+                    {
+                        "LEVEL_1": "Disperser",
+                        "LEVEL_2": "Area 4 Slurry",
+                        "LEVEL_3": "4S_DISPR|A4_SL___|3|Level 3|4|Level 4|Area 4 Slurry|---|3|1",
+                        "LEVEL_4": "A4_SL___|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|4"
+                    },
+                    {
+                        "LEVEL_1": "F4468 (#2)",
+                        "LEVEL_2": "Disperser",
+                        "LEVEL_3": "F4468___|4S_DISPR|4|Level 4|5|Level 5|Disperser|10000545|4|1",
+                        "LEVEL_4": "4S_DISPR|A4_SL___|3|Level 3|4|Level 4|Area 4 Slurry|---||1"
+                    },
+                    {
+                        "LEVEL_1": "F4472(#3)",
+                        "LEVEL_2": "Disperser",
+                        "LEVEL_3": "F4472___|4S_DISPR|4|Level 4|5|Level 5|Disperser|10000668|4|2",
+                        "LEVEL_4": "4S_DISPR|A4_SL___|3|Level 3|4|Level 4|Area 4 Slurry|---||1"
+                    },
+                    {
+                        "LEVEL_1": "F5454 (#4)",
+                        "LEVEL_2": "Disperser",
+                        "LEVEL_3": "F5454___|4S_DISPR|4|Level 4|5|Level 5|Disperser|10000551|4|3",
+                        "LEVEL_4": "4S_DISPR|A4_SL___|3|Level 3|4|Level 4|Area 4 Slurry|---||1"
+                    },
+                    {
+                        "LEVEL_1": "Storage",
+                        "LEVEL_2": "Area 4 Slurry",
+                        "LEVEL_3": "4S_STOR_|A4_SL___|3|Level 3|4|Level 4|Area 4 Slurry|---|3|2",
+                        "LEVEL_4": "A4_SL___|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|4"
+                    },
+                    {
+                        "LEVEL_1": "F4454",
+                        "LEVEL_2": "Storage",
+                        "LEVEL_3": "F4454___|4S_STOR_|4|Level 4|5|Level 5|Storage|10000541|4|1",
+                        "LEVEL_4": "4S_STOR_|A4_SL___|3|Level 3|4|Level 4|Area 4 Slurry|---||2"
+                    },
+                    {
+                        "LEVEL_1": "F4455",
+                        "LEVEL_2": "Storage",
+                        "LEVEL_3": "F4455___|4S_STOR_|4|Level 4|5|Level 5|Storage|10000542|4|2",
+                        "LEVEL_4": "4S_STOR_|A4_SL___|3|Level 3|4|Level 4|Area 4 Slurry|---||2"
+                    },
+                    {
+                        "LEVEL_1": "F4456",
+                        "LEVEL_2": "Storage",
+                        "LEVEL_3": "F4456___|4S_STOR_|4|Level 4|5|Level 5|Storage|10000543|4|3",
+                        "LEVEL_4": "4S_STOR_|A4_SL___|3|Level 3|4|Level 4|Area 4 Slurry|---||2"
+                    },
+                    {
+                        "LEVEL_1": "F4457",
+                        "LEVEL_2": "Storage",
+                        "LEVEL_3": "F4457___|4S_STOR_|4|Level 4|5|Level 5|Storage|10000544|4|4",
+                        "LEVEL_4": "4S_STOR_|A4_SL___|3|Level 3|4|Level 4|Area 4 Slurry|---||2"
+                    },
+                    {
+                        "LEVEL_1": "F4475",
+                        "LEVEL_2": "Storage",
+                        "LEVEL_3": "F4475___|4S_STOR_|4|Level 4|5|Level 5|Storage|10000546|4|5",
+                        "LEVEL_4": "4S_STOR_|A4_SL___|3|Level 3|4|Level 4|Area 4 Slurry|---||2"
+                    },
+                    {
+                        "LEVEL_1": "Area 5",
+                        "LEVEL_2": "Finishing Plant",
+                        "LEVEL_3": "A5______|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|5",
+                        "LEVEL_4": "PLN_SEC2|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|2"
+                    },
+                    {
+                        "LEVEL_1": "Cool Tower",
+                        "LEVEL_2": "Area 5",
+                        "LEVEL_3": "A5_OTHER|A5______|3|Level 3|4|Level 4|Area 5|---|3|1",
+                        "LEVEL_4": "A5______|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|5"
+                    },
+                    {
+                        "LEVEL_1": "E3503",
+                        "LEVEL_2": "Cool Tower",
+                        "LEVEL_3": "E3503___|A5_OTHER|4|Level 4|5|Level 5|Cool Tower|10000501|4|1",
+                        "LEVEL_4": "A5_OTHER|A5______|3|Level 3|4|Level 4|Area 5|---||1"
+                    },
+                    {
+                        "LEVEL_1": "E5501",
+                        "LEVEL_2": "Cool Tower",
+                        "LEVEL_3": "E5501___|A5_OTHER|4|Level 4|5|Level 5|Cool Tower|10000502|4|2",
+                        "LEVEL_4": "A5_OTHER|A5______|3|Level 3|4|Level 4|Area 5|---||1"
+                    },
+                    {
+                        "LEVEL_1": "E6503",
+                        "LEVEL_2": "Cool Tower",
+                        "LEVEL_3": "E6503___|A5_OTHER|4|Level 4|5|Level 5|Cool Tower|10000503|4|3",
+                        "LEVEL_4": "A5_OTHER|A5______|3|Level 3|4|Level 4|Area 5|---||1"
+                    },
+                    {
+                        "LEVEL_1": "Utility",
+                        "LEVEL_2": "Area 5",
+                        "LEVEL_3": "A5_UTILL|A5______|3|Level 3|4|Level 4|Area 5|---|3|2",
+                        "LEVEL_4": "A5______|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|5"
+                    },
+                    {
+                        "LEVEL_1": "A5_CHILL",
+                        "LEVEL_2": "Utility",
+                        "LEVEL_3": "A5_CHILL|A5_UTILL|4|Level 4|5|Level 5|Utility|10000458|4|1",
+                        "LEVEL_4": "A5_UTILL|A5______|3|Level 3|4|Level 4|Area 5|---||2"
+                    },
+                    {
+                        "LEVEL_1": "B0501",
+                        "LEVEL_2": "Utility",
+                        "LEVEL_3": "B0501___|A5_UTILL|4|Level 4|5|Level 5|Utility|10000460|4|2",
+                        "LEVEL_4": "A5_UTILL|A5______|3|Level 3|4|Level 4|Area 5|---||2"
+                    },
+                    {
+                        "LEVEL_1": "B0502",
+                        "LEVEL_2": "Utility",
+                        "LEVEL_3": "B0502___|A5_UTILL|4|Level 4|5|Level 5|Utility|10000461|4|3",
+                        "LEVEL_4": "A5_UTILL|A5______|3|Level 3|4|Level 4|Area 5|---||2"
+                    },
+                    {
+                        "LEVEL_1": "B0503",
+                        "LEVEL_2": "Utility",
+                        "LEVEL_3": "B0503___|A5_UTILL|4|Level 4|5|Level 5|Utility|10000462|4|4",
+                        "LEVEL_4": "A5_UTILL|A5______|3|Level 3|4|Level 4|Area 5|---||2"
+                    },
+                    {
+                        "LEVEL_1": "B3503",
+                        "LEVEL_2": "Utility",
+                        "LEVEL_3": "B3503___|A5_UTILL|4|Level 4|5|Level 5|Utility|10000467|4|5",
+                        "LEVEL_4": "A5_UTILL|A5______|3|Level 3|4|Level 4|Area 5|---||2"
+                    },
+                    {
+                        "LEVEL_1": "D0322",
+                        "LEVEL_2": "Utility",
+                        "LEVEL_3": "D0322___|A5_UTILL|4|Level 4|5|Level 5|Utility|10000481|4|6",
+                        "LEVEL_4": "A5_UTILL|A5______|3|Level 3|4|Level 4|Area 5|---||2"
+                    },
+                    {
+                        "LEVEL_1": "D3322",
+                        "LEVEL_2": "Utility",
+                        "LEVEL_3": "D3322___|A5_UTILL|4|Level 4|5|Level 5|Utility|10000490|4|7",
+                        "LEVEL_4": "A5_UTILL|A5______|3|Level 3|4|Level 4|Area 5|---||2"
+                    },
+                    {
+                        "LEVEL_1": "Waste water  & Treatment",
+                        "LEVEL_2": "Area 5",
+                        "LEVEL_3": "A5_WWT__|A5______|3|Level 3|4|Level 4|Area 5|---|3|3",
+                        "LEVEL_4": "A5______|PLN_SEC2|2|Level 2|3|Level 3|Finishing Plant|---|2|5"
+                    },
+                    {
+                        "LEVEL_1": "A5 Treated water",
+                        "LEVEL_2": "Waste water  & Treatment",
+                        "LEVEL_3": "A5_TRT__|A5_WWT__|4|Level 4|5|Level 5|Waste water  & Treatment|10000459|4|1",
+                        "LEVEL_4": "A5_WWT__|A5______|3|Level 3|4|Level 4|Area 5|---||3"
+                    },
+                    {
+                        "LEVEL_1": "Maintenance",
+                        "LEVEL_2": "Operations",
+                        "LEVEL_3": "H_MAINT_|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|3",
+                        "LEVEL_4": "PIGMENTS|---|0|Level 0|1|Level 1|---|10000585|0|2"
+                    },
+                    {
+                        "LEVEL_1": "R&I",
+                        "LEVEL_2": "Maintenance",
+                        "LEVEL_3": "H_TI_REL|H_MAINT_|2|Level 2|3|Level 3|Maintenance|---|2|1",
+                        "LEVEL_4": "H_MAINT_|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|3"
+                    },
+                    {
+                        "LEVEL_1": "Area 1",
+                        "LEVEL_2": "R&I",
+                        "LEVEL_3": "H_RI_A1|H_TI_REL|3|Level 3|4|Level 4|R&I|---|3|1",
+                        "LEVEL_4": "H_TI_REL|H_MAINT_|2|Level 2|3|Level 3|Maintenance|---|2|1"
+                    },
+                    {
+                        "LEVEL_1": "Area 2",
+                        "LEVEL_2": "R&I",
+                        "LEVEL_3": "H_RI_A2|H_TI_REL|3|Level 3|4|Level 4|R&I|---|3|2",
+                        "LEVEL_4": "H_TI_REL|H_MAINT_|2|Level 2|3|Level 3|Maintenance|---|2|1"
+                    },
+                    {
+                        "LEVEL_1": "Lab",
+                        "LEVEL_2": "Operations",
+                        "LEVEL_3": "LAB_____|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|4",
+                        "LEVEL_4": "PIGMENTS|---|0|Level 0|1|Level 1|---|10000585|0|2"
+                    },
+                    {
+                        "LEVEL_1": "QC Lab",
+                        "LEVEL_2": "Lab",
+                        "LEVEL_3": "QC_LAB__|LAB_____|2|Level 2|3|Level 3|Lab|---|2|1",
+                        "LEVEL_4": "LAB_____|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|4"
+                    },
+                    {
+                        "LEVEL_1": "SECSTD",
+                        "LEVEL_2": "QC Lab",
+                        "LEVEL_3": "SECSTD__|QC_LAB__|3|Level 3|4|Level 4|QC Lab|10000586|3|1",
+                        "LEVEL_4": "QC_LAB__|LAB_____|2|Level 2|3|Level 3|Lab|---|2|1"
+                    },
+                    {
+                        "LEVEL_1": "All Results",
+                        "LEVEL_2": "QC Lab",
+                        "LEVEL_3": "HAM_LAB_|QC_LAB__|3|Level 3|4|Level 4|QC Lab|10000001|3|2",
+                        "LEVEL_4": "QC_LAB__|LAB_____|2|Level 2|3|Level 3|Lab|---|2|1"
+                    },
+                    {
+                        "LEVEL_1": "Waste and water treatment",
+                        "LEVEL_2": "Operations",
+                        "LEVEL_3": "WWT_____|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|5",
+                        "LEVEL_4": "PIGMENTS|---|0|Level 0|1|Level 1|---|10000585|0|2"
+                    },
+                    {
+                        "LEVEL_1": "101NPDES",
+                        "LEVEL_2": "Waste and water treatment",
+                        "LEVEL_3": "101NPDES|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|10000454|2|1",
+                        "LEVEL_4": "WWT_____|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|5"
+                    },
+                    {
+                        "LEVEL_1": "101OUTFALL",
+                        "LEVEL_2": "Waste and water treatment",
+                        "LEVEL_3": "101OUTFL|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|10000455|2|2",
+                        "LEVEL_4": "WWT_____|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|5"
+                    },
+                    {
+                        "LEVEL_1": "201NPDES",
+                        "LEVEL_2": "Waste and water treatment",
+                        "LEVEL_3": "201NPDES|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|10000456|2|3",
+                        "LEVEL_4": "WWT_____|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|5"
+                    },
+                    {
+                        "LEVEL_1": "201OUTFALL",
+                        "LEVEL_2": "Waste and water treatment",
+                        "LEVEL_3": "201OUTFL|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|10000457|2|4",
+                        "LEVEL_4": "WWT_____|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|5"
+                    },
+                    {
+                        "LEVEL_1": "PND009",
+                        "LEVEL_2": "Waste and water treatment",
+                        "LEVEL_3": "PND009__|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|10000579|2|5",
+                        "LEVEL_4": "WWT_____|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|5"
+                    },
+                    {
+                        "LEVEL_1": "PND011",
+                        "LEVEL_2": "Waste and water treatment",
+                        "LEVEL_3": "PND011__|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|10000580|2|6",
+                        "LEVEL_4": "WWT_____|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|5"
+                    },
+                    {
+                        "LEVEL_1": "PND014",
+                        "LEVEL_2": "Waste and water treatment",
+                        "LEVEL_3": "PND015__|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|10000581|2|7",
+                        "LEVEL_4": "WWT_____|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|5"
+                    },
+                    {
+                        "LEVEL_1": "F0707- A1 Tailings",
+                        "LEVEL_2": "Waste and water treatment",
+                        "LEVEL_3": "F0707___|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|10000518|2|8",
+                        "LEVEL_4": "WWT_____|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|5"
+                    },
+                    {
+                        "LEVEL_1": "F1530 - A1 Tailings",
+                        "LEVEL_2": "Waste and water treatment",
+                        "LEVEL_3": "F1530___|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|10000522|2|9",
+                        "LEVEL_4": "WWT_____|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|5"
+                    },
+                    {
+                        "LEVEL_1": "F2597 - A1 Tailings",
+                        "LEVEL_2": "Waste and water treatment",
+                        "LEVEL_3": "F2597___|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|10000528|2|10",
+                        "LEVEL_4": "WWT_____|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|5"
+                    },
+                    {
+                        "LEVEL_1": "WESTDITCH",
+                        "LEVEL_2": "Waste and water treatment",
+                        "LEVEL_3": "WSTDITCH|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|10000630|2|11",
+                        "LEVEL_4": "WWT_____|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|5"
+                    },
+                    {
+                        "LEVEL_1": "Filter Press",
+                        "LEVEL_2": "Waste and water treatment",
+                        "LEVEL_3": "WWT_WWT_|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|12",
+                        "LEVEL_4": "WWT_____|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|5"
+                    },
+                    {
+                        "LEVEL_1": "FiltPress01",
+                        "LEVEL_2": "Filter Press",
+                        "LEVEL_3": "FILTPRS1|WWT_WWT_|3|Level 3|4|Level 4|Filter Press|10000565|3|1",
+                        "LEVEL_4": "WWT_WWT_|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|12"
+                    },
+                    {
+                        "LEVEL_1": "FiltPress02",
+                        "LEVEL_2": "Filter Press",
+                        "LEVEL_3": "FILTPRS2|WWT_WWT_|3|Level 3|4|Level 4|Filter Press|10000566|3|2",
+                        "LEVEL_4": "WWT_WWT_|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|12"
+                    },
+                    {
+                        "LEVEL_1": "FiltPress03",
+                        "LEVEL_2": "Filter Press",
+                        "LEVEL_3": "FILTPRS3|WWT_WWT_|3|Level 3|4|Level 4|Filter Press|10000567|3|3",
+                        "LEVEL_4": "WWT_WWT_|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|12"
+                    },
+                    {
+                        "LEVEL_1": "FiltPress04",
+                        "LEVEL_2": "Filter Press",
+                        "LEVEL_3": "FILTPRS4|WWT_WWT_|3|Level 3|4|Level 4|Filter Press|10000568|3|4",
+                        "LEVEL_4": "WWT_WWT_|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|12"
+                    },
+                    {
+                        "LEVEL_1": "FiltPress05",
+                        "LEVEL_2": "Filter Press",
+                        "LEVEL_3": "FILTPRS5|WWT_WWT_|3|Level 3|4|Level 4|Filter Press|10000569|3|5",
+                        "LEVEL_4": "WWT_WWT_|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|12"
+                    },
+                    {
+                        "LEVEL_1": "FiltPress06",
+                        "LEVEL_2": "Filter Press",
+                        "LEVEL_3": "FILTPRS6|WWT_WWT_|3|Level 3|4|Level 4|Filter Press|10000570|3|6",
+                        "LEVEL_4": "WWT_WWT_|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|12"
+                    },
+                    {
+                        "LEVEL_1": "FiltPress07",
+                        "LEVEL_2": "Filter Press",
+                        "LEVEL_3": "FILTPRS7|WWT_WWT_|3|Level 3|4|Level 4|Filter Press|10000571|3|7",
+                        "LEVEL_4": "WWT_WWT_|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|12"
+                    },
+                    {
+                        "LEVEL_1": "Wells",
+                        "LEVEL_2": "Waste and water treatment",
+                        "LEVEL_3": "WELLS___|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|13",
+                        "LEVEL_4": "WWT_____|PIGMENTS|1|Level 1|2|Level 2|Operations|---|1|5"
+                    },
+                    {
+                        "LEVEL_1": "WW2101",
+                        "LEVEL_2": "Wells",
+                        "LEVEL_3": "WW2101__|WELLS___|3|Level 3|4|Level 4|Wells|10000631|3|1",
+                        "LEVEL_4": "WELLS___|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|13"
+                    },
+                    {
+                        "LEVEL_1": "WW2102",
+                        "LEVEL_2": "Wells",
+                        "LEVEL_3": "WW2102__|WELLS___|3|Level 3|4|Level 4|Wells|10000632|3|2",
+                        "LEVEL_4": "WELLS___|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|13"
+                    },
+                    {
+                        "LEVEL_1": "WW2103",
+                        "LEVEL_2": "Wells",
+                        "LEVEL_3": "WW2103__|WELLS___|3|Level 3|4|Level 4|Wells|10000633|3|3",
+                        "LEVEL_4": "WELLS___|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|13"
+                    },
+                    {
+                        "LEVEL_1": "WW2104",
+                        "LEVEL_2": "Wells",
+                        "LEVEL_3": "WW2104__|WELLS___|3|Level 3|4|Level 4|Wells|10000634|3|4",
+                        "LEVEL_4": "WELLS___|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|13"
+                    },
+                    {
+                        "LEVEL_1": "WW2105",
+                        "LEVEL_2": "Wells",
+                        "LEVEL_3": "WW2105__|WELLS___|3|Level 3|4|Level 4|Wells|10000635|3|5",
+                        "LEVEL_4": "WELLS___|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|13"
+                    },
+                    {
+                        "LEVEL_1": "WW2106",
+                        "LEVEL_2": "Wells",
+                        "LEVEL_3": "WW2106__|WELLS___|3|Level 3|4|Level 4|Wells|10000636|3|6",
+                        "LEVEL_4": "WELLS___|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|13"
+                    },
+                    {
+                        "LEVEL_1": "WW2107",
+                        "LEVEL_2": "Wells",
+                        "LEVEL_3": "WW2107__|WELLS___|3|Level 3|4|Level 4|Wells|10000637|3|7",
+                        "LEVEL_4": "WELLS___|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|13"
+                    },
+                    {
+                        "LEVEL_1": "WW2108",
+                        "LEVEL_2": "Wells",
+                        "LEVEL_3": "WW2108__|WELLS___|3|Level 3|4|Level 4|Wells|10000638|3|8",
+                        "LEVEL_4": "WELLS___|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|13"
+                    },
+                    {
+                        "LEVEL_1": "WW2109",
+                        "LEVEL_2": "Wells",
+                        "LEVEL_3": "WW2109__|WELLS___|3|Level 3|4|Level 4|Wells|10000639|3|9",
+                        "LEVEL_4": "WELLS___|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|13"
+                    },
+                    {
+                        "LEVEL_1": "WW2110",
+                        "LEVEL_2": "Wells",
+                        "LEVEL_3": "WW2110__|WELLS___|3|Level 3|4|Level 4|Wells|10000640|3|10",
+                        "LEVEL_4": "WELLS___|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|13"
+                    },
+                    {
+                        "LEVEL_1": "WW2111",
+                        "LEVEL_2": "Wells",
+                        "LEVEL_3": "WW2111__|WELLS___|3|Level 3|4|Level 4|Wells|10000641|3|11",
+                        "LEVEL_4": "WELLS___|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|13"
+                    },
+                    {
+                        "LEVEL_1": "WW2113",
+                        "LEVEL_2": "Wells",
+                        "LEVEL_3": "WW2113__|WELLS___|3|Level 3|4|Level 4|Wells|10000642|3|12",
+                        "LEVEL_4": "WELLS___|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|13"
+                    },
+                    {
+                        "LEVEL_1": "WW2114",
+                        "LEVEL_2": "Wells",
+                        "LEVEL_3": "WW2114__|WELLS___|3|Level 3|4|Level 4|Wells|10000643|3|13",
+                        "LEVEL_4": "WELLS___|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|13"
+                    },
+                    {
+                        "LEVEL_1": "CO3104 - Water",
+                        "LEVEL_2": "Wells",
+                        "LEVEL_3": "CO3104WT|WELLS___|3|Level 3|4|Level 4|Wells|10000475|3|14",
+                        "LEVEL_4": "WELLS___|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|13"
+                    },
+                    {
+                        "LEVEL_1": "CO3107 - Water",
+                        "LEVEL_2": "Wells",
+                        "LEVEL_3": "CO3107WT|WELLS___|3|Level 3|4|Level 4|Wells|10000478|3|15",
+                        "LEVEL_4": "WELLS___|WWT_____|2|Level 2|3|Level 3|Waste and water treatment|---|2|13"
+                    },
+                    {
+                        "LEVEL_1": "T&I",
+                        "LEVEL_2": "",
+                        "LEVEL_3": "H_TI____|---|0|Level 0|1|Level 1|---|---|0|3",
+                        "LEVEL_4": ""
+                    },
+                    {
+                        "LEVEL_1": "Process Improvement",
+                        "LEVEL_2": "T&I",
+                        "LEVEL_3": "H_TI_PI|H_TI____|1|Level 1|2|Level 2|T&I|---|1|1",
+                        "LEVEL_4": "H_TI____|---|0|Level 0|1|Level 1|---|---|0|3"
+                    },
+                    {
+                        "LEVEL_1": "Business Improvement",
+                        "LEVEL_2": "T&I",
+                        "LEVEL_3": "H_TI_BI|H_TI____|1|Level 1|2|Level 2|T&I|---|1|2",
+                        "LEVEL_4": "H_TI____|---|0|Level 0|1|Level 1|---|---|0|3"
+                    },
+                    {
+                        "LEVEL_1": "Asset Improvement",
+                        "LEVEL_2": "T&I",
+                        "LEVEL_3": "H_TIAIP|H_TI____|1|Level 1|2|Level 2|T&I|---|1|3",
+                        "LEVEL_4": "H_TI____|---|0|Level 0|1|Level 1|---|---|0|3"
+                    },
+                    {
+                        "LEVEL_1": "OE&R",
+                        "LEVEL_2": "T&I",
+                        "LEVEL_3": "H_TI_OER|H_TI____|1|Level 1|2|Level 2|T&I|---|1|4",
+                        "LEVEL_4": "H_TI____|---|0|Level 0|1|Level 1|---|---|0|3"
+                    },
+                    {
+                        "LEVEL_1": "Planning",
+                        "LEVEL_2": "T&I",
+                        "LEVEL_3": "H_TI_PLA|H_TI____|1|Level 1|2|Level 2|T&I|---|1|5",
+                        "LEVEL_4": "H_TI____|---|0|Level 0|1|Level 1|---|---|0|3"
+                    }
+                ]
+            }
+        ]
+    }
+}

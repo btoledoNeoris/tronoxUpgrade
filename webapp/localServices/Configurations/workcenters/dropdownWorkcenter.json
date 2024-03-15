@@ -1,0 +1,1599 @@
+{
+    "Rowsets": {
+        "DateCreated": "2024-03-15T01:05:09",
+        "Version": "15.0 SP6 Patch 0 (Jan 21, 2016)",
+        "StartDate": "2024-03-15T00:05:09-0500",
+        "EndDate": "2024-03-15T01:05:09-0500",
+        "CachedTime": "",
+        "Rowset": [
+            {
+                "Columns": {
+                    "Column": [
+                        {
+                            "Name": "DS_WORK_CENTE",
+                            "SourceColumn": "DS_WORK_CENTE",
+                            "Description": "DS_WORK_CENTE",
+                            "SQLDataType": -9,
+                            "MinRange": 1.0,
+                            "MaxRange": 1.0
+                        },
+                        {
+                            "Name": "ID_WORK_CENTE",
+                            "SourceColumn": "ID_WORK_CENTE",
+                            "Description": "ID_WORK_CENTE",
+                            "SQLDataType": 12,
+                            "MinRange": 1.0,
+                            "MaxRange": 1.0
+                        }
+                    ]
+                },
+                "Row": [
+                    {
+                        "DS_WORK_CENTE": "100A     - PRODUCTION PM",
+                        "ID_WORK_CENTE": "10000057"
+                    },
+                    {
+                        "DS_WORK_CENTE": "100B     - PRODUCTION PM",
+                        "ID_WORK_CENTE": "10000058"
+                    },
+                    {
+                        "DS_WORK_CENTE": "100C     - PRODUCTION PM",
+                        "ID_WORK_CENTE": "10000059"
+                    },
+                    {
+                        "DS_WORK_CENTE": "100D     - PRODUCTION PM",
+                        "ID_WORK_CENTE": "10000060"
+                    },
+                    {
+                        "DS_WORK_CENTE": "101NPDES - Pond 101 NPDES",
+                        "ID_WORK_CENTE": "10000454"
+                    },
+                    {
+                        "DS_WORK_CENTE": "101OUTFL - Pond 101 OUTFALL 101OUTFL",
+                        "ID_WORK_CENTE": "10000455"
+                    },
+                    {
+                        "DS_WORK_CENTE": "201NPDES - Pond 201 NDPES",
+                        "ID_WORK_CENTE": "10000456"
+                    },
+                    {
+                        "DS_WORK_CENTE": "201OUTFL - Pond 201 OUTFALL 201OUTFL",
+                        "ID_WORK_CENTE": "10000457"
+                    },
+                    {
+                        "DS_WORK_CENTE": "A        - MECHANICAL MAINTENANCE CHLORATE WEST",
+                        "ID_WORK_CENTE": "10000061"
+                    },
+                    {
+                        "DS_WORK_CENTE": "A1DAYOP  - OPERATOR, DAY, AREA 1",
+                        "ID_WORK_CENTE": "10001170"
+                    },
+                    {
+                        "DS_WORK_CENTE": "A31A     - AREA 3 OPERATOR TRAIN 1 A SHIFT",
+                        "ID_WORK_CENTE": "10000062"
+                    },
+                    {
+                        "DS_WORK_CENTE": "A31B     - AREA 3 OPERATOR TRAIN 1 B SHIFT",
+                        "ID_WORK_CENTE": "10000063"
+                    },
+                    {
+                        "DS_WORK_CENTE": "A31C     - AREA 3 OPERATOR TRAIN 1 C SHIFT",
+                        "ID_WORK_CENTE": "10000064"
+                    },
+                    {
+                        "DS_WORK_CENTE": "A31D     - AREA 3 OPERATOR TRAIN 1 D SHIFT",
+                        "ID_WORK_CENTE": "10000065"
+                    },
+                    {
+                        "DS_WORK_CENTE": "A32A     - AREA 3 OPERATOR TRAIN 2 A SHIFT",
+                        "ID_WORK_CENTE": "10000066"
+                    },
+                    {
+                        "DS_WORK_CENTE": "A32B     - AREA 3 OPERATOR TRAIN 2 B SHIFT",
+                        "ID_WORK_CENTE": "10000067"
+                    },
+                    {
+                        "DS_WORK_CENTE": "A32C     - AREA 3 OPERATOR TRAIN 2 C SHIFT",
+                        "ID_WORK_CENTE": "10000068"
+                    },
+                    {
+                        "DS_WORK_CENTE": "A32D     - AREA 3 OPERATOR TRAIN 2 D SHIFT",
+                        "ID_WORK_CENTE": "10000069"
+                    },
+                    {
+                        "DS_WORK_CENTE": "A5_CHILL - A5 chiller A5_CHILL",
+                        "ID_WORK_CENTE": "10000458"
+                    },
+                    {
+                        "DS_WORK_CENTE": "A5_TRT   - A5 Treated water A5_TRT",
+                        "ID_WORK_CENTE": "10000459"
+                    },
+                    {
+                        "DS_WORK_CENTE": "AE       - MECHANICAL MAINTENANCE CHLORATE EAST",
+                        "ID_WORK_CENTE": "10000405"
+                    },
+                    {
+                        "DS_WORK_CENTE": "AI       - CHLORATE LUBE PM TECH",
+                        "ID_WORK_CENTE": "10000659"
+                    },
+                    {
+                        "DS_WORK_CENTE": "AR4A     - AREA 4 OPERATOR A SHIFT",
+                        "ID_WORK_CENTE": "10000070"
+                    },
+                    {
+                        "DS_WORK_CENTE": "AR4B     - AREA 4 OPERATOR B SHIFT",
+                        "ID_WORK_CENTE": "10000071"
+                    },
+                    {
+                        "DS_WORK_CENTE": "AR4C     - AREA 4 OPERATOR C SHIFT",
+                        "ID_WORK_CENTE": "10000072"
+                    },
+                    {
+                        "DS_WORK_CENTE": "AR4D     - AREA 4 OPERATOR D SHIFT",
+                        "ID_WORK_CENTE": "10000073"
+                    },
+                    {
+                        "DS_WORK_CENTE": "AR5A     - AREA 5 OPERATOR A SHIFT",
+                        "ID_WORK_CENTE": "10000074"
+                    },
+                    {
+                        "DS_WORK_CENTE": "AR5B     - AREA 5 OPERATOR B SHIFT",
+                        "ID_WORK_CENTE": "10000075"
+                    },
+                    {
+                        "DS_WORK_CENTE": "AR5C     - AREA 5 OPERATOR C SHIFT",
+                        "ID_WORK_CENTE": "10000076"
+                    },
+                    {
+                        "DS_WORK_CENTE": "AR5D     - AREA 5 OPERATOR D SHIFT",
+                        "ID_WORK_CENTE": "10000077"
+                    },
+                    {
+                        "DS_WORK_CENTE": "AREA2    - Oxidation Area 2",
+                        "ID_WORK_CENTE": "10000010"
+                    },
+                    {
+                        "DS_WORK_CENTE": "AREA3OP  - AREA 3 OPEATOR PM",
+                        "ID_WORK_CENTE": "10000866"
+                    },
+                    {
+                        "DS_WORK_CENTE": "AREA4OP  - AREA 4 OPEARATOR PM",
+                        "ID_WORK_CENTE": "10000857"
+                    },
+                    {
+                        "DS_WORK_CENTE": "B        - DO NOT USE--USE HM151",
+                        "ID_WORK_CENTE": "10000078"
+                    },
+                    {
+                        "DS_WORK_CENTE": "B0501    - A5 Boiler B0501",
+                        "ID_WORK_CENTE": "10000460"
+                    },
+                    {
+                        "DS_WORK_CENTE": "B0502    - A5 Boiler B0502",
+                        "ID_WORK_CENTE": "10000461"
+                    },
+                    {
+                        "DS_WORK_CENTE": "B0503    - A5 Boiler B0503",
+                        "ID_WORK_CENTE": "10000462"
+                    },
+                    {
+                        "DS_WORK_CENTE": "B1403    - Tunnel Dryer B1403",
+                        "ID_WORK_CENTE": "10000463"
+                    },
+                    {
+                        "DS_WORK_CENTE": "B2502    - Incinerator boiler B2502",
+                        "ID_WORK_CENTE": "10000464"
+                    },
+                    {
+                        "DS_WORK_CENTE": "B2502K   - Incinerator boiler B2502K",
+                        "ID_WORK_CENTE": "10000465"
+                    },
+                    {
+                        "DS_WORK_CENTE": "B3502    - Incinerator boiler B3502",
+                        "ID_WORK_CENTE": "10000466"
+                    },
+                    {
+                        "DS_WORK_CENTE": "B3503    - A5 Boiler B3503",
+                        "ID_WORK_CENTE": "10000467"
+                    },
+                    {
+                        "DS_WORK_CENTE": "BAGHOPPR - Finished pigment BAGHOPPER",
+                        "ID_WORK_CENTE": "10000468"
+                    },
+                    {
+                        "DS_WORK_CENTE": "BASEOPA  - OPERATOR BASE PLANT \"A\" SHIFT",
+                        "ID_WORK_CENTE": "10001161"
+                    },
+                    {
+                        "DS_WORK_CENTE": "BASEOPB  - OPERATOR BASE PLANT \"B\" SHIFT",
+                        "ID_WORK_CENTE": "10001166"
+                    },
+                    {
+                        "DS_WORK_CENTE": "BASEOPC  - OPERATOR BASE PLANT \"C\" SHIFT",
+                        "ID_WORK_CENTE": "10001168"
+                    },
+                    {
+                        "DS_WORK_CENTE": "BASEOPD  - OPERATOR BASE PLANT \"D\" SHIFT",
+                        "ID_WORK_CENTE": "10001169"
+                    },
+                    {
+                        "DS_WORK_CENTE": "C        - DO NOT USE--USE HM121",
+                        "ID_WORK_CENTE": "10000079"
+                    },
+                    {
+                        "DS_WORK_CENTE": "C-001    - Chlorate Cell Building",
+                        "ID_WORK_CENTE": "10000005"
+                    },
+                    {
+                        "DS_WORK_CENTE": "C-002    - Chlorate Finishing",
+                        "ID_WORK_CENTE": "10000006"
+                    },
+                    {
+                        "DS_WORK_CENTE": "C-003    - Chlorate Solution",
+                        "ID_WORK_CENTE": "10000007"
+                    },
+                    {
+                        "DS_WORK_CENTE": "C-004    - Chlorate Packaging",
+                        "ID_WORK_CENTE": "10000008"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CAP      - CAPITAL PROJECTS",
+                        "ID_WORK_CENTE": "10000109"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CBL      - CONTRACTOR BACKLOG",
+                        "ID_WORK_CENTE": "10000386"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CC1      - CONTRACTOR MECHANICAL CHLORATE",
+                        "ID_WORK_CENTE": "10000080"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CE       - CHLORATE INSTRUMENT ELECTRICAL EAST",
+                        "ID_WORK_CENTE": "10000406"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CELLBLDG - Huron Cells",
+                        "ID_WORK_CENTE": "10000649"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CENGE    - DO NOT USE--USE DCS_PLC",
+                        "ID_WORK_CENTE": "10000403"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CENGW    - DO NOT USE--USE DCS_PLC",
+                        "ID_WORK_CENTE": "10000404"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CENT_DSC - CHL centrifuge discharge CENT_DSC",
+                        "ID_WORK_CENTE": "10000469"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CENT_INL - CHL centrifuge inlet CENT_INL",
+                        "ID_WORK_CENTE": "10000470"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CF3181   - CHL south centrifuge CF3181",
+                        "ID_WORK_CENTE": "10000471"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CF3182   - CHL west centrifuge CF3182",
+                        "ID_WORK_CENTE": "10000472"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CF3183   - CHL east centrifuge CF3183",
+                        "ID_WORK_CENTE": "10000473"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CHL_COMP - CHL Process liquor composite CHL_COMP",
+                        "ID_WORK_CENTE": "10000474"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CHL_CRYS - Chlorate Finished Crystal",
+                        "ID_WORK_CENTE": "10000645"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CHL_SOLN - Chlorate Finished Solution",
+                        "ID_WORK_CENTE": "10000646"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CHL01    - Purification (Chlorination Line)",
+                        "ID_WORK_CENTE": "10000009"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CHLA     - PRODUCTION PM",
+                        "ID_WORK_CENTE": "10000081"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CHLB     - PRODUCTION PM",
+                        "ID_WORK_CENTE": "10000082"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CHLC     - PRODUCTION PM",
+                        "ID_WORK_CENTE": "10000083"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CHLD     - PRODUCTION PM",
+                        "ID_WORK_CENTE": "10000084"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CO3104   - CHL compressor CO3104",
+                        "ID_WORK_CENTE": "10000475"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CO3104FR - CHL compressor Freon CO3104FR",
+                        "ID_WORK_CENTE": "10000476"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CO3104LB - CHL compressor Lube CO3104LB",
+                        "ID_WORK_CENTE": "10000477"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CO3107   - CHL compressor CO3107",
+                        "ID_WORK_CENTE": "10000478"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CO3107FR - CHL compressor Freon CO3107FR",
+                        "ID_WORK_CENTE": "10000479"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CO3107LB - CHL compressor Lube CO3107LB",
+                        "ID_WORK_CENTE": "10000480"
+                    },
+                    {
+                        "DS_WORK_CENTE": "COAT     - DO NOT USE--USE HM211",
+                        "ID_WORK_CENTE": "10000085"
+                    },
+                    {
+                        "DS_WORK_CENTE": "COMP     - OPERATION STATUS COMPLETE",
+                        "ID_WORK_CENTE": "10000431"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CTECH1   - DO NOT USE--USE HM122SC",
+                        "ID_WORK_CENTE": "10000391"
+                    },
+                    {
+                        "DS_WORK_CENTE": "CTECH2   - DO NOT USE--USE HM122SO",
+                        "ID_WORK_CENTE": "10000392"
+                    },
+                    {
+                        "DS_WORK_CENTE": "D        - MECHANICAL MAINTENANCE PONDS (JIMCO)",
+                        "ID_WORK_CENTE": "10000400"
+                    },
+                    {
+                        "DS_WORK_CENTE": "D0322    - A5 cooling water D0322",
+                        "ID_WORK_CENTE": "10000481"
+                    },
+                    {
+                        "DS_WORK_CENTE": "D0423    - Tr1 Krebs D0423",
+                        "ID_WORK_CENTE": "10000482"
+                    },
+                    {
+                        "DS_WORK_CENTE": "D0424    - Tr1 Krebs D0424",
+                        "ID_WORK_CENTE": "10000483"
+                    },
+                    {
+                        "DS_WORK_CENTE": "D1202    - A1 Chlorinator D1202",
+                        "ID_WORK_CENTE": "10000484"
+                    },
+                    {
+                        "DS_WORK_CENTE": "D1223    - A1 Chlorinator D1223",
+                        "ID_WORK_CENTE": "10000485"
+                    },
+                    {
+                        "DS_WORK_CENTE": "D2201    - A1 Chlorinator D2201",
+                        "ID_WORK_CENTE": "10000486"
+                    },
+                    {
+                        "DS_WORK_CENTE": "D3201    - A1 Chlorinator D3201",
+                        "ID_WORK_CENTE": "10000487"
+                    },
+                    {
+                        "DS_WORK_CENTE": "D3202    - A1 Chlorinator D3202",
+                        "ID_WORK_CENTE": "10000488"
+                    },
+                    {
+                        "DS_WORK_CENTE": "D3223    - A1 Chlorinator D3223",
+                        "ID_WORK_CENTE": "10000489"
+                    },
+                    {
+                        "DS_WORK_CENTE": "D3322    - A5 cooling water D3322",
+                        "ID_WORK_CENTE": "10000490"
+                    },
+                    {
+                        "DS_WORK_CENTE": "D3423    - TR2 Krebs D3423",
+                        "ID_WORK_CENTE": "10000491"
+                    },
+                    {
+                        "DS_WORK_CENTE": "D3424    - TR2 Krebs D3424",
+                        "ID_WORK_CENTE": "10000492"
+                    },
+                    {
+                        "DS_WORK_CENTE": "D3452    - TR2 caustic srubber D3452",
+                        "ID_WORK_CENTE": "10000493"
+                    },
+                    {
+                        "DS_WORK_CENTE": "D5201    - A1 Chlorinator D5201",
+                        "ID_WORK_CENTE": "10000494"
+                    },
+                    {
+                        "DS_WORK_CENTE": "D5202    - A1 Chlorinator D5202",
+                        "ID_WORK_CENTE": "10000495"
+                    },
+                    {
+                        "DS_WORK_CENTE": "D5209    - A1 Chlorinator D5209",
+                        "ID_WORK_CENTE": "10000496"
+                    },
+                    {
+                        "DS_WORK_CENTE": "D6452    - TR1 scrubber D6452",
+                        "ID_WORK_CENTE": "10000497"
+                    },
+                    {
+                        "DS_WORK_CENTE": "DAILYORE - Daily Ore Railcar Sample",
+                        "ID_WORK_CENTE": "10000667"
+                    },
+                    {
+                        "DS_WORK_CENTE": "DBADMIN  - DATA BASE ADMINISTRATIVE GROUP",
+                        "ID_WORK_CENTE": "10000424"
+                    },
+                    {
+                        "DS_WORK_CENTE": "DCS_PLC  - DCS/PLC PROGRAMMING",
+                        "ID_WORK_CENTE": "10000438"
+                    },
+                    {
+                        "DS_WORK_CENTE": "DEHYPO   - Dehypo tanks",
+                        "ID_WORK_CENTE": "10000650"
+                    },
+                    {
+                        "DS_WORK_CENTE": "DISP04   - Finished Slurry DISP04",
+                        "ID_WORK_CENTE": "10000498"
+                    },
+                    {
+                        "DS_WORK_CENTE": "E        - DO NOT USE--USE HM111/HM111AM",
+                        "ID_WORK_CENTE": "10000086"
+                    },
+                    {
+                        "DS_WORK_CENTE": "E0501    - A5 cool tower E0501",
+                        "ID_WORK_CENTE": "10000499"
+                    },
+                    {
+                        "DS_WORK_CENTE": "E1       - DO NOT USE--USE HM111/HM111AM",
+                        "ID_WORK_CENTE": "10000655"
+                    },
+                    {
+                        "DS_WORK_CENTE": "E2501    - A5 cool tower E2501",
+                        "ID_WORK_CENTE": "10000500"
+                    },
+                    {
+                        "DS_WORK_CENTE": "E3       - DO NOT USE",
+                        "ID_WORK_CENTE": "10000656"
+                    },
+                    {
+                        "DS_WORK_CENTE": "E3503    - A5 cool tower E3503",
+                        "ID_WORK_CENTE": "10000501"
+                    },
+                    {
+                        "DS_WORK_CENTE": "E5501    - A5 cool tower E5501",
+                        "ID_WORK_CENTE": "10000502"
+                    },
+                    {
+                        "DS_WORK_CENTE": "E6503    - A5 cool tower E6503",
+                        "ID_WORK_CENTE": "10000503"
+                    },
+                    {
+                        "DS_WORK_CENTE": "ELC1     - DO NOT USE--USE HM217/HM217AE",
+                        "ID_WORK_CENTE": "10000087"
+                    },
+                    {
+                        "DS_WORK_CENTE": "ELC2     - CONTRACTOR ELECTRICAL CHLORATE",
+                        "ID_WORK_CENTE": "10000449"
+                    },
+                    {
+                        "DS_WORK_CENTE": "EWSILO   - East West Ore Silo Composite",
+                        "ID_WORK_CENTE": "10000666"
+                    },
+                    {
+                        "DS_WORK_CENTE": "EXP      - DO NOT USE--USE HM213/HM213AM",
+                        "ID_WORK_CENTE": "10000110"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F        - DO NOT USE--USE HM131/HM131AE",
+                        "ID_WORK_CENTE": "10000088"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F0104    - Ore silo F0104",
+                        "ID_WORK_CENTE": "10000504"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F0105    - Ore Silo F0105",
+                        "ID_WORK_CENTE": "10000505"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F0204    - TiCl4 storage crude F0204",
+                        "ID_WORK_CENTE": "10000506"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F0219    - TiCl4 storage finished F0219",
+                        "ID_WORK_CENTE": "10000507"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F0222    - TiCl4 storage crude F0222",
+                        "ID_WORK_CENTE": "10000508"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F0223    - TiCl4 storage crude F0223",
+                        "ID_WORK_CENTE": "10000509"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F0224    - TiCl4 storage crude F0224",
+                        "ID_WORK_CENTE": "10000510"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F0401    - In process slurry storage 401",
+                        "ID_WORK_CENTE": "10000663"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F0409    - TR1 storage F0409",
+                        "ID_WORK_CENTE": "10000644"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F0412    - TR1 Milling F0412",
+                        "ID_WORK_CENTE": "10000511"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F0414    - TR1 treatment F0414",
+                        "ID_WORK_CENTE": "10000512"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F0415    - TR1 treatment F0415",
+                        "ID_WORK_CENTE": "10000513"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F0416    - TR1 treatment F0416",
+                        "ID_WORK_CENTE": "10000514"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F0418    - TR1 filtration F0418",
+                        "ID_WORK_CENTE": "10000515"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F0423    - TR1 filtration F0423",
+                        "ID_WORK_CENTE": "10000516"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F0424    - TR1 filtration F0424",
+                        "ID_WORK_CENTE": "10000517"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F0707    - A1 Tailings F0707",
+                        "ID_WORK_CENTE": "10000518"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F1419    - TR1 storage F1419",
+                        "ID_WORK_CENTE": "10000519"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F1430    - TR1 storage F1430",
+                        "ID_WORK_CENTE": "10000520"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F1506    - A1 proc water F1506",
+                        "ID_WORK_CENTE": "10000521"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F1530    - A1 Tailings F1530",
+                        "ID_WORK_CENTE": "10000522"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F2204    - TiCl4 storage crude F2204",
+                        "ID_WORK_CENTE": "10000523"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F2219    - TiCl4 storage finished F2219",
+                        "ID_WORK_CENTE": "10000524"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F2223    - TiCl4 storage crude F2223",
+                        "ID_WORK_CENTE": "10000525"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F2224    - TiCl4 storage crude F2224",
+                        "ID_WORK_CENTE": "10000526"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F2415    - TR1 treatment F2415",
+                        "ID_WORK_CENTE": "10000527"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F2597    - A1 Tailings F2597",
+                        "ID_WORK_CENTE": "10000528"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F3412    - TR2 milling F3412",
+                        "ID_WORK_CENTE": "10000529"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F3414FD  - Tr2 treatment F3414FD",
+                        "ID_WORK_CENTE": "10000530"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F3415    - Tr2 treatment F3415",
+                        "ID_WORK_CENTE": "10000531"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F3416    - Tr2 treatment F3416",
+                        "ID_WORK_CENTE": "10000532"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F3418    - TR2 filtration F3418",
+                        "ID_WORK_CENTE": "10000533"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F3431    - TR2 storage F3431",
+                        "ID_WORK_CENTE": "10000534"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F3432    - TR2 storage F3432",
+                        "ID_WORK_CENTE": "10000535"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F3437    - TR2 storage F3437",
+                        "ID_WORK_CENTE": "10000536"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F3438    - TR2 storage F3438",
+                        "ID_WORK_CENTE": "10000537"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F3445    - A2 Export Tank F3445",
+                        "ID_WORK_CENTE": "10000538"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F3447    - A2 Export Tank F3447",
+                        "ID_WORK_CENTE": "10000539"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F4401    - Multiverter F4401",
+                        "ID_WORK_CENTE": "10000540"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F4454    - Slurry storage F4454",
+                        "ID_WORK_CENTE": "10000541"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F4455    - Slurry storage F4455",
+                        "ID_WORK_CENTE": "10000542"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F4456    - Slurry storage F4456",
+                        "ID_WORK_CENTE": "10000543"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F4457    - Slurry storage F4457",
+                        "ID_WORK_CENTE": "10000544"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F4468    - Slurry disperser F4468",
+                        "ID_WORK_CENTE": "10000545"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F4472    - Slurry storage F4472",
+                        "ID_WORK_CENTE": "10000668"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F4475    - Slurry storage F4475",
+                        "ID_WORK_CENTE": "10000546"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F5204    - TiCl4 storage crude F5204",
+                        "ID_WORK_CENTE": "10000547"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F5219    - TiCl4 storage finished F5219",
+                        "ID_WORK_CENTE": "10000548"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F5224    - TiCl4 storage crude F5224",
+                        "ID_WORK_CENTE": "10000549"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F5417    - Tr2 treatment F5417",
+                        "ID_WORK_CENTE": "10000550"
+                    },
+                    {
+                        "DS_WORK_CENTE": "F5454    - Slurry disperser F5454",
+                        "ID_WORK_CENTE": "10000551"
+                    },
+                    {
+                        "DS_WORK_CENTE": "FC3001   - CHL filter FC3001",
+                        "ID_WORK_CENTE": "10000552"
+                    },
+                    {
+                        "DS_WORK_CENTE": "FC3201   - CHL filter FC3201",
+                        "ID_WORK_CENTE": "10000553"
+                    },
+                    {
+                        "DS_WORK_CENTE": "FC3261   - CHL filter FC3261",
+                        "ID_WORK_CENTE": "10000554"
+                    },
+                    {
+                        "DS_WORK_CENTE": "FDTREAT  - Feed Treatment",
+                        "ID_WORK_CENTE": "10000651"
+                    },
+                    {
+                        "DS_WORK_CENTE": "FL3151A  - CHL filter FL3151A",
+                        "ID_WORK_CENTE": "10000555"
+                    },
+                    {
+                        "DS_WORK_CENTE": "FL3151B  - CHL filter FL3151B",
+                        "ID_WORK_CENTE": "10000556"
+                    },
+                    {
+                        "DS_WORK_CENTE": "FL3151C  - CHL filter FL3151C",
+                        "ID_WORK_CENTE": "10000557"
+                    },
+                    {
+                        "DS_WORK_CENTE": "FL3151D  - CHL filter FL3151D",
+                        "ID_WORK_CENTE": "10000558"
+                    },
+                    {
+                        "DS_WORK_CENTE": "FL3201A  - CHL filter FL3201A",
+                        "ID_WORK_CENTE": "10000559"
+                    },
+                    {
+                        "DS_WORK_CENTE": "FL3201B  - CHL filter FL3201B",
+                        "ID_WORK_CENTE": "10000560"
+                    },
+                    {
+                        "DS_WORK_CENTE": "FL3201C  - CHL filter FL3201C",
+                        "ID_WORK_CENTE": "10000561"
+                    },
+                    {
+                        "DS_WORK_CENTE": "FL3202A  - CHL filter FL3202A",
+                        "ID_WORK_CENTE": "10000562"
+                    },
+                    {
+                        "DS_WORK_CENTE": "FL3202B  - CHL filter FL3202B",
+                        "ID_WORK_CENTE": "10000563"
+                    },
+                    {
+                        "DS_WORK_CENTE": "FL3202C  - CHL filter FL3202C",
+                        "ID_WORK_CENTE": "10000564"
+                    },
+                    {
+                        "DS_WORK_CENTE": "FLTPRS01 - Dredge solids FltPrs01",
+                        "ID_WORK_CENTE": "10000565"
+                    },
+                    {
+                        "DS_WORK_CENTE": "FLTPRS02 - Dredge solids FltPrs02",
+                        "ID_WORK_CENTE": "10000566"
+                    },
+                    {
+                        "DS_WORK_CENTE": "FLTPRS03 - Dredge solids FltPrs03",
+                        "ID_WORK_CENTE": "10000567"
+                    },
+                    {
+                        "DS_WORK_CENTE": "FLTPRS04 - Dredge solids FltPrs04",
+                        "ID_WORK_CENTE": "10000568"
+                    },
+                    {
+                        "DS_WORK_CENTE": "FLTPRS05 - Dredge solids FltPrs05",
+                        "ID_WORK_CENTE": "10000569"
+                    },
+                    {
+                        "DS_WORK_CENTE": "FLTPRS06 - Dredge solids FltPrs06",
+                        "ID_WORK_CENTE": "10000570"
+                    },
+                    {
+                        "DS_WORK_CENTE": "FLTPRS07 - Dredge solids FltPrs07",
+                        "ID_WORK_CENTE": "10000571"
+                    },
+                    {
+                        "DS_WORK_CENTE": "G        - DO NOT USE--USE HM142/HM142AM",
+                        "ID_WORK_CENTE": "10000089"
+                    },
+                    {
+                        "DS_WORK_CENTE": "G2       - DO NOT USE",
+                        "ID_WORK_CENTE": "10000657"
+                    },
+                    {
+                        "DS_WORK_CENTE": "G4       - DO NOT USE--USE HM142/HM142AM",
+                        "ID_WORK_CENTE": "10000658"
+                    },
+                    {
+                        "DS_WORK_CENTE": "GEN1     - DO NOT USE--USE HM212/HM212AM",
+                        "ID_WORK_CENTE": "10000090"
+                    },
+                    {
+                        "DS_WORK_CENTE": "GEN2     - PIGMENT MAINT EXPENSE PROJECT MECH CONTR",
+                        "ID_WORK_CENTE": "10000440"
+                    },
+                    {
+                        "DS_WORK_CENTE": "GEN3     - CAPITAL EXPENSE PROJECTS MECHANICAL CONT",
+                        "ID_WORK_CENTE": "10000442"
+                    },
+                    {
+                        "DS_WORK_CENTE": "GEN4     - CLORATE MAINT EXPENSE PROJECT MECH CONTR",
+                        "ID_WORK_CENTE": "10000446"
+                    },
+                    {
+                        "DS_WORK_CENTE": "H        - RELIABILITY LUBRICATION TECH",
+                        "ID_WORK_CENTE": "10000091"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HAM-LAB  - Quality Lab - Hamilton",
+                        "ID_WORK_CENTE": "10000001"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM       - Manager, Engineering, Hamilton MS",
+                        "ID_WORK_CENTE": "10000785"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM1      - Leader, Maintenance, Hamilton MS",
+                        "ID_WORK_CENTE": "10000786"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM11     - Head of Dept, Mech Maint Chlorination",
+                        "ID_WORK_CENTE": "10000787"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM111    - Supervisor, Mech Maint, Chlorination",
+                        "ID_WORK_CENTE": "10000788"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM111AM  - Mechanic, Mech Maint, Chlorination E1",
+                        "ID_WORK_CENTE": "10000789"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM112    - Supervisor, Mech Maint, Chlorination E3",
+                        "ID_WORK_CENTE": "10000790"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM112AM  - Mechanic, Mech Maint, Chlorination E3",
+                        "ID_WORK_CENTE": "10000791"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM113    - Supervisor, Swing Shift",
+                        "ID_WORK_CENTE": "10000843"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM12     - Head of Dept, Elec & Inst, Plant Sect 1",
+                        "ID_WORK_CENTE": "10000792"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM121    - Supervisor, Elec & Inst, Plant Section 1",
+                        "ID_WORK_CENTE": "10000793"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM121AE  - Technician, Elec & Inst, Plant Section 1",
+                        "ID_WORK_CENTE": "10000794"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM122    - Supervisor, Control Technician",
+                        "ID_WORK_CENTE": "10000841"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM122SC  - Technician, Control, Chlorination",
+                        "ID_WORK_CENTE": "10000795"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM122SO  - Technician, Control, Oxidation",
+                        "ID_WORK_CENTE": "10000796"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM13     - Head of Dept, Elec & Inst, Plant Sect 2",
+                        "ID_WORK_CENTE": "10000797"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM131    - Supervisor, Elec & Inst, Plant Section 2",
+                        "ID_WORK_CENTE": "10000798"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM131AE  - Technician, Elec & Inst, Plant Section 2",
+                        "ID_WORK_CENTE": "10000799"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM132    - Supervisor, Technicians DCS Dummy",
+                        "ID_WORK_CENTE": "10000842"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM132DC  - Technician, DCS_PLC, F Crew",
+                        "ID_WORK_CENTE": "10000800"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM14     - Head of Dept, Mech Maint Oxidation",
+                        "ID_WORK_CENTE": "10000801"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM141    - Do Not Use",
+                        "ID_WORK_CENTE": "10000802"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM141AM  - Do Not Use",
+                        "ID_WORK_CENTE": "10000803"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM142    - Supervisor, Mech Maint, Oxidation G4",
+                        "ID_WORK_CENTE": "10000805"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM142AM  - Mechanic, Mech Maint, Oxidation G4",
+                        "ID_WORK_CENTE": "10000806"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM143    - Supervisor, Fab Shop (Dummy)",
+                        "ID_WORK_CENTE": "10000844"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM144    - Supervisor, Rebuild Crew (Dummy)",
+                        "ID_WORK_CENTE": "10000845"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM15     - Head of Dept, Finishing & Utilities",
+                        "ID_WORK_CENTE": "10000809"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM151    - Supervisor, Finishing & Utilities",
+                        "ID_WORK_CENTE": "10000810"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM151AM  - Mechanic, Finishing & Utilities",
+                        "ID_WORK_CENTE": "10000811"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM16     - Head of Dept, Reliability",
+                        "ID_WORK_CENTE": "10000812"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM161    - Supervisor, Reliability, Dummy",
+                        "ID_WORK_CENTE": "10000813"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM161IR  - Technician, Infrared Analyst",
+                        "ID_WORK_CENTE": "10000815"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM161LU  - Technician, Lubrication",
+                        "ID_WORK_CENTE": "10000817"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM161MI  - Technician, Mechanical Integrity (MI)",
+                        "ID_WORK_CENTE": "10000816"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM161VI  - Technician, Vibration Analyst (VI)",
+                        "ID_WORK_CENTE": "10000814"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM17     - Head of Dept, Fab, Rebuild & Swing",
+                        "ID_WORK_CENTE": "10000948"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM171    - Supervisor Rebuild & Fabrication",
+                        "ID_WORK_CENTE": "10000950"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM171AF  - Mechanic, Fabrication (J)",
+                        "ID_WORK_CENTE": "10000804"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM171AM  - Mechanic, Walking Working Surfaces",
+                        "ID_WORK_CENTE": "10001109"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM171AR  - Mechanic, Refurbishment Shop",
+                        "ID_WORK_CENTE": "10000807"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM18     - Head of Dept, Fabrication and Install",
+                        "ID_WORK_CENTE": "10000949"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM181    - Do not Use",
+                        "ID_WORK_CENTE": "10000951"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM181AM  - Mechanic, Fab and Install Crew (J)",
+                        "ID_WORK_CENTE": "10000952"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM191    - Supervisor Weekend/Swing Crew",
+                        "ID_WORK_CENTE": "10000972"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM191AM  - Mechanic, Mech Maint, Weekend Crew",
+                        "ID_WORK_CENTE": "10000973"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM191AS  - Mechanic, Swing Shift K Crew",
+                        "ID_WORK_CENTE": "10000808"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM2      - Leader, Maintenance, Contractor",
+                        "ID_WORK_CENTE": "10000818"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM21     - Head of Dept, Contractors",
+                        "ID_WORK_CENTE": "10000819"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM211    - Contractor, Coatings",
+                        "ID_WORK_CENTE": "10000820"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM211AM  - Mechanic, Contractor, Coatings",
+                        "ID_WORK_CENTE": "10000821"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM212    - Contractor, Mechanical, General (GEN1)",
+                        "ID_WORK_CENTE": "10000822"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM212AM  - Mechanic, Contractor, Mechanical (GEN1)",
+                        "ID_WORK_CENTE": "10000823"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM213    - Contractor, Pigm Maint Exp Prj Mech",
+                        "ID_WORK_CENTE": "10000824"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM213AM  - Mechanic, Pigm Maint Exp Prj Mech",
+                        "ID_WORK_CENTE": "10000825"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM214    - Contractor, General Services (MEWCO)",
+                        "ID_WORK_CENTE": "10000826"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM214AM  - Mechanic, Contractor, Services (MEWCO)",
+                        "ID_WORK_CENTE": "10000827"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM215    - Contractor, Mechanical, Services",
+                        "ID_WORK_CENTE": "10000828"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM215AM  - Mechanic, Contr, Mechanical, Services",
+                        "ID_WORK_CENTE": "10000829"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM216    - Contractor, Mechanical, Mobile Equipment",
+                        "ID_WORK_CENTE": "10000830"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM216AM  - Mechanic, Contr, Mechanical Mobile Equip",
+                        "ID_WORK_CENTE": "10000831"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM217    - Contractor, Electrical",
+                        "ID_WORK_CENTE": "10000832"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM217AE  - Electrician, Contractor",
+                        "ID_WORK_CENTE": "10000833"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM218    - Contractor, HVAC",
+                        "ID_WORK_CENTE": "10000847"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM218AM  - Mechanic, Contractor, HVAC",
+                        "ID_WORK_CENTE": "10000848"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM219    - Contractor, Security",
+                        "ID_WORK_CENTE": "10001152"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM219AS  - Security Officer",
+                        "ID_WORK_CENTE": "10001153"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM290    - External Refurbishment",
+                        "ID_WORK_CENTE": "10001239"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM3      - Manager, Technology & Improvement",
+                        "ID_WORK_CENTE": "10000834"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM31     - Leader, Asset Improvement, T&I",
+                        "ID_WORK_CENTE": "10000835"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM311    - Supervisor, T&I Capital Projects",
+                        "ID_WORK_CENTE": "10000836"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM311AM  - Mechanic, Technology & Improvement",
+                        "ID_WORK_CENTE": "10000837"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM312    - Supervisor, T&I DCS_PLC Group",
+                        "ID_WORK_CENTE": "10000849"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HM312DC  - Technician, DCS_PLC, T&I",
+                        "ID_WORK_CENTE": "10000838"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HUR0N    - ELECTRODE MAINTENANCE SHOP",
+                        "ID_WORK_CENTE": "10000408"
+                    },
+                    {
+                        "DS_WORK_CENTE": "HVAC     - HEATING AND AIR CONDITIONING",
+                        "ID_WORK_CENTE": "10000412"
+                    },
+                    {
+                        "DS_WORK_CENTE": "I        - RELIABILITY LUBRICATION TECH",
+                        "ID_WORK_CENTE": "10000092"
+                    },
+                    {
+                        "DS_WORK_CENTE": "IR       - RELIABILITY THERMOGRAPHY TECH",
+                        "ID_WORK_CENTE": "10000093"
+                    },
+                    {
+                        "DS_WORK_CENTE": "J        - DO NOT USE--USE HM171/HM171AF",
+                        "ID_WORK_CENTE": "10000401"
+                    },
+                    {
+                        "DS_WORK_CENTE": "K        - DO NOT USE--USE HM171/HM171AS",
+                        "ID_WORK_CENTE": "10000402"
+                    },
+                    {
+                        "DS_WORK_CENTE": "LINE_A   - A2 oxidation LineA",
+                        "ID_WORK_CENTE": "10000572"
+                    },
+                    {
+                        "DS_WORK_CENTE": "LINE_B   - A2 oxidation LineB",
+                        "ID_WORK_CENTE": "10000573"
+                    },
+                    {
+                        "DS_WORK_CENTE": "LINE_C   - A2 oxidation LineC",
+                        "ID_WORK_CENTE": "10000574"
+                    },
+                    {
+                        "DS_WORK_CENTE": "LINE_D   - A2 oxidation LineD",
+                        "ID_WORK_CENTE": "10000575"
+                    },
+                    {
+                        "DS_WORK_CENTE": "LINE_E   - A2 oxidation LineE",
+                        "ID_WORK_CENTE": "10000576"
+                    },
+                    {
+                        "DS_WORK_CENTE": "LINE_F   - A2 oxidation LineF",
+                        "ID_WORK_CENTE": "10000577"
+                    },
+                    {
+                        "DS_WORK_CENTE": "M        - DO NOT USE--USE HM214/HM214AM",
+                        "ID_WORK_CENTE": "10000411"
+                    },
+                    {
+                        "DS_WORK_CENTE": "MCS      - MECHANICAL CONTRACTOR SERVICES",
+                        "ID_WORK_CENTE": "10000111"
+                    },
+                    {
+                        "DS_WORK_CENTE": "MEC1     - CONTRACTOR MECHANICAL",
+                        "ID_WORK_CENTE": "10000094"
+                    },
+                    {
+                        "DS_WORK_CENTE": "MEC2     - MECHANICAL CONTRACTOR FABRICATION CREW",
+                        "ID_WORK_CENTE": "10000453"
+                    },
+                    {
+                        "DS_WORK_CENTE": "MI       - DO NOT USE--USE HM161MI",
+                        "ID_WORK_CENTE": "10000095"
+                    },
+                    {
+                        "DS_WORK_CENTE": "N/WE     - Nights and Weekends",
+                        "ID_WORK_CENTE": "10000395"
+                    },
+                    {
+                        "DS_WORK_CENTE": "ORE_COMP - Ore composite sample ORE_COMP",
+                        "ID_WORK_CENTE": "10000578"
+                    },
+                    {
+                        "DS_WORK_CENTE": "OXIA     - OXIDATION \"A\" SHIFT",
+                        "ID_WORK_CENTE": "10000096"
+                    },
+                    {
+                        "DS_WORK_CENTE": "OXIB     - OXIDATION \"B\" SHIFT",
+                        "ID_WORK_CENTE": "10000097"
+                    },
+                    {
+                        "DS_WORK_CENTE": "OXIC     - OXIDATION \"C\" SHIFT",
+                        "ID_WORK_CENTE": "10000098"
+                    },
+                    {
+                        "DS_WORK_CENTE": "OXID     - OXIDATION \"D\" SHIFT",
+                        "ID_WORK_CENTE": "10000099"
+                    },
+                    {
+                        "DS_WORK_CENTE": "P        - PRODUCTION PM",
+                        "ID_WORK_CENTE": "10000108"
+                    },
+                    {
+                        "DS_WORK_CENTE": "PIG_ALL  - All Dry Pigment Prod Lines",
+                        "ID_WORK_CENTE": "10000043"
+                    },
+                    {
+                        "DS_WORK_CENTE": "PIG_CHLO - Pigment Chlorination Lines",
+                        "ID_WORK_CENTE": "10000047"
+                    },
+                    {
+                        "DS_WORK_CENTE": "PIG_FIN  - Pigment Finshing Trains 1 and 2",
+                        "ID_WORK_CENTE": "10000045"
+                    },
+                    {
+                        "DS_WORK_CENTE": "PIG_OXI  - Pigment Oxidation Lines",
+                        "ID_WORK_CENTE": "10000046"
+                    },
+                    {
+                        "DS_WORK_CENTE": "PIG_PCK  - Pigment Packaging Lines",
+                        "ID_WORK_CENTE": "10000044"
+                    },
+                    {
+                        "DS_WORK_CENTE": "PND009   - Pond 9 PND009",
+                        "ID_WORK_CENTE": "10000579"
+                    },
+                    {
+                        "DS_WORK_CENTE": "PND011   - Pond 11 PND011",
+                        "ID_WORK_CENTE": "10000580"
+                    },
+                    {
+                        "DS_WORK_CENTE": "PND014   - Pond 14 PND014",
+                        "ID_WORK_CENTE": "10000581"
+                    },
+                    {
+                        "DS_WORK_CENTE": "PPA_COMP - Plant Performance Assessment composite",
+                        "ID_WORK_CENTE": "10000654"
+                    },
+                    {
+                        "DS_WORK_CENTE": "PROCSTOR - Process Storage",
+                        "ID_WORK_CENTE": "10000653"
+                    },
+                    {
+                        "DS_WORK_CENTE": "RECOVRY  - Recovery",
+                        "ID_WORK_CENTE": "10000652"
+                    },
+                    {
+                        "DS_WORK_CENTE": "S        - DO NOT USE--USE HM171/HM171AR",
+                        "ID_WORK_CENTE": "10000112"
+                    },
+                    {
+                        "DS_WORK_CENTE": "S1000078 - A1 Coke receiving S1000078",
+                        "ID_WORK_CENTE": "10000582"
+                    },
+                    {
+                        "DS_WORK_CENTE": "S1000099 - Toluene Storage tanks S1000099",
+                        "ID_WORK_CENTE": "10000583"
+                    },
+                    {
+                        "DS_WORK_CENTE": "S1000180 - A2 Scour sand S1000180",
+                        "ID_WORK_CENTE": "10000584"
+                    },
+                    {
+                        "DS_WORK_CENTE": "S1000237 - A1 Ore receiving S1000237",
+                        "ID_WORK_CENTE": "10000585"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SECSTD   - Secondary standard SECSTD",
+                        "ID_WORK_CENTE": "10000586"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SFDCAKE  - Filter Cake at SpinFlashDryer",
+                        "ID_WORK_CENTE": "10000648"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SILOPGMT - Finished Pigment sent to SILO",
+                        "ID_WORK_CENTE": "10000647"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SL-01    - Manual Dispersers 2 and 3",
+                        "ID_WORK_CENTE": "10000054"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SL-04    - Slurry Disperser 4",
+                        "ID_WORK_CENTE": "10000053"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SM0412   - TR1 Milling SM0412",
+                        "ID_WORK_CENTE": "10000587"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SM0413   - TR1 Milling SM0413",
+                        "ID_WORK_CENTE": "10000588"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SM0415   - TR1 Milling SM0415",
+                        "ID_WORK_CENTE": "10000589"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SM0416   - TR1 Milling SM0416",
+                        "ID_WORK_CENTE": "10000590"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SM2411   - TR1 Milling SM2411",
+                        "ID_WORK_CENTE": "10000591"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SM2412   - TR1 Milling SM2412",
+                        "ID_WORK_CENTE": "10000592"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SM2413   - TR1 Milling SM2413",
+                        "ID_WORK_CENTE": "10000593"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SM2414   - TR1 Milling SM2414",
+                        "ID_WORK_CENTE": "10000594"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SM3411   - TR2 milling SM3411",
+                        "ID_WORK_CENTE": "10000595"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SM3412   - TR2 milling SM3412",
+                        "ID_WORK_CENTE": "10000596"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SM3413   - TR2 milling SM3413",
+                        "ID_WORK_CENTE": "10000597"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SM3414   - TR2 milling SM3414",
+                        "ID_WORK_CENTE": "10000598"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SM3415   - TR2 milling SM3415",
+                        "ID_WORK_CENTE": "10000599"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SM3416   - TR2 milling SM3416",
+                        "ID_WORK_CENTE": "10000600"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SM5417   - TR2 milling SM5417",
+                        "ID_WORK_CENTE": "10000601"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SM5418   - TR2 milling SM5418",
+                        "ID_WORK_CENTE": "10000602"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SM5419   - TR2 milling SM5419",
+                        "ID_WORK_CENTE": "10000603"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SM5420   - TR2 milling SM5420",
+                        "ID_WORK_CENTE": "10000604"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SM5421   - TR2 milling SM5421",
+                        "ID_WORK_CENTE": "10000605"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SM5422   - TR2 milling SM5422",
+                        "ID_WORK_CENTE": "10000606"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SP0046   - CHL SUMP SP0046",
+                        "ID_WORK_CENTE": "10000607"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SP3050   - CHL SUMP SP3050",
+                        "ID_WORK_CENTE": "10000608"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SP3080   - CHL SUMP SP3080",
+                        "ID_WORK_CENTE": "10000609"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SP3202   - CHL SUMP SP3202",
+                        "ID_WORK_CENTE": "10000610"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SP3205   - CHL SUMP SP3205",
+                        "ID_WORK_CENTE": "10000611"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SPG      - CONTRACTOR MECHANICAL SPECIALTY",
+                        "ID_WORK_CENTE": "10000100"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SR_702   - Synthetic Rutile SR_702",
+                        "ID_WORK_CENTE": "10000612"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SR_721   - Synthetic Rutile SR_721",
+                        "ID_WORK_CENTE": "10000613"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SR_CAKE  - SR_702",
+                        "ID_WORK_CENTE": "10001164"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SR_COMP  - SR composite sample SR_COMP",
+                        "ID_WORK_CENTE": "10000614"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SR_FEED  - S-702 Underflow",
+                        "ID_WORK_CENTE": "10001163"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SR_WASTE - SR_721",
+                        "ID_WORK_CENTE": "10001165"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SRA      - PRODUCTION PM",
+                        "ID_WORK_CENTE": "10000101"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SRB      - PRODUCTION PM",
+                        "ID_WORK_CENTE": "10000102"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SRC      - PRODUCTION PM",
+                        "ID_WORK_CENTE": "10000103"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SRD      - PRODUCTION PM",
+                        "ID_WORK_CENTE": "10000104"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SUMPAB   - A2 pretreat sump A/B",
+                        "ID_WORK_CENTE": "10000615"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SUMPCD   - A2 pretreat sumpC/D",
+                        "ID_WORK_CENTE": "10000616"
+                    },
+                    {
+                        "DS_WORK_CENTE": "SUMPEF   - A2 pretreat sump E/F",
+                        "ID_WORK_CENTE": "10000617"
+                    },
+                    {
+                        "DS_WORK_CENTE": "T1BULK   - Bulk Packaging Line - Train 1",
+                        "ID_WORK_CENTE": "10000013"
+                    },
+                    {
+                        "DS_WORK_CENTE": "T1FLTRAT - TR1 filtration",
+                        "ID_WORK_CENTE": "10000618"
+                    },
+                    {
+                        "DS_WORK_CENTE": "T1FLTREC - TR1 Filtrate recovery",
+                        "ID_WORK_CENTE": "10000619"
+                    },
+                    {
+                        "DS_WORK_CENTE": "T1PAPER  - Paper Packaging Line - Train 1",
+                        "ID_WORK_CENTE": "10000014"
+                    },
+                    {
+                        "DS_WORK_CENTE": "T2BULK   - Bulk Packaging Line - Train 2",
+                        "ID_WORK_CENTE": "10000015"
+                    },
+                    {
+                        "DS_WORK_CENTE": "T2FLTRAT - TR2 Filtration",
+                        "ID_WORK_CENTE": "10000620"
+                    },
+                    {
+                        "DS_WORK_CENTE": "T2FLTREC - TR2 Filtrate Recovery",
+                        "ID_WORK_CENTE": "10000621"
+                    },
+                    {
+                        "DS_WORK_CENTE": "T2PAPER  - Paper Packaging Line - Train 2",
+                        "ID_WORK_CENTE": "10000016"
+                    },
+                    {
+                        "DS_WORK_CENTE": "T2SPRDRY - TR2 Spray Dryer T2SPRDRY",
+                        "ID_WORK_CENTE": "10000622"
+                    },
+                    {
+                        "DS_WORK_CENTE": "T3301    - Finished Chlorate Solution",
+                        "ID_WORK_CENTE": "10000623"
+                    },
+                    {
+                        "DS_WORK_CENTE": "T3302    - Finished Chlorate Solution",
+                        "ID_WORK_CENTE": "10000624"
+                    },
+                    {
+                        "DS_WORK_CENTE": "T3303    - Finished Chlorate Solution",
+                        "ID_WORK_CENTE": "10000625"
+                    },
+                    {
+                        "DS_WORK_CENTE": "T3304    - Finished Chlorate Solution",
+                        "ID_WORK_CENTE": "10000626"
+                    },
+                    {
+                        "DS_WORK_CENTE": "T3305    - Finished Chlorate Solution",
+                        "ID_WORK_CENTE": "10000627"
+                    },
+                    {
+                        "DS_WORK_CENTE": "T3306    - Finished Chlorate Solution",
+                        "ID_WORK_CENTE": "10000628"
+                    },
+                    {
+                        "DS_WORK_CENTE": "TR1_SPFD - Spin Flash Dryer TR1_SPFD",
+                        "ID_WORK_CENTE": "10000629"
+                    },
+                    {
+                        "DS_WORK_CENTE": "TRAIN1   - Finishing Train 1",
+                        "ID_WORK_CENTE": "10000011"
+                    },
+                    {
+                        "DS_WORK_CENTE": "TRAIN2   - Finishing Train 2",
+                        "ID_WORK_CENTE": "10000012"
+                    },
+                    {
+                        "DS_WORK_CENTE": "US       - RELIABILITY MECHANICAL ULTRASONIC TECH",
+                        "ID_WORK_CENTE": "10000105"
+                    },
+                    {
+                        "DS_WORK_CENTE": "VEH1     - DO NOT USE--USE HM216/HM216AM",
+                        "ID_WORK_CENTE": "10000106"
+                    },
+                    {
+                        "DS_WORK_CENTE": "VI       - DO NOT USE--USE HM161VI",
+                        "ID_WORK_CENTE": "10000107"
+                    },
+                    {
+                        "DS_WORK_CENTE": "WSTDITCH - waste water WESTDITCH",
+                        "ID_WORK_CENTE": "10000630"
+                    },
+                    {
+                        "DS_WORK_CENTE": "WW2101   - Water well WW2101",
+                        "ID_WORK_CENTE": "10000631"
+                    },
+                    {
+                        "DS_WORK_CENTE": "WW2102   - Water well WW2102",
+                        "ID_WORK_CENTE": "10000632"
+                    },
+                    {
+                        "DS_WORK_CENTE": "WW2103   - Water well WW2103",
+                        "ID_WORK_CENTE": "10000633"
+                    },
+                    {
+                        "DS_WORK_CENTE": "WW2104   - Water well WW2104",
+                        "ID_WORK_CENTE": "10000634"
+                    },
+                    {
+                        "DS_WORK_CENTE": "WW2105   - Water well WW2105",
+                        "ID_WORK_CENTE": "10000635"
+                    },
+                    {
+                        "DS_WORK_CENTE": "WW2106   - Water well WW2106",
+                        "ID_WORK_CENTE": "10000636"
+                    },
+                    {
+                        "DS_WORK_CENTE": "WW2107   - Water well WW2107",
+                        "ID_WORK_CENTE": "10000637"
+                    },
+                    {
+                        "DS_WORK_CENTE": "WW2108   - Water well WW2108",
+                        "ID_WORK_CENTE": "10000638"
+                    },
+                    {
+                        "DS_WORK_CENTE": "WW2109   - Water well WW2109",
+                        "ID_WORK_CENTE": "10000639"
+                    },
+                    {
+                        "DS_WORK_CENTE": "WW2110   - Water well WW2110",
+                        "ID_WORK_CENTE": "10000640"
+                    },
+                    {
+                        "DS_WORK_CENTE": "WW2111   - Water well WW2111",
+                        "ID_WORK_CENTE": "10000641"
+                    },
+                    {
+                        "DS_WORK_CENTE": "WW2113   - Water well WW2113",
+                        "ID_WORK_CENTE": "10000642"
+                    },
+                    {
+                        "DS_WORK_CENTE": "WW2114   - Water well WW2114",
+                        "ID_WORK_CENTE": "10000643"
+                    }
+                ]
+            }
+        ]
+    }
+}

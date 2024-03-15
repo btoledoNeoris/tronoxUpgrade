@@ -1,0 +1,3195 @@
+{
+    "Rowsets": {
+        "DateCreated": "2024-03-15T01:06:24",
+        "Version": "15.0 SP6 Patch 0 (Jan 21, 2016)",
+        "StartDate": "2024-03-15T00:06:24-0500",
+        "EndDate": "2024-03-15T01:06:24-0500",
+        "CachedTime": "",
+        "Rowset": [
+            {
+                "Columns": {
+                    "Column": [
+                        {
+                            "Name": "ID_WORK_CENTE",
+                            "SourceColumn": "ID_WORK_CENTE",
+                            "Description": "ID_WORK_CENTE",
+                            "SQLDataType": 12,
+                            "MinRange": 1.0,
+                            "MaxRange": 1.0
+                        },
+                        {
+                            "Name": "ID_PLANT",
+                            "SourceColumn": "ID_PLANT",
+                            "Description": "ID_PLANT",
+                            "SQLDataType": 12,
+                            "MinRange": 1.0,
+                            "MaxRange": 1.0
+                        },
+                        {
+                            "Name": "CD_WORK_CENTE",
+                            "SourceColumn": "CD_WORK_CENTE",
+                            "Description": "CD_WORK_CENTE",
+                            "SQLDataType": -9,
+                            "MinRange": 1.0,
+                            "MaxRange": 1.0
+                        },
+                        {
+                            "Name": "DS_WORK_CENTE",
+                            "SourceColumn": "DS_WORK_CENTE",
+                            "Description": "DS_WORK_CENTE",
+                            "SQLDataType": -9,
+                            "MinRange": 1.0,
+                            "MaxRange": 1.0
+                        },
+                        {
+                            "Name": "FL_DELET",
+                            "SourceColumn": "FL_DELET",
+                            "Description": "FL_DELET",
+                            "SQLDataType": -7,
+                            "MinRange": 1.0,
+                            "MaxRange": 1.0
+                        },
+                        {
+                            "Name": "FL_DELET2",
+                            "SourceColumn": "FL_DELET2",
+                            "Description": "FL_DELET2",
+                            "SQLDataType": -7,
+                            "MinRange": 1.0,
+                            "MaxRange": 1.0
+                        }
+                    ]
+                },
+                "Row": [
+                    {
+                        "ID_WORK_CENTE": "10000057",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "100A    ",
+                        "DS_WORK_CENTE": "PRODUCTION PM",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000058",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "100B    ",
+                        "DS_WORK_CENTE": "PRODUCTION PM",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000059",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "100C    ",
+                        "DS_WORK_CENTE": "PRODUCTION PM",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000060",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "100D    ",
+                        "DS_WORK_CENTE": "PRODUCTION PM",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000454",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "101NPDES",
+                        "DS_WORK_CENTE": "Pond 101 NPDES",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000455",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "101OUTFL",
+                        "DS_WORK_CENTE": "Pond 101 OUTFALL 101OUTFL",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000456",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "201NPDES",
+                        "DS_WORK_CENTE": "Pond 201 NDPES",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000457",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "201OUTFL",
+                        "DS_WORK_CENTE": "Pond 201 OUTFALL 201OUTFL",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000061",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "A       ",
+                        "DS_WORK_CENTE": "MECHANICAL MAINTENANCE CHLORATE WEST",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10001170",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "A1DAYOP ",
+                        "DS_WORK_CENTE": "OPERATOR, DAY, AREA 1",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000062",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "A31A    ",
+                        "DS_WORK_CENTE": "AREA 3 OPERATOR TRAIN 1 A SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000063",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "A31B    ",
+                        "DS_WORK_CENTE": "AREA 3 OPERATOR TRAIN 1 B SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000064",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "A31C    ",
+                        "DS_WORK_CENTE": "AREA 3 OPERATOR TRAIN 1 C SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000065",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "A31D    ",
+                        "DS_WORK_CENTE": "AREA 3 OPERATOR TRAIN 1 D SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000066",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "A32A    ",
+                        "DS_WORK_CENTE": "AREA 3 OPERATOR TRAIN 2 A SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000067",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "A32B    ",
+                        "DS_WORK_CENTE": "AREA 3 OPERATOR TRAIN 2 B SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000068",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "A32C    ",
+                        "DS_WORK_CENTE": "AREA 3 OPERATOR TRAIN 2 C SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000069",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "A32D    ",
+                        "DS_WORK_CENTE": "AREA 3 OPERATOR TRAIN 2 D SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000458",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "A5_CHILL",
+                        "DS_WORK_CENTE": "A5 chiller A5_CHILL",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000459",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "A5_TRT  ",
+                        "DS_WORK_CENTE": "A5 Treated water A5_TRT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000405",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "AE      ",
+                        "DS_WORK_CENTE": "MECHANICAL MAINTENANCE CHLORATE EAST",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000659",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "AI      ",
+                        "DS_WORK_CENTE": "CHLORATE LUBE PM TECH",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000070",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "AR4A    ",
+                        "DS_WORK_CENTE": "AREA 4 OPERATOR A SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000071",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "AR4B    ",
+                        "DS_WORK_CENTE": "AREA 4 OPERATOR B SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000072",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "AR4C    ",
+                        "DS_WORK_CENTE": "AREA 4 OPERATOR C SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000073",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "AR4D    ",
+                        "DS_WORK_CENTE": "AREA 4 OPERATOR D SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000074",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "AR5A    ",
+                        "DS_WORK_CENTE": "AREA 5 OPERATOR A SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000075",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "AR5B    ",
+                        "DS_WORK_CENTE": "AREA 5 OPERATOR B SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000076",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "AR5C    ",
+                        "DS_WORK_CENTE": "AREA 5 OPERATOR C SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000077",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "AR5D    ",
+                        "DS_WORK_CENTE": "AREA 5 OPERATOR D SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000010",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "AREA2   ",
+                        "DS_WORK_CENTE": "Oxidation Area 2",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000866",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "AREA3OP ",
+                        "DS_WORK_CENTE": "AREA 3 OPEATOR PM",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000857",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "AREA4OP ",
+                        "DS_WORK_CENTE": "AREA 4 OPEARATOR PM",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000078",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "B       ",
+                        "DS_WORK_CENTE": "DO NOT USE--USE HM151",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000460",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "B0501   ",
+                        "DS_WORK_CENTE": "A5 Boiler B0501",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000461",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "B0502   ",
+                        "DS_WORK_CENTE": "A5 Boiler B0502",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000462",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "B0503   ",
+                        "DS_WORK_CENTE": "A5 Boiler B0503",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000463",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "B1403   ",
+                        "DS_WORK_CENTE": "Tunnel Dryer B1403",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000464",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "B2502   ",
+                        "DS_WORK_CENTE": "Incinerator boiler B2502",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000465",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "B2502K  ",
+                        "DS_WORK_CENTE": "Incinerator boiler B2502K",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000466",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "B3502   ",
+                        "DS_WORK_CENTE": "Incinerator boiler B3502",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000467",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "B3503   ",
+                        "DS_WORK_CENTE": "A5 Boiler B3503",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000468",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "BAGHOPPR",
+                        "DS_WORK_CENTE": "Finished pigment BAGHOPPER",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10001161",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "BASEOPA ",
+                        "DS_WORK_CENTE": "OPERATOR BASE PLANT \"A\" SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10001166",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "BASEOPB ",
+                        "DS_WORK_CENTE": "OPERATOR BASE PLANT \"B\" SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10001168",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "BASEOPC ",
+                        "DS_WORK_CENTE": "OPERATOR BASE PLANT \"C\" SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10001169",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "BASEOPD ",
+                        "DS_WORK_CENTE": "OPERATOR BASE PLANT \"D\" SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000079",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "C       ",
+                        "DS_WORK_CENTE": "DO NOT USE--USE HM121",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000005",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "C-001   ",
+                        "DS_WORK_CENTE": "Chlorate Cell Building",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000006",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "C-002   ",
+                        "DS_WORK_CENTE": "Chlorate Finishing",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000007",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "C-003   ",
+                        "DS_WORK_CENTE": "Chlorate Solution",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000008",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "C-004   ",
+                        "DS_WORK_CENTE": "Chlorate Packaging",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000109",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CAP     ",
+                        "DS_WORK_CENTE": "CAPITAL PROJECTS",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000386",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CBL     ",
+                        "DS_WORK_CENTE": "CONTRACTOR BACKLOG",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000080",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CC1     ",
+                        "DS_WORK_CENTE": "CONTRACTOR MECHANICAL CHLORATE",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000406",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CE      ",
+                        "DS_WORK_CENTE": "CHLORATE INSTRUMENT ELECTRICAL EAST",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000649",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CELLBLDG",
+                        "DS_WORK_CENTE": "Huron Cells",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000403",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CENGE   ",
+                        "DS_WORK_CENTE": "DO NOT USE--USE DCS_PLC",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000404",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CENGW   ",
+                        "DS_WORK_CENTE": "DO NOT USE--USE DCS_PLC",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000469",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CENT_DSC",
+                        "DS_WORK_CENTE": "CHL centrifuge discharge CENT_DSC",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000470",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CENT_INL",
+                        "DS_WORK_CENTE": "CHL centrifuge inlet CENT_INL",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000471",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CF3181  ",
+                        "DS_WORK_CENTE": "CHL south centrifuge CF3181",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000472",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CF3182  ",
+                        "DS_WORK_CENTE": "CHL west centrifuge CF3182",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000473",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CF3183  ",
+                        "DS_WORK_CENTE": "CHL east centrifuge CF3183",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000474",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CHL_COMP",
+                        "DS_WORK_CENTE": "CHL Process liquor composite CHL_COMP",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000645",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CHL_CRYS",
+                        "DS_WORK_CENTE": "Chlorate Finished Crystal",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000646",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CHL_SOLN",
+                        "DS_WORK_CENTE": "Chlorate Finished Solution",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000009",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CHL01   ",
+                        "DS_WORK_CENTE": "Purification (Chlorination Line)",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000081",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CHLA    ",
+                        "DS_WORK_CENTE": "PRODUCTION PM",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000082",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CHLB    ",
+                        "DS_WORK_CENTE": "PRODUCTION PM",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000083",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CHLC    ",
+                        "DS_WORK_CENTE": "PRODUCTION PM",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000084",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CHLD    ",
+                        "DS_WORK_CENTE": "PRODUCTION PM",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000475",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CO3104  ",
+                        "DS_WORK_CENTE": "CHL compressor CO3104",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000476",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CO3104FR",
+                        "DS_WORK_CENTE": "CHL compressor Freon CO3104FR",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000477",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CO3104LB",
+                        "DS_WORK_CENTE": "CHL compressor Lube CO3104LB",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000478",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CO3107  ",
+                        "DS_WORK_CENTE": "CHL compressor CO3107",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000479",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CO3107FR",
+                        "DS_WORK_CENTE": "CHL compressor Freon CO3107FR",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000480",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CO3107LB",
+                        "DS_WORK_CENTE": "CHL compressor Lube CO3107LB",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000085",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "COAT    ",
+                        "DS_WORK_CENTE": "DO NOT USE--USE HM211",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000431",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "COMP    ",
+                        "DS_WORK_CENTE": "OPERATION STATUS COMPLETE",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000391",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CTECH1  ",
+                        "DS_WORK_CENTE": "DO NOT USE--USE HM122SC",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000392",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "CTECH2  ",
+                        "DS_WORK_CENTE": "DO NOT USE--USE HM122SO",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000400",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "D       ",
+                        "DS_WORK_CENTE": "MECHANICAL MAINTENANCE PONDS (JIMCO)",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000481",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "D0322   ",
+                        "DS_WORK_CENTE": "A5 cooling water D0322",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000482",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "D0423   ",
+                        "DS_WORK_CENTE": "Tr1 Krebs D0423",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000483",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "D0424   ",
+                        "DS_WORK_CENTE": "Tr1 Krebs D0424",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000484",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "D1202   ",
+                        "DS_WORK_CENTE": "A1 Chlorinator D1202",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000485",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "D1223   ",
+                        "DS_WORK_CENTE": "A1 Chlorinator D1223",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000486",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "D2201   ",
+                        "DS_WORK_CENTE": "A1 Chlorinator D2201",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000487",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "D3201   ",
+                        "DS_WORK_CENTE": "A1 Chlorinator D3201",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000488",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "D3202   ",
+                        "DS_WORK_CENTE": "A1 Chlorinator D3202",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000489",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "D3223   ",
+                        "DS_WORK_CENTE": "A1 Chlorinator D3223",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000490",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "D3322   ",
+                        "DS_WORK_CENTE": "A5 cooling water D3322",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000491",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "D3423   ",
+                        "DS_WORK_CENTE": "TR2 Krebs D3423",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000492",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "D3424   ",
+                        "DS_WORK_CENTE": "TR2 Krebs D3424",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000493",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "D3452   ",
+                        "DS_WORK_CENTE": "TR2 caustic srubber D3452",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000494",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "D5201   ",
+                        "DS_WORK_CENTE": "A1 Chlorinator D5201",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000495",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "D5202   ",
+                        "DS_WORK_CENTE": "A1 Chlorinator D5202",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000496",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "D5209   ",
+                        "DS_WORK_CENTE": "A1 Chlorinator D5209",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000497",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "D6452   ",
+                        "DS_WORK_CENTE": "TR1 scrubber D6452",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000667",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "DAILYORE",
+                        "DS_WORK_CENTE": "Daily Ore Railcar Sample",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000424",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "DBADMIN ",
+                        "DS_WORK_CENTE": "DATA BASE ADMINISTRATIVE GROUP",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000438",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "DCS_PLC ",
+                        "DS_WORK_CENTE": "DCS/PLC PROGRAMMING",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000650",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "DEHYPO  ",
+                        "DS_WORK_CENTE": "Dehypo tanks",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000498",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "DISP04  ",
+                        "DS_WORK_CENTE": "Finished Slurry DISP04",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000086",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "E       ",
+                        "DS_WORK_CENTE": "DO NOT USE--USE HM111/HM111AM",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000499",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "E0501   ",
+                        "DS_WORK_CENTE": "A5 cool tower E0501",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000655",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "E1      ",
+                        "DS_WORK_CENTE": "DO NOT USE--USE HM111/HM111AM",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000500",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "E2501   ",
+                        "DS_WORK_CENTE": "A5 cool tower E2501",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000656",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "E3      ",
+                        "DS_WORK_CENTE": "DO NOT USE",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000501",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "E3503   ",
+                        "DS_WORK_CENTE": "A5 cool tower E3503",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000502",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "E5501   ",
+                        "DS_WORK_CENTE": "A5 cool tower E5501",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000503",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "E6503   ",
+                        "DS_WORK_CENTE": "A5 cool tower E6503",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000087",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "ELC1    ",
+                        "DS_WORK_CENTE": "DO NOT USE--USE HM217/HM217AE",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000449",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "ELC2    ",
+                        "DS_WORK_CENTE": "CONTRACTOR ELECTRICAL CHLORATE",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000666",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "EWSILO  ",
+                        "DS_WORK_CENTE": "East West Ore Silo Composite",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000110",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "EXP     ",
+                        "DS_WORK_CENTE": "DO NOT USE--USE HM213/HM213AM",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000088",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F       ",
+                        "DS_WORK_CENTE": "DO NOT USE--USE HM131/HM131AE",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000504",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F0104   ",
+                        "DS_WORK_CENTE": "Ore silo F0104",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000505",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F0105   ",
+                        "DS_WORK_CENTE": "Ore Silo F0105",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000506",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F0204   ",
+                        "DS_WORK_CENTE": "TiCl4 storage crude F0204",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000507",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F0219   ",
+                        "DS_WORK_CENTE": "TiCl4 storage finished F0219",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000508",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F0222   ",
+                        "DS_WORK_CENTE": "TiCl4 storage crude F0222",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000509",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F0223   ",
+                        "DS_WORK_CENTE": "TiCl4 storage crude F0223",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000510",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F0224   ",
+                        "DS_WORK_CENTE": "TiCl4 storage crude F0224",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000663",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F0401   ",
+                        "DS_WORK_CENTE": "In process slurry storage 401",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000644",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F0409   ",
+                        "DS_WORK_CENTE": "TR1 storage F0409",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000511",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F0412   ",
+                        "DS_WORK_CENTE": "TR1 Milling F0412",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000512",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F0414   ",
+                        "DS_WORK_CENTE": "TR1 treatment F0414",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000513",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F0415   ",
+                        "DS_WORK_CENTE": "TR1 treatment F0415",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000514",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F0416   ",
+                        "DS_WORK_CENTE": "TR1 treatment F0416",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000515",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F0418   ",
+                        "DS_WORK_CENTE": "TR1 filtration F0418",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000516",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F0423   ",
+                        "DS_WORK_CENTE": "TR1 filtration F0423",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000517",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F0424   ",
+                        "DS_WORK_CENTE": "TR1 filtration F0424",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000518",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F0707   ",
+                        "DS_WORK_CENTE": "A1 Tailings F0707",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000519",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F1419   ",
+                        "DS_WORK_CENTE": "TR1 storage F1419",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000520",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F1430   ",
+                        "DS_WORK_CENTE": "TR1 storage F1430",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000521",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F1506   ",
+                        "DS_WORK_CENTE": "A1 proc water F1506",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000522",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F1530   ",
+                        "DS_WORK_CENTE": "A1 Tailings F1530",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000523",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F2204   ",
+                        "DS_WORK_CENTE": "TiCl4 storage crude F2204",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000524",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F2219   ",
+                        "DS_WORK_CENTE": "TiCl4 storage finished F2219",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000525",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F2223   ",
+                        "DS_WORK_CENTE": "TiCl4 storage crude F2223",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000526",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F2224   ",
+                        "DS_WORK_CENTE": "TiCl4 storage crude F2224",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000527",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F2415   ",
+                        "DS_WORK_CENTE": "TR1 treatment F2415",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000528",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F2597   ",
+                        "DS_WORK_CENTE": "A1 Tailings F2597",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000529",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F3412   ",
+                        "DS_WORK_CENTE": "TR2 milling F3412",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000530",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F3414FD ",
+                        "DS_WORK_CENTE": "Tr2 treatment F3414FD",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000531",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F3415   ",
+                        "DS_WORK_CENTE": "Tr2 treatment F3415",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000532",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F3416   ",
+                        "DS_WORK_CENTE": "Tr2 treatment F3416",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000533",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F3418   ",
+                        "DS_WORK_CENTE": "TR2 filtration F3418",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000534",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F3431   ",
+                        "DS_WORK_CENTE": "TR2 storage F3431",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000535",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F3432   ",
+                        "DS_WORK_CENTE": "TR2 storage F3432",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000536",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F3437   ",
+                        "DS_WORK_CENTE": "TR2 storage F3437",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000537",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F3438   ",
+                        "DS_WORK_CENTE": "TR2 storage F3438",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000538",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F3445   ",
+                        "DS_WORK_CENTE": "A2 Export Tank F3445",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000539",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F3447   ",
+                        "DS_WORK_CENTE": "A2 Export Tank F3447",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000540",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F4401   ",
+                        "DS_WORK_CENTE": "Multiverter F4401",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000541",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F4454   ",
+                        "DS_WORK_CENTE": "Slurry storage F4454",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000542",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F4455   ",
+                        "DS_WORK_CENTE": "Slurry storage F4455",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000543",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F4456   ",
+                        "DS_WORK_CENTE": "Slurry storage F4456",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000544",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F4457   ",
+                        "DS_WORK_CENTE": "Slurry storage F4457",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000545",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F4468   ",
+                        "DS_WORK_CENTE": "Slurry disperser F4468",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000668",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F4472   ",
+                        "DS_WORK_CENTE": "Slurry storage F4472",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000546",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F4475   ",
+                        "DS_WORK_CENTE": "Slurry storage F4475",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000547",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F5204   ",
+                        "DS_WORK_CENTE": "TiCl4 storage crude F5204",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000548",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F5219   ",
+                        "DS_WORK_CENTE": "TiCl4 storage finished F5219",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000549",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F5224   ",
+                        "DS_WORK_CENTE": "TiCl4 storage crude F5224",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000550",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F5417   ",
+                        "DS_WORK_CENTE": "Tr2 treatment F5417",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000551",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "F5454   ",
+                        "DS_WORK_CENTE": "Slurry disperser F5454",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000552",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "FC3001  ",
+                        "DS_WORK_CENTE": "CHL filter FC3001",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000553",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "FC3201  ",
+                        "DS_WORK_CENTE": "CHL filter FC3201",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000554",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "FC3261  ",
+                        "DS_WORK_CENTE": "CHL filter FC3261",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000651",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "FDTREAT ",
+                        "DS_WORK_CENTE": "Feed Treatment",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000555",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "FL3151A ",
+                        "DS_WORK_CENTE": "CHL filter FL3151A",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000556",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "FL3151B ",
+                        "DS_WORK_CENTE": "CHL filter FL3151B",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000557",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "FL3151C ",
+                        "DS_WORK_CENTE": "CHL filter FL3151C",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000558",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "FL3151D ",
+                        "DS_WORK_CENTE": "CHL filter FL3151D",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000559",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "FL3201A ",
+                        "DS_WORK_CENTE": "CHL filter FL3201A",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000560",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "FL3201B ",
+                        "DS_WORK_CENTE": "CHL filter FL3201B",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000561",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "FL3201C ",
+                        "DS_WORK_CENTE": "CHL filter FL3201C",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000562",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "FL3202A ",
+                        "DS_WORK_CENTE": "CHL filter FL3202A",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000563",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "FL3202B ",
+                        "DS_WORK_CENTE": "CHL filter FL3202B",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000564",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "FL3202C ",
+                        "DS_WORK_CENTE": "CHL filter FL3202C",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000565",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "FLTPRS01",
+                        "DS_WORK_CENTE": "Dredge solids FltPrs01",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000566",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "FLTPRS02",
+                        "DS_WORK_CENTE": "Dredge solids FltPrs02",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000567",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "FLTPRS03",
+                        "DS_WORK_CENTE": "Dredge solids FltPrs03",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000568",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "FLTPRS04",
+                        "DS_WORK_CENTE": "Dredge solids FltPrs04",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000569",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "FLTPRS05",
+                        "DS_WORK_CENTE": "Dredge solids FltPrs05",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000570",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "FLTPRS06",
+                        "DS_WORK_CENTE": "Dredge solids FltPrs06",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000571",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "FLTPRS07",
+                        "DS_WORK_CENTE": "Dredge solids FltPrs07",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000089",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "G       ",
+                        "DS_WORK_CENTE": "DO NOT USE--USE HM142/HM142AM",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000657",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "G2      ",
+                        "DS_WORK_CENTE": "DO NOT USE",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000658",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "G4      ",
+                        "DS_WORK_CENTE": "DO NOT USE--USE HM142/HM142AM",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000090",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "GEN1    ",
+                        "DS_WORK_CENTE": "DO NOT USE--USE HM212/HM212AM",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000440",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "GEN2    ",
+                        "DS_WORK_CENTE": "PIGMENT MAINT EXPENSE PROJECT MECH CONTR",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000442",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "GEN3    ",
+                        "DS_WORK_CENTE": "CAPITAL EXPENSE PROJECTS MECHANICAL CONT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000446",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "GEN4    ",
+                        "DS_WORK_CENTE": "CLORATE MAINT EXPENSE PROJECT MECH CONTR",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000091",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "H       ",
+                        "DS_WORK_CENTE": "RELIABILITY LUBRICATION TECH",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000001",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HAM-LAB ",
+                        "DS_WORK_CENTE": "Quality Lab - Hamilton",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000785",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM      ",
+                        "DS_WORK_CENTE": "Manager, Engineering, Hamilton MS",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000786",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM1     ",
+                        "DS_WORK_CENTE": "Leader, Maintenance, Hamilton MS",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000787",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM11    ",
+                        "DS_WORK_CENTE": "Head of Dept, Mech Maint Chlorination",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000788",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM111   ",
+                        "DS_WORK_CENTE": "Supervisor, Mech Maint, Chlorination",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000789",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM111AM ",
+                        "DS_WORK_CENTE": "Mechanic, Mech Maint, Chlorination E1",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000790",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM112   ",
+                        "DS_WORK_CENTE": "Supervisor, Mech Maint, Chlorination E3",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000791",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM112AM ",
+                        "DS_WORK_CENTE": "Mechanic, Mech Maint, Chlorination E3",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000843",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM113   ",
+                        "DS_WORK_CENTE": "Supervisor, Swing Shift",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000792",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM12    ",
+                        "DS_WORK_CENTE": "Head of Dept, Elec & Inst, Plant Sect 1",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000793",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM121   ",
+                        "DS_WORK_CENTE": "Supervisor, Elec & Inst, Plant Section 1",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000794",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM121AE ",
+                        "DS_WORK_CENTE": "Technician, Elec & Inst, Plant Section 1",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000841",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM122   ",
+                        "DS_WORK_CENTE": "Supervisor, Control Technician",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000795",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM122SC ",
+                        "DS_WORK_CENTE": "Technician, Control, Chlorination",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000796",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM122SO ",
+                        "DS_WORK_CENTE": "Technician, Control, Oxidation",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000797",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM13    ",
+                        "DS_WORK_CENTE": "Head of Dept, Elec & Inst, Plant Sect 2",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000798",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM131   ",
+                        "DS_WORK_CENTE": "Supervisor, Elec & Inst, Plant Section 2",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000799",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM131AE ",
+                        "DS_WORK_CENTE": "Technician, Elec & Inst, Plant Section 2",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000842",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM132   ",
+                        "DS_WORK_CENTE": "Supervisor, Technicians DCS Dummy",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000800",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM132DC ",
+                        "DS_WORK_CENTE": "Technician, DCS_PLC, F Crew",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000801",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM14    ",
+                        "DS_WORK_CENTE": "Head of Dept, Mech Maint Oxidation",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000802",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM141   ",
+                        "DS_WORK_CENTE": "Do Not Use",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000803",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM141AM ",
+                        "DS_WORK_CENTE": "Do Not Use",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000805",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM142   ",
+                        "DS_WORK_CENTE": "Supervisor, Mech Maint, Oxidation G4",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000806",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM142AM ",
+                        "DS_WORK_CENTE": "Mechanic, Mech Maint, Oxidation G4",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000844",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM143   ",
+                        "DS_WORK_CENTE": "Supervisor, Fab Shop (Dummy)",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000845",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM144   ",
+                        "DS_WORK_CENTE": "Supervisor, Rebuild Crew (Dummy)",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000809",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM15    ",
+                        "DS_WORK_CENTE": "Head of Dept, Finishing & Utilities",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000810",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM151   ",
+                        "DS_WORK_CENTE": "Supervisor, Finishing & Utilities",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000811",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM151AM ",
+                        "DS_WORK_CENTE": "Mechanic, Finishing & Utilities",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000812",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM16    ",
+                        "DS_WORK_CENTE": "Head of Dept, Reliability",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000813",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM161   ",
+                        "DS_WORK_CENTE": "Supervisor, Reliability, Dummy",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000815",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM161IR ",
+                        "DS_WORK_CENTE": "Technician, Infrared Analyst",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000817",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM161LU ",
+                        "DS_WORK_CENTE": "Technician, Lubrication",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000816",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM161MI ",
+                        "DS_WORK_CENTE": "Technician, Mechanical Integrity (MI)",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000814",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM161VI ",
+                        "DS_WORK_CENTE": "Technician, Vibration Analyst (VI)",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000948",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM17    ",
+                        "DS_WORK_CENTE": "Head of Dept, Fab, Rebuild & Swing",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000950",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM171   ",
+                        "DS_WORK_CENTE": "Supervisor Rebuild & Fabrication",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000804",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM171AF ",
+                        "DS_WORK_CENTE": "Mechanic, Fabrication (J)",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10001109",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM171AM ",
+                        "DS_WORK_CENTE": "Mechanic, Walking Working Surfaces",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000807",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM171AR ",
+                        "DS_WORK_CENTE": "Mechanic, Refurbishment Shop",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000949",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM18    ",
+                        "DS_WORK_CENTE": "Head of Dept, Fabrication and Install",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000951",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM181   ",
+                        "DS_WORK_CENTE": "Do not Use",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000952",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM181AM ",
+                        "DS_WORK_CENTE": "Mechanic, Fab and Install Crew (J)",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000972",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM191   ",
+                        "DS_WORK_CENTE": "Supervisor Weekend/Swing Crew",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000973",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM191AM ",
+                        "DS_WORK_CENTE": "Mechanic, Mech Maint, Weekend Crew",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000808",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM191AS ",
+                        "DS_WORK_CENTE": "Mechanic, Swing Shift K Crew",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000818",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM2     ",
+                        "DS_WORK_CENTE": "Leader, Maintenance, Contractor",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000819",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM21    ",
+                        "DS_WORK_CENTE": "Head of Dept, Contractors",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000820",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM211   ",
+                        "DS_WORK_CENTE": "Contractor, Coatings",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000821",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM211AM ",
+                        "DS_WORK_CENTE": "Mechanic, Contractor, Coatings",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000822",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM212   ",
+                        "DS_WORK_CENTE": "Contractor, Mechanical, General (GEN1)",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000823",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM212AM ",
+                        "DS_WORK_CENTE": "Mechanic, Contractor, Mechanical (GEN1)",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000824",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM213   ",
+                        "DS_WORK_CENTE": "Contractor, Pigm Maint Exp Prj Mech",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000825",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM213AM ",
+                        "DS_WORK_CENTE": "Mechanic, Pigm Maint Exp Prj Mech",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000826",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM214   ",
+                        "DS_WORK_CENTE": "Contractor, General Services (MEWCO)",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000827",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM214AM ",
+                        "DS_WORK_CENTE": "Mechanic, Contractor, Services (MEWCO)",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000828",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM215   ",
+                        "DS_WORK_CENTE": "Contractor, Mechanical, Services",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000829",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM215AM ",
+                        "DS_WORK_CENTE": "Mechanic, Contr, Mechanical, Services",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000830",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM216   ",
+                        "DS_WORK_CENTE": "Contractor, Mechanical, Mobile Equipment",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000831",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM216AM ",
+                        "DS_WORK_CENTE": "Mechanic, Contr, Mechanical Mobile Equip",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000832",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM217   ",
+                        "DS_WORK_CENTE": "Contractor, Electrical",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000833",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM217AE ",
+                        "DS_WORK_CENTE": "Electrician, Contractor",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000847",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM218   ",
+                        "DS_WORK_CENTE": "Contractor, HVAC",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000848",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM218AM ",
+                        "DS_WORK_CENTE": "Mechanic, Contractor, HVAC",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10001152",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM219   ",
+                        "DS_WORK_CENTE": "Contractor, Security",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10001153",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM219AS ",
+                        "DS_WORK_CENTE": "Security Officer",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10001239",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM290   ",
+                        "DS_WORK_CENTE": "External Refurbishment",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000834",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM3     ",
+                        "DS_WORK_CENTE": "Manager, Technology & Improvement",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000835",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM31    ",
+                        "DS_WORK_CENTE": "Leader, Asset Improvement, T&I",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000836",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM311   ",
+                        "DS_WORK_CENTE": "Supervisor, T&I Capital Projects",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000837",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM311AM ",
+                        "DS_WORK_CENTE": "Mechanic, Technology & Improvement",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000849",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM312   ",
+                        "DS_WORK_CENTE": "Supervisor, T&I DCS_PLC Group",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000838",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HM312DC ",
+                        "DS_WORK_CENTE": "Technician, DCS_PLC, T&I",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000408",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HUR0N   ",
+                        "DS_WORK_CENTE": "ELECTRODE MAINTENANCE SHOP",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000412",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "HVAC    ",
+                        "DS_WORK_CENTE": "HEATING AND AIR CONDITIONING",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000092",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "I       ",
+                        "DS_WORK_CENTE": "RELIABILITY LUBRICATION TECH",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000093",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "IR      ",
+                        "DS_WORK_CENTE": "RELIABILITY THERMOGRAPHY TECH",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000401",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "J       ",
+                        "DS_WORK_CENTE": "DO NOT USE--USE HM171/HM171AF",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000402",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "K       ",
+                        "DS_WORK_CENTE": "DO NOT USE--USE HM171/HM171AS",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000572",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "LINE_A  ",
+                        "DS_WORK_CENTE": "A2 oxidation LineA",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000573",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "LINE_B  ",
+                        "DS_WORK_CENTE": "A2 oxidation LineB",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000574",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "LINE_C  ",
+                        "DS_WORK_CENTE": "A2 oxidation LineC",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000575",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "LINE_D  ",
+                        "DS_WORK_CENTE": "A2 oxidation LineD",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000576",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "LINE_E  ",
+                        "DS_WORK_CENTE": "A2 oxidation LineE",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000577",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "LINE_F  ",
+                        "DS_WORK_CENTE": "A2 oxidation LineF",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000411",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "M       ",
+                        "DS_WORK_CENTE": "DO NOT USE--USE HM214/HM214AM",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000111",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "MCS     ",
+                        "DS_WORK_CENTE": "MECHANICAL CONTRACTOR SERVICES",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000094",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "MEC1    ",
+                        "DS_WORK_CENTE": "CONTRACTOR MECHANICAL",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000453",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "MEC2    ",
+                        "DS_WORK_CENTE": "MECHANICAL CONTRACTOR FABRICATION CREW",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000095",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "MI      ",
+                        "DS_WORK_CENTE": "DO NOT USE--USE HM161MI",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000395",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "N/WE    ",
+                        "DS_WORK_CENTE": "Nights and Weekends",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000578",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "ORE_COMP",
+                        "DS_WORK_CENTE": "Ore composite sample ORE_COMP",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000096",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "OXIA    ",
+                        "DS_WORK_CENTE": "OXIDATION \"A\" SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000097",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "OXIB    ",
+                        "DS_WORK_CENTE": "OXIDATION \"B\" SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000098",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "OXIC    ",
+                        "DS_WORK_CENTE": "OXIDATION \"C\" SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000099",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "OXID    ",
+                        "DS_WORK_CENTE": "OXIDATION \"D\" SHIFT",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000108",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "P       ",
+                        "DS_WORK_CENTE": "PRODUCTION PM",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000043",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "PIG_ALL ",
+                        "DS_WORK_CENTE": "All Dry Pigment Prod Lines",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000047",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "PIG_CHLO",
+                        "DS_WORK_CENTE": "Pigment Chlorination Lines",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000045",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "PIG_FIN ",
+                        "DS_WORK_CENTE": "Pigment Finshing Trains 1 and 2",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000046",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "PIG_OXI ",
+                        "DS_WORK_CENTE": "Pigment Oxidation Lines",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000044",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "PIG_PCK ",
+                        "DS_WORK_CENTE": "Pigment Packaging Lines",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000579",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "PND009  ",
+                        "DS_WORK_CENTE": "Pond 9 PND009",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000580",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "PND011  ",
+                        "DS_WORK_CENTE": "Pond 11 PND011",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000581",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "PND014  ",
+                        "DS_WORK_CENTE": "Pond 14 PND014",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000654",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "PPA_COMP",
+                        "DS_WORK_CENTE": "Plant Performance Assessment composite",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000653",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "PROCSTOR",
+                        "DS_WORK_CENTE": "Process Storage",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000652",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "RECOVRY ",
+                        "DS_WORK_CENTE": "Recovery",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000112",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "S       ",
+                        "DS_WORK_CENTE": "DO NOT USE--USE HM171/HM171AR",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000582",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "S1000078",
+                        "DS_WORK_CENTE": "A1 Coke receiving S1000078",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000583",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "S1000099",
+                        "DS_WORK_CENTE": "Toluene Storage tanks S1000099",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000584",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "S1000180",
+                        "DS_WORK_CENTE": "A2 Scour sand S1000180",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000585",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "S1000237",
+                        "DS_WORK_CENTE": "A1 Ore receiving S1000237",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000586",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SECSTD  ",
+                        "DS_WORK_CENTE": "Secondary standard SECSTD",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000648",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SFDCAKE ",
+                        "DS_WORK_CENTE": "Filter Cake at SpinFlashDryer",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000647",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SILOPGMT",
+                        "DS_WORK_CENTE": "Finished Pigment sent to SILO",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000054",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SL-01   ",
+                        "DS_WORK_CENTE": "Manual Dispersers 2 and 3",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000053",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SL-04   ",
+                        "DS_WORK_CENTE": "Slurry Disperser 4",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000587",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SM0412  ",
+                        "DS_WORK_CENTE": "TR1 Milling SM0412",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000588",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SM0413  ",
+                        "DS_WORK_CENTE": "TR1 Milling SM0413",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000589",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SM0415  ",
+                        "DS_WORK_CENTE": "TR1 Milling SM0415",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000590",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SM0416  ",
+                        "DS_WORK_CENTE": "TR1 Milling SM0416",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000591",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SM2411  ",
+                        "DS_WORK_CENTE": "TR1 Milling SM2411",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000592",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SM2412  ",
+                        "DS_WORK_CENTE": "TR1 Milling SM2412",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000593",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SM2413  ",
+                        "DS_WORK_CENTE": "TR1 Milling SM2413",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000594",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SM2414  ",
+                        "DS_WORK_CENTE": "TR1 Milling SM2414",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000595",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SM3411  ",
+                        "DS_WORK_CENTE": "TR2 milling SM3411",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000596",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SM3412  ",
+                        "DS_WORK_CENTE": "TR2 milling SM3412",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000597",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SM3413  ",
+                        "DS_WORK_CENTE": "TR2 milling SM3413",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000598",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SM3414  ",
+                        "DS_WORK_CENTE": "TR2 milling SM3414",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000599",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SM3415  ",
+                        "DS_WORK_CENTE": "TR2 milling SM3415",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000600",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SM3416  ",
+                        "DS_WORK_CENTE": "TR2 milling SM3416",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000601",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SM5417  ",
+                        "DS_WORK_CENTE": "TR2 milling SM5417",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000602",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SM5418  ",
+                        "DS_WORK_CENTE": "TR2 milling SM5418",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000603",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SM5419  ",
+                        "DS_WORK_CENTE": "TR2 milling SM5419",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000604",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SM5420  ",
+                        "DS_WORK_CENTE": "TR2 milling SM5420",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000605",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SM5421  ",
+                        "DS_WORK_CENTE": "TR2 milling SM5421",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000606",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SM5422  ",
+                        "DS_WORK_CENTE": "TR2 milling SM5422",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000607",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SP0046  ",
+                        "DS_WORK_CENTE": "CHL SUMP SP0046",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000608",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SP3050  ",
+                        "DS_WORK_CENTE": "CHL SUMP SP3050",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000609",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SP3080  ",
+                        "DS_WORK_CENTE": "CHL SUMP SP3080",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000610",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SP3202  ",
+                        "DS_WORK_CENTE": "CHL SUMP SP3202",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000611",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SP3205  ",
+                        "DS_WORK_CENTE": "CHL SUMP SP3205",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000100",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SPG     ",
+                        "DS_WORK_CENTE": "CONTRACTOR MECHANICAL SPECIALTY",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000612",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SR_702  ",
+                        "DS_WORK_CENTE": "Synthetic Rutile SR_702",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000613",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SR_721  ",
+                        "DS_WORK_CENTE": "Synthetic Rutile SR_721",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10001164",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SR_CAKE ",
+                        "DS_WORK_CENTE": "SR_702",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000614",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SR_COMP ",
+                        "DS_WORK_CENTE": "SR composite sample SR_COMP",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10001163",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SR_FEED ",
+                        "DS_WORK_CENTE": "S-702 Underflow",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10001165",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SR_WASTE",
+                        "DS_WORK_CENTE": "SR_721",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000101",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SRA     ",
+                        "DS_WORK_CENTE": "PRODUCTION PM",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000102",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SRB     ",
+                        "DS_WORK_CENTE": "PRODUCTION PM",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000103",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SRC     ",
+                        "DS_WORK_CENTE": "PRODUCTION PM",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000104",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SRD     ",
+                        "DS_WORK_CENTE": "PRODUCTION PM",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000615",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SUMPAB  ",
+                        "DS_WORK_CENTE": "A2 pretreat sump A/B",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000616",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SUMPCD  ",
+                        "DS_WORK_CENTE": "A2 pretreat sumpC/D",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000617",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "SUMPEF  ",
+                        "DS_WORK_CENTE": "A2 pretreat sump E/F",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000013",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "T1BULK  ",
+                        "DS_WORK_CENTE": "Bulk Packaging Line - Train 1",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000618",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "T1FLTRAT",
+                        "DS_WORK_CENTE": "TR1 filtration",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000619",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "T1FLTREC",
+                        "DS_WORK_CENTE": "TR1 Filtrate recovery",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000014",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "T1PAPER ",
+                        "DS_WORK_CENTE": "Paper Packaging Line - Train 1",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000015",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "T2BULK  ",
+                        "DS_WORK_CENTE": "Bulk Packaging Line - Train 2",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000620",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "T2FLTRAT",
+                        "DS_WORK_CENTE": "TR2 Filtration",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000621",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "T2FLTREC",
+                        "DS_WORK_CENTE": "TR2 Filtrate Recovery",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000016",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "T2PAPER ",
+                        "DS_WORK_CENTE": "Paper Packaging Line - Train 2",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000622",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "T2SPRDRY",
+                        "DS_WORK_CENTE": "TR2 Spray Dryer T2SPRDRY",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000623",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "T3301   ",
+                        "DS_WORK_CENTE": "Finished Chlorate Solution",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000624",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "T3302   ",
+                        "DS_WORK_CENTE": "Finished Chlorate Solution",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000625",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "T3303   ",
+                        "DS_WORK_CENTE": "Finished Chlorate Solution",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000626",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "T3304   ",
+                        "DS_WORK_CENTE": "Finished Chlorate Solution",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000627",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "T3305   ",
+                        "DS_WORK_CENTE": "Finished Chlorate Solution",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000628",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "T3306   ",
+                        "DS_WORK_CENTE": "Finished Chlorate Solution",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000629",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "TR1_SPFD",
+                        "DS_WORK_CENTE": "Spin Flash Dryer TR1_SPFD",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000011",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "TRAIN1  ",
+                        "DS_WORK_CENTE": "Finishing Train 1",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000012",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "TRAIN2  ",
+                        "DS_WORK_CENTE": "Finishing Train 2",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000105",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "US      ",
+                        "DS_WORK_CENTE": "RELIABILITY MECHANICAL ULTRASONIC TECH",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000106",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "VEH1    ",
+                        "DS_WORK_CENTE": "DO NOT USE--USE HM216/HM216AM",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000107",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "VI      ",
+                        "DS_WORK_CENTE": "DO NOT USE--USE HM161VI",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000630",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "WSTDITCH",
+                        "DS_WORK_CENTE": "waste water WESTDITCH",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000631",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "WW2101  ",
+                        "DS_WORK_CENTE": "Water well WW2101",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000632",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "WW2102  ",
+                        "DS_WORK_CENTE": "Water well WW2102",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000633",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "WW2103  ",
+                        "DS_WORK_CENTE": "Water well WW2103",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000634",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "WW2104  ",
+                        "DS_WORK_CENTE": "Water well WW2104",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000635",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "WW2105  ",
+                        "DS_WORK_CENTE": "Water well WW2105",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000636",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "WW2106  ",
+                        "DS_WORK_CENTE": "Water well WW2106",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000637",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "WW2107  ",
+                        "DS_WORK_CENTE": "Water well WW2107",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000638",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "WW2108  ",
+                        "DS_WORK_CENTE": "Water well WW2108",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000639",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "WW2109  ",
+                        "DS_WORK_CENTE": "Water well WW2109",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000640",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "WW2110  ",
+                        "DS_WORK_CENTE": "Water well WW2110",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000641",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "WW2111  ",
+                        "DS_WORK_CENTE": "Water well WW2111",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000642",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "WW2113  ",
+                        "DS_WORK_CENTE": "Water well WW2113",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    },
+                    {
+                        "ID_WORK_CENTE": "10000643",
+                        "ID_PLANT": "1100",
+                        "CD_WORK_CENTE": "WW2114  ",
+                        "DS_WORK_CENTE": "Water well WW2114",
+                        "FL_DELET": 0,
+                        "FL_DELET2": 0
+                    }
+                ]
+            }
+        ]
+    }
+}
