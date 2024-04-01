@@ -110,34 +110,9 @@
 				    "target": "characteristic"
                 },
                 {
-                    "pattern": "rule",
-				    "name": "rulePanel",
-				    "target": "rule"
-                },
-                {
-                    "pattern": "actionCatalog",
-				    "name": "actionCatalogPanel",
-				    "target": "actionCatalog"
-                },
-                {
                     "pattern": "usage",
 				    "name": "usagePanel",
 				    "target": "usage"
-                },
-                {
-                    "pattern": "statistic",
-				    "name": "statisticPanel",
-				    "target": "statistic"
-                },
-                {
-                    "pattern": "alarm",
-				    "name": "alarmPanel",
-				    "target": "alarm"
-                },
-                {
-                    "pattern": "dashboard",
-				    "name": "dashboardPanel",
-				    "target": "dashboard"
                 },
                 {
                     "pattern": "lotBatch",
@@ -195,40 +170,10 @@
                  "name": "CharacteristicPanel",
                  "level" : 2
               },
-              "rule": {
-                 "id": "rulePanel",
-                 "path": "tronox.view.configurations.rule",
-                 "name": "RulePanel",
-                 "level" : 2
-              },
-              "actionCatalog": {
-                 "id": "actionCatalogPanel",
-                 "path": "tronox.view.configurations.actionCatalog",
-                 "name": "ActionCatalogPanel",
-                 "level" : 2
-              },
               "usage": {
                  "id": "usagePanel",
                  "path": "tronox.view.quality.usage",
                  "name": "UsagePanel",
-                 "level" : 2
-              },
-              "statistic": {
-                 "id": "statisticPanel",
-                 "path": "tronox.view.quality.statistics",
-                 "name": "StatisticPanel",
-                 "level" : 2
-              },
-              "alarm": {
-                 "id": "alarmPanel",
-                 "path": "tronox.view.quality.alarms",
-                 "name": "AlarmPanel",
-                 "level" : 2
-              },
-              "dashboard": {
-                 "id": "dashboardPanel",
-                 "path": "tronox.view.quality.dashboard",
-                 "name": "dashboardPanel",
                  "level" : 2
               },
               "lotBatch": {
