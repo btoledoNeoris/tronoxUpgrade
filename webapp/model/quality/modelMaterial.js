@@ -7,14 +7,12 @@ sap.ui.define([
         return `/XMII/Illuminator?service=Query&QueryTemplate=${service}&Content-Type=text/json`;
     };
 	return {
-        loadTreeWorkcenter: function(parameters){
-            var getLocalData = '../../localServices/Configurations/workcenters/HIERACHY_TREE.json';
-            var getData = urlBaseXqt('Tronox/Quality/Xacute/RecordResultsXacuteQuery');
+        loadMaterialList: function(parameters){
+            var getLocalData = '../../localServices/quality/materials.json';
+            var getData = urlBaseXqt('Tronox/Quality/Xacute/RecordResultsXacuteQuery'); //modificar
             var getDataUrl = env ? getData : getLocalData;
             var oModel = handler.requestData(getDataUrl,parameters);
-            console.log("Model workcenters: " + oModel)
             return oModel
         }
     };
 });
-

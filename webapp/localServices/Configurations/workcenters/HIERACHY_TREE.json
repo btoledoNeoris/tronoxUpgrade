@@ -7,42 +7,6 @@
         "CachedTime": "",
         "Rowset": [
             {
-                "Columns": {
-                    "Column": [
-                        {
-                            "Name": "LEVEL_1",
-                            "SourceColumn": "LEVEL_1",
-                            "Description": "",
-                            "SQLDataType": 1,
-                            "MinRange": 1.0,
-                            "MaxRange": 1.0
-                        },
-                        {
-                            "Name": "LEVEL_2",
-                            "SourceColumn": "LEVEL_2",
-                            "Description": "",
-                            "SQLDataType": 1,
-                            "MinRange": 1.0,
-                            "MaxRange": 1.0
-                        },
-                        {
-                            "Name": "LEVEL_3",
-                            "SourceColumn": "LEVEL_3",
-                            "Description": "",
-                            "SQLDataType": 1,
-                            "MinRange": 1.0,
-                            "MaxRange": 1.0
-                        },
-                        {
-                            "Name": "LEVEL_4",
-                            "SourceColumn": "LEVEL_4",
-                            "Description": "",
-                            "SQLDataType": 1,
-                            "MinRange": 1.0,
-                            "MaxRange": 1.0
-                        }
-                    ]
-                },
                 "Row": [
                     {
                         "LEVEL_1": "General",

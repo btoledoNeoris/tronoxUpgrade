@@ -1,11 +1,12 @@
 sap.ui.define([
     'tronox/controller/LayerController',
+    'tronox/model/configuration/modelWorkcenters',
     "sap/ui/model/json/JSONModel",
     "../../../tools/handler",
     'sap/ui/core/Fragment',
     'sap/m/MessageToast'
   ],
-    function (LayerController, JSONModel, handler, Fragment, MessageToast) {
+    function (LayerController, modelWorkcenters,JSONModel, handler, Fragment, MessageToast) {
       "use strict";
 
       return LayerController.extend("tronox.controller.configurations.workcenters.WorkcenterPanel", {
@@ -27,6 +28,8 @@ sap.ui.define([
           let parameters = {};
           try{
             const data = await handler.requestData(getPlant, parameters);
+            const datas = await modelWorkcenters.loadTreeWorkcenter(parameters);
+            console.log({datas})
             const [textPlant, idPlnt] = [data[0].Row[0].DS_PLANT, data[0].Row[0].ID_PLANT];
             return textPlant;
           }catch(err){

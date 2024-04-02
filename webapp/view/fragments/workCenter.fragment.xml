@@ -1,0 +1,17 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:t="sap.ui.table" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.fragment">
+  <Dialog title="{i18n>dialogTitleWorkCenter}" contentHeight="40%" contentWidth="25%">
+    <content>
+      <VBox class="sapUiSmallMargin">
+        <Tree id="idWorkCenterTreeTable" items="{path: '/'}" mode="SingleSelectMaster" selectionChange="onWorkCenterSelected">
+          <StandardTreeItem title="{text}" icon="sap-icon://folder-blank" />
+        </Tree>
+      </VBox>
+    </content>
+    <beginButton>
+      <Button text="{i18n>buttonSelectWorkCenter}" press="onSelectWorkCenterDialog" type="Accept" />
+    </beginButton>
+    <endButton>
+      <Button text="{i18n>buttonCloseWorkCenter}" press="onCloseWorkCenterDialog" type="Reject" />
+    </endButton>
+  </Dialog>
+</core:FragmentDefinition>

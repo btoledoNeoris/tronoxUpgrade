@@ -1,324 +1,556 @@
 <mvc:View
-	controllerName="tronox.controller.quality.resultRecording.ResultRecordingPanel"
-	xmlns="sap.m"
+  controllerName="tronox.controller.quality.resultRecording.ResultRecordingPanel"
+  xmlns="sap.m"
   xmlns:fb="sap.ui.comp.filterbar"
-	xmlns:mvc="sap.ui.core.mvc"
+  xmlns:mvc="sap.ui.core.mvc"
   xmlns:core="sap.ui.core"
-  
   xmlns:tnt="sap.tnt"
   xmlns:t="sap.ui.table"
-  >
-	<Page
-		id="configurationsListPage"
-		title="{i18n>qualityDescription} | {i18n>resultsRecordingTitle}"
-		showNavButton="true"
-		navButtonPress=".onNavBack"
-		class="sapUiResponsiveContentPadding"
+>
+  <Page
+    id="configurationsListPage"
+    title="{i18n>qualityDescription} | {i18n>resultsRecordingTitle}"
+    showNavButton="true"
+    navButtonPress=".onNavBack"
+    class="sapUiResponsiveContentPadding"
     showHeader="true"
     enableScrolling="true"
   >
     <tnt:ToolHeader>
-      <Label class="sapUiTinyMarginBegin sapUiTinyMarginEnd sapMTitleStyleH4" text="{i18n>titleTableResultsRecording}"/>
+      <Label
+        class="sapUiTinyMarginBegin sapUiTinyMarginEnd sapMTitleStyleH4"
+        text="{i18n>titleTableResultsRecording}"
+      />
       <tnt:ToolHeaderUtilitySeparator />
       <ToolbarSpacer>
         <layoutData>
           <OverflowToolbarLayoutData minWidth="50px" />
         </layoutData>
       </ToolbarSpacer>
-      <Label class="sapUiTinyMarginBegin sapUiTinyMarginEnd tileLayout" text="{i18n>Plant}" labelFor="wkInput" />
+      <Label
+        class="sapUiTinyMarginBegin sapUiTinyMarginEnd tileLayout"
+        text="{i18n>Plant}"
+        labelFor="wkInput"
+      />
     </tnt:ToolHeader>
-
     <content>
-      <fb:FilterBar 
-        id="filBarId" 
-        search="onSearch" 
-        showRestoreButton="false" 
-        showClearButton="true" 
+      <fb:FilterBar
+        id="filBarId"
+        search="onSearch"
+        showRestoreButton="false"
+        showClearButton="true"
         showFilterConfiguration="false"
-        useToolbar="false" 
+        useToolbar="false"
         showGoOnFB="true"
       >
-      <fb:filterGroupItems>   
-        <fb:FilterGroupItem name="workcenter" label="{i18n>workCenter}" groupName="main" visibleInFilterBar="true">
-          <fb:control>
-            <MultiComboBox 
-              id="wkComboBox" 
-              selectionChange="onMaterialComboBoxChange" 
-              items="{ path: '/mtsd',templateShareable: true }"
-              placeholder="{i18n>workCenter}"> 
-              <core:Item key="-1" text="Seleccionar..."/>
-            </MultiComboBox>
-          </fb:control>
-        </fb:FilterGroupItem>
-               
-        <fb:FilterGroupItem name="material" label="{i18n>material}" groupName="main" visibleInFilterBar="true">
-          <fb:control>
-            <MultiComboBox 
-              id="materialComboBox" 
-              selectionChange="onMaterialComboBoxChange" 
-              items="{ path: '/mtsd',templateShareable: true }"
-              placeholder="{i18n>material}"> 
-              <core:Item key="-1" text="Seleccionar..."/>
-            </MultiComboBox>
-          </fb:control>
-        </fb:FilterGroupItem>
-      
-        <fb:FilterGroupItem name="batch" label="{i18n>batch}" groupName="main" visibleInFilterBar="true">
-          <fb:control>
-            <MultiComboBox 
-              id="batchComboBox" 
-              selectionChange="onBatchComboBoxChange" 
-              items="{ path: '/batchs',templateShareable: true }"
-              placeholder="{i18n>batch}">
-              <core:Item key="-1" text="Seleccionar..."/>
-            </MultiComboBox>
-          </fb:control>
-        </fb:FilterGroupItem>
-      
-        <fb:FilterGroupItem name="dateInit" label="{i18n>dateStart}" groupName="main" visibleInFilterBar="true">
-          <fb:control>
-            <DateTimePicker
-              placeholder="{i18n>placeDate}"
-              id="dateInit" 
-              change="onDateInitChange"
-              valueFormat="MM/dd/yyyy HH:mm:ss" 
-              displayFormat="yyyy/MM/dd HH:mm:ss"
-              class="sapUiSmallMarginEnd"
-              value="{/dateInit}"                
+        <fb:filterGroupItems>
+          <fb:FilterGroupItem
+            name="workcenter"
+            label="{i18n>workCenter}"
+            groupName="main"
+            visibleInFilterBar="true"
+          >
+            <fb:control>
+              <Input
+                id="wkInput"
+                class="sapUiSmallMarginBottom"
+                type="Text"
+                placeholder="{i18n>workCenter}"
+                showValueHelp="true"
+                valueHelpIconSrc="sap-icon://factory"
+                valueHelpRequest="onWorkCenterChange"
               />
-          </fb:control>
-        </fb:FilterGroupItem>
-      
-        <fb:FilterGroupItem name="dateEnd" label="{i18n>dateEnd}" groupName="main" visibleInFilterBar="true">
-          <fb:control>
-            <DateTimePicker
-              placeholder="{i18n>placeDate}"
-              id="dateEnd" 
-              change="onDateEndChange"
-              valueFormat="MM/dd/yyyy HH:mm:ss" 
-              displayFormat="yyyy/MM/dd HH:mm:ss"
-              class="sapUiSmallMarginEnd"
-              value="{/dateEnd}"    
+            </fb:control>
+          </fb:FilterGroupItem>
+          <fb:FilterGroupItem
+            name="material"
+            label="{i18n>material}"
+            groupName="main"
+            visibleInFilterBar="true"
+          >
+            <fb:control>
+              <ComboBox
+                id="materialComboBox"
+                selectionChange="onMaterialComboBoxChange"
+                items="{ path: '/mtsd',templateShareable: true }"
+                placeholder="{i18n>material}"
+              >
+                <core:Item
+                  key="{ID_MATER}"
+                  text="{DS_MATER}"
+                />
+              </ComboBox>
+            </fb:control>
+          </fb:FilterGroupItem>
+          <fb:FilterGroupItem
+            name="batch"
+            label="{i18n>batch}"
+            groupName="main"
+            visibleInFilterBar="true"
+          >
+            <fb:control>
+              <ComboBox
+                id="batchComboBox"
+                selectionChange="onBatchComboBoxChange"
+                items="{ path: '/batchs',templateShareable: true }"
+                placeholder="{i18n>batch}"
+              >
+                <core:Item
+                  key="{CD_BATCH}"
+                  text="{CD_BATCH}"
+                />
+              </ComboBox>
+            </fb:control>
+          </fb:FilterGroupItem>
+          <fb:FilterGroupItem
+            name="dateInit"
+            label="{i18n>dateStart}"
+            groupName="main"
+            visibleInFilterBar="true"
+          >
+            <fb:control>
+              <DateTimePicker
+                placeholder="{i18n>placeDate}"
+                id="dateInit"
+                change="onDateInitChange"
+                valueFormat="MM/dd/yyyy HH:mm:ss"
+                displayFormat="yyyy/MM/dd HH:mm:ss"
+                class="sapUiSmallMarginEnd"
+                value="{/dateInit}"
               />
-          </fb:control>
-        </fb:FilterGroupItem>
-      </fb:filterGroupItems>
+            </fb:control>
+          </fb:FilterGroupItem>
+          <fb:FilterGroupItem
+            name="dateEnd"
+            label="{i18n>dateEnd}"
+            groupName="main"
+            visibleInFilterBar="true"
+          >
+            <fb:control>
+              <DateTimePicker
+                placeholder="{i18n>placeDate}"
+                id="dateEnd"
+                change="onDateEndChange"
+                valueFormat="MM/dd/yyyy HH:mm:ss"
+                displayFormat="yyyy/MM/dd HH:mm:ss"
+                class="sapUiSmallMarginEnd"
+                value="{/dateEnd}"
+              />
+            </fb:control>
+          </fb:FilterGroupItem>
+        </fb:filterGroupItems>
       </fb:FilterBar>
-
       <VBox renderType="Bare">
         <VBox>
-          <t:Table 
-            id="Table" 
-            rows="{path: '/table'}" 
-            selectionMode="Single" 
-            enableSelectAll="false" 
+          <t:Table
+            id="Table"
+            rows="{path: '/table'}"
+            selectionMode="Single"
+            enableSelectAll="false"
             ariaLabelledBy="title"
             class=""
             visibleRowCount="20"
-            selectionBehavior="RowOnly" 
+            selectionBehavior="RowOnly"
           >
-              
-              <t:columns>
-                <t:Column hAlign="Center" width="7rem" >
-                  <Text text="{i18n>colInspectionLot}" class="" />
-                    <t:template>
-                      <Text text="{ID_INSPE_LOT}" />
-                    </t:template>
-                </t:Column>
-                <t:Column hAlign="Center" width="10rem">
-                  <Text text="{i18n>material}" class="" />
-                  <t:template>
-                    <Text text="{DS_MATER}" />
-                  </t:template>
-                </t:Column>
-                <t:Column hAlign="Center" width="6rem">
-                  <Text text="{i18n>batch}" class="" />
-                  <t:template>
-                    <Text text="{CD_BATCH}" />
-                  </t:template>
-                </t:Column>
-                <t:Column hAlign="Center" width="10rem">
-                  <Text text="{i18n>workCenter}" class="" />
-                  <t:template>
-                    <Text text="{CD_WORK_CENTE}"/>
-                  </t:template>
-                </t:Column>
-
-                <t:Column hAlign="Center" width="10rem">
-                  <Text text="{i18n>colInspectionLot}" />
-                  <t:template>
-                    <ComboBox  items="{path: 'CD_INSPE_POINT_LIST_ITEMS', templateShareable:true}" change="onComboBoxSelectionChange">
-                      <core:Item key="{key}" text="{text}" />
-                    </ComboBox>
-                  </t:template>                  
-                </t:Column>
-
-                <t:Column hAlign="Center" width="6rem">
-                  <Text text="{i18n>colInspectionPoi}" class="" />
-                  <t:template>
-                    <Text text="{CD_SAMPL_MACHI}"/>
-                  </t:template>
-                </t:Column>
-                <!-- <t:Column hAlign="Center" width="4rem">
+            <t:columns>
+              <t:Column
+                hAlign="Center"
+                width="7rem"
+              >
+                <Text
+                  text="{i18n>colInspectionLot}"
+                  class=""
+                />
+                <t:template>
+                  <Text text="{ID_INSPE_LOT}" />
+                </t:template>
+              </t:Column>
+              <t:Column
+                hAlign="Center"
+                width="10rem"
+              >
+                <Text
+                  text="{i18n>material}"
+                  class=""
+                />
+                <t:template>
+                  <Text text="{DS_MATER}" />
+                </t:template>
+              </t:Column>
+              <t:Column
+                hAlign="Center"
+                width="6rem"
+              >
+                <Text
+                  text="{i18n>batch}"
+                  class=""
+                />
+                <t:template>
+                  <Text text="{CD_BATCH}" />
+                </t:template>
+              </t:Column>
+              <t:Column
+                hAlign="Center"
+                width="10rem"
+              >
+                <Text
+                  text="{i18n>workCenter}"
+                  class=""
+                />
+                <t:template>
+                  <Text text="{CD_WORK_CENTE}" />
+                </t:template>
+              </t:Column>
+              <t:Column
+                hAlign="Center"
+                width="10rem"
+              >
+                <Text text="{i18n>colInspectionLot}" />
+                <t:template>
+                  <ComboBox
+                    items="{path: 'CD_INSPE_POINT_LIST_ITEMS', templateShareable:true}"
+                    change="onComboBoxSelectionChange"
+                  >
+                    <core:Item
+                      key="{key}"
+                      text="{text}"
+                    />
+                  </ComboBox>
+                </t:template>
+              </t:Column>
+              <t:Column
+                hAlign="Center"
+                width="6rem"
+              >
+                <Text
+                  text="{i18n>colInspectionPoi}"
+                  class=""
+                />
+                <t:template>
+                  <Text text="{CD_SAMPL_MACHI}" />
+                </t:template>
+              </t:Column>
+              <!-- <t:Column hAlign="Center" width="4rem">
                   <t:template>
                     <Button icon="sap-icon://business-objects-experience" press="onShowChart" />
                   </t:template>
                 </t:Column> -->
-
-                <t:Column hAlign="Center" width="6.5rem">
-                  <VBox>
-                    <Button icon="sap-icon://business-objects-experience" press="onShowChart" type="Transparent"/>
-                    <Text text="{i18n>colCem1}" />
-                  </VBox>  
-                    <t:template>
-                      <Text text="{path: 'resultsMapping/CEM1', formatter: '.getDynamicResult'}" />
-                    </t:template>
-                </t:Column>
-
-                <t:Column hAlign="Center" width="3rem">
-                  <VBox>
-                    <Button icon="sap-icon://business-objects-experience" press="onShowChart" type="Transparent"/>
-                    <Text text="{i18n>phTitle}" class="" />
-                  </VBox>
-                  <t:template>
-                    <Text text="{path: 'resultsMapping/PH', formatter: '.getDynamicResult'}"/>
-                  </t:template>
-                </t:Column>
-                
-                <t:Column hAlign="Center" width="6.5rem">
-                  <VBox>
-                    <Button icon="sap-icon://business-objects-experience" press="onShowChart" type="Transparent"/>
-                    <Text text="{i18n>colCem2}" class="" />
-                  </VBox>
-                  <t:template>
-                    <Text text="{path: 'resultsMapping/CEM2', formatter: '.getDynamicResult'}" />
-                  </t:template>
-                </t:Column>
-
-                <t:Column hAlign="Center" width="5.5rem">
-                  <VBox>
-                    <Button icon="sap-icon://business-objects-experience" press="onShowChart" type="Transparent"/>
-                    <Text text="{i18n>colSolids}" class="" />
-                  </VBox>
-                  <t:template>
-                    <Text text="{path: 'resultsMapping/SOLIDS_F', formatter: '.getDynamicResult'}" />
-                  </t:template>
-                </t:Column>
-
-                <t:Column hAlign="Center" width="5rem">
-                  <VBox>
-                    <Button icon="sap-icon://business-objects-experience" press="onShowChart" type="Transparent"/>
-                    <Text text="{i18n>colDen}" class="" />
-                  </VBox>
-                  <t:template>
-                    <Text text="{path: 'resultsMapping/DENS1_F', formatter: '.getDynamicResult'}" />
-                  </t:template>
-                </t:Column>
-
-                <t:Column hAlign="Center" width="3rem">
-                    <VBox>
-                      <Button icon="sap-icon://business-objects-experience" press="onShowChart" type="Transparent"/>
-                      <Text text="{i18n>phTitle}" class="" />
-                    </VBox>
-                  <t:template>
-                    <Text text="{path: 'resultsMapping/PH_F', formatter: '.getDynamicResult'}" />
-                  </t:template>
-                </t:Column>
-
-                <t:Column hAlign="Center" width="6.5rem">
-                    <VBox>
-                      <Button icon="sap-icon://business-objects-experience" press="onShowChart" type="Transparent"/>
-                      <Text text="{i18n>colTare}" class="" />
-                    </VBox>
-                  <t:template>
-                    <Text text="{path: 'resultsMapping/PANTARE', formatter: '.getDynamicResult'}" />
-                  </t:template>
-                </t:Column>
-
-                <t:Column hAlign="Center" width="5rem">
-                    <VBox>
-                      <Button icon="sap-icon://business-objects-experience" press="onShowChart" type="Transparent"/>
-                      <Text text="{i18n>colFinal}" class="" />
-                    </VBox>
-                  <t:template>
-                    <Text text="{path: 'resultsMapping/PANFINAL', formatter: '.getDynamicResult'}" />
-                  </t:template>
-                </t:Column>
-
-                <t:Column hAlign="Center" width="6.5rem">
-                    <VBox>
-                      <Button icon="sap-icon://business-objects-experience" press="onShowChart" type="Transparent"/>
-                      <Text text="{i18n>colTare2}" class="" />
-                    </VBox>
-                  <t:template>
-                    <Text text="{path: 'resultsMapping/BOTTARE', formatter: '.getDynamicResult'}" />
-                  </t:template>
-                </t:Column>
-
-                <t:Column hAlign="Center" width="6.5rem">
-                    <VBox>
-                      <Button icon="sap-icon://business-objects-experience" press="onShowChart" type="Transparent"/>
-                      <Text text="{i18n>colFinal2}" class="" />
-                    </VBox>
-                  <t:template>
-                    <Text text="{path: 'resultsMapping/BOTFINAL', formatter: '.getDynamicResult'}" />
-                  </t:template>
-                </t:Column>
-
-                <t:Column hAlign="Center" width="5rem">
-                    <VBox>
-                      <Button icon="sap-icon://business-objects-experience" press="onShowChart" type="Transparent"/>
-                      <Text text="{i18n>colMesh}" class="" />
-                    </VBox>
-                  <t:template>
-                    <Text text="{path: 'resultsMapping/325M_F', formatter: '.getDynamicResult'}" />
-                  </t:template>
-                </t:Column>
-
-                <t:Column hAlign="Center" width="5rem">
-                    <VBox>
-                      <Button icon="sap-icon://business-objects-experience" press="onShowChart" type="Transparent"/>
-                      <Text text="{i18n>colVis}" class="" />
-                    </VBox>
-                  <t:template>
-                    <Text text="{path: 'resultsMapping/VISC_F', formatter: '.getDynamicResult'}" />
-                  </t:template>
-                </t:Column>
-                <t:Column hAlign="Center" width="5rem">
-                    <VBox>
-                      <Button icon="sap-icon://business-objects-experience" press="onShowChart" type="Transparent"/>
-                      <Text text="{i18n>colBIS}" class="" />
-                    </VBox>
-                  <t:template>
-                    <Text text="{path: 'resultsMapping/BIT_PPM', formatter: '.getDynamicResult'}" />
-                  </t:template>
-                </t:Column>
-
-                <t:Column hAlign="Center" width="6rem">
-                    <VBox>
-                      <Button icon="sap-icon://business-objects-experience" press="onShowChart" type="Transparent"/>
-                      <Text text="{i18n>colSAM}" class="" />
-                    </VBox>
-                  <t:template>
-                    <Text text="{path: 'resultsMapping/SAMTYPE', formatter: '.getDynamicResult'}" />
-                  </t:template>
-                </t:Column>
-                <t:Column hAlign="Center" width="6.5rem">
-                    <VBox>
-                      <Button icon="sap-icon://business-objects-experience" press="onShowChart" type="Transparent"/>
-                      <Text text="{i18n>colCem2}" class="" />
-                    </VBox>
-                  <t:template>
-                    <Text text="{path: 'resultsMapping/SOLIDSCK', formatter: '.getDynamicResult'}" />
-                  </t:template>
-                </t:Column>
-
-              </t:columns>
-              
+              <t:Column
+                hAlign="Center"
+                width="6.5rem"
+              >
+                <VBox>
+                  <Button
+                    icon="sap-icon://business-objects-experience"
+                    press="onShowChart($event,'CEM1')"
+                    type="Transparent"
+                  />
+                  <Text text="{i18n>colCem1}" />
+                </VBox>
+                <t:template>
+                  <Text
+                    text="{path: 'resultsMapping/CEM1', formatter: '.getDynamicResult'}"
+                  />
+                </t:template>
+              </t:Column>
+              <t:Column
+                hAlign="Center"
+                width="3rem"
+              >
+                <VBox>
+                  <Button
+                    icon="sap-icon://business-objects-experience"
+                    press="onShowChart($event,'PH')"
+                    type="Transparent"
+                  />
+                  <Text
+                    text="{i18n>phTitle}"
+                    class=""
+                  />
+                </VBox>
+                <t:template>
+                  <Text
+                    text="{path: 'resultsMapping/PH', formatter: '.getDynamicResult'}"
+                  />
+                </t:template>
+              </t:Column>
+              <t:Column
+                hAlign="Center"
+                width="6.5rem"
+              >
+                <VBox>
+                  <Button
+                    icon="sap-icon://business-objects-experience"
+                    press="onShowChart($event,'CEM2')"
+                    type="Transparent"
+                  />
+                  <Text
+                    text="{i18n>colCem2}"
+                    class=""
+                  />
+                </VBox>
+                <t:template>
+                  <Text
+                    text="{path: 'resultsMapping/CEM2', formatter: '.getDynamicResult'}"
+                  />
+                </t:template>
+              </t:Column>
+              <t:Column
+                hAlign="Center"
+                width="5.5rem"
+              >
+                <VBox>
+                  <Button
+                    icon="sap-icon://business-objects-experience"
+                    press="onShowChart($event,'SOLIDS_F')"
+                    type="Transparent"
+                  />
+                  <Text
+                    text="{i18n>colSolids}"
+                    class=""
+                  />
+                </VBox>
+                <t:template>
+                  <Text
+                    text="{path: 'resultsMapping/SOLIDS_F', formatter: '.getDynamicResult'}"
+                  />
+                </t:template>
+              </t:Column>
+              <t:Column
+                hAlign="Center"
+                width="5rem"
+              >
+                <VBox>
+                  <Button
+                    icon="sap-icon://business-objects-experience"
+                    press="onShowChart($event,'DENS1_F')"
+                    type="Transparent"
+                  />
+                  <Text
+                    text="{i18n>colDen}"
+                    class=""
+                  />
+                </VBox>
+                <t:template>
+                  <Text
+                    text="{path: 'resultsMapping/DENS1_F', formatter: '.getDynamicResult'}"
+                  />
+                </t:template>
+              </t:Column>
+              <t:Column
+                hAlign="Center"
+                width="3rem"
+              >
+                <VBox>
+                  <Button
+                    icon="sap-icon://business-objects-experience"
+                    press="onShowChart($event,'PH_F')"
+                    type="Transparent"
+                  />
+                  <Text
+                    text="{i18n>phTitle}"
+                    class=""
+                  />
+                </VBox>
+                <t:template>
+                  <Text
+                    text="{path: 'resultsMapping/PH_F', formatter: '.getDynamicResult'}"
+                  />
+                </t:template>
+              </t:Column>
+              <t:Column
+                hAlign="Center"
+                width="6.5rem"
+              >
+                <VBox>
+                  <Button
+                    icon="sap-icon://business-objects-experience"
+                    press="onShowChart($event,'PANTARE')"
+                    type="Transparent"
+                  />
+                  <Text
+                    text="{i18n>colTare}"
+                    class=""
+                  />
+                </VBox>
+                <t:template>
+                  <Text
+                    text="{path: 'resultsMapping/PANTARE', formatter: '.getDynamicResult'}"
+                  />
+                </t:template>
+              </t:Column>
+              <t:Column
+                hAlign="Center"
+                width="5rem"
+              >
+                <VBox>
+                  <Button
+                    icon="sap-icon://business-objects-experience"
+                    press="onShowChart($event,'PANFINAL')"
+                    type="Transparent"
+                  />
+                  <Text
+                    text="{i18n>colFinal}"
+                    class=""
+                  />
+                </VBox>
+                <t:template>
+                  <Text
+                    text="{path: 'resultsMapping/PANFINAL', formatter: '.getDynamicResult'}"
+                  />
+                </t:template>
+              </t:Column>
+              <t:Column
+                hAlign="Center"
+                width="6.5rem"
+              >
+                <VBox>
+                  <Button
+                    icon="sap-icon://business-objects-experience"
+                    press="onShowChart($event,'BOTTARE')"
+                    type="Transparent"
+                  />
+                  <Text
+                    text="{i18n>colTare2}"
+                    class=""
+                  />
+                </VBox>
+                <t:template>
+                  <Text
+                    text="{path: 'resultsMapping/BOTTARE', formatter: '.getDynamicResult'}"
+                  />
+                </t:template>
+              </t:Column>
+              <t:Column
+                hAlign="Center"
+                width="6.5rem"
+              >
+                <VBox>
+                  <Button
+                    icon="sap-icon://business-objects-experience"
+                    press="onShowChart($event,'BOTFINAL')"
+                    type="Transparent"
+                  />
+                  <Text
+                    text="{i18n>colFinal2}"
+                    class=""
+                  />
+                </VBox>
+                <t:template>
+                  <Text
+                    text="{path: 'resultsMapping/BOTFINAL', formatter: '.getDynamicResult'}"
+                  />
+                </t:template>
+              </t:Column>
+              <t:Column
+                hAlign="Center"
+                width="5rem"
+              >
+                <VBox>
+                  <Button
+                    icon="sap-icon://business-objects-experience"
+                    press="onShowChart($event,'325M_F')"
+                    type="Transparent"
+                  />
+                  <Text
+                    text="{i18n>colMesh}"
+                    class=""
+                  />
+                </VBox>
+                <t:template>
+                  <Text
+                    text="{path: 'resultsMapping/325M_F', formatter: '.getDynamicResult'}"
+                  />
+                </t:template>
+              </t:Column>
+              <t:Column
+                hAlign="Center"
+                width="5rem"
+              >
+                <VBox>
+                  <Button
+                    icon="sap-icon://business-objects-experience"
+                    press="onShowChart($event,'VISC_F')"
+                    type="Transparent"
+                  />
+                  <Text
+                    text="{i18n>colVis}"
+                    class=""
+                  />
+                </VBox>
+                <t:template>
+                  <Text
+                    text="{path: 'resultsMapping/VISC_F', formatter: '.getDynamicResult'}"
+                  />
+                </t:template>
+              </t:Column>
+              <t:Column
+                hAlign="Center"
+                width="5rem"
+              >
+                <VBox>
+                  <Button
+                    icon="sap-icon://business-objects-experience"
+                    press="onShowChart($event,'BIT_PPM')"
+                    type="Transparent"
+                  />
+                  <Text
+                    text="{i18n>colBIS}"
+                    class=""
+                  />
+                </VBox>
+                <t:template>
+                  <Text
+                    text="{path: 'resultsMapping/BIT_PPM', formatter: '.getDynamicResult'}"
+                  />
+                </t:template>
+              </t:Column>
+              <t:Column
+                hAlign="Center"
+                width="6rem"
+              >
+                <VBox>
+                  <Button
+                    icon="sap-icon://business-objects-experience"
+                    press="onShowChart($event,'SAMTYPE')"
+                    type="Transparent"
+                  />
+                  <Text
+                    text="{i18n>colSAM}"
+                    class=""
+                  />
+                </VBox>
+                <t:template>
+                  <Text
+                    text="{path: 'resultsMapping/SAMTYPE', formatter: '.getDynamicResult'}"
+                  />
+                </t:template>
+              </t:Column>
+              <t:Column
+                hAlign="Center"
+                width="6.5rem"
+              >
+                <VBox>
+                  <Button
+                    icon="sap-icon://business-objects-experience"
+                    press="onShowChart($event,'SOLIDSCK')"
+                    type="Transparent"
+                  />
+                  <Text
+                    text="{i18n>colCem2}"
+                    class=""
+                  />
+                </VBox>
+                <t:template>
+                  <Text
+                    text="{path: 'resultsMapping/SOLIDSCK', formatter: '.getDynamicResult'}"
+                  />
+                </t:template>
+              </t:Column>
+            </t:columns>
           </t:Table>
         </VBox>
       </VBox>
-    </content>  
-    
-	</Page>
+    </content>
+  </Page>
 </mvc:View>

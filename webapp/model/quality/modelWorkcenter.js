@@ -7,14 +7,12 @@ sap.ui.define([
         return `/XMII/Illuminator?service=Query&QueryTemplate=${service}&Content-Type=text/json`;
     };
 	return {
-        loadReportResult: function(parameters){
-            var getLocalData = '../../localServices/quality/ResultsRecording.json';
-            var getData = urlBaseXqt('Tronox/Quality/Xacute/RecordResultsXacuteQuery');
+        loadWorkCenterList: function(parameters){
+            var getLocalData = '../../localServices/configurations/workcenters/WorkcentersLevels.json';
+            var getData = urlBaseXqt('Tronox/Quality/Xacute/RecordResultsXacuteQuery'); //modificar
             var getDataUrl = env ? getData : getLocalData;
             var oModel = handler.requestData(getDataUrl,parameters);
-            console.log("Model result recording: " + oModel)
             return oModel
         }
     };
 });
-

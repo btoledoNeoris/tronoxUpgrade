@@ -1,15 +1,18 @@
 sap.ui.define([
 	'tronox/controller/LayerController',
 	'tronox/model/quality/modelResultRecording',
+    'tronox/model/quality/modelWorkCenter',
+    'tronox/model/quality/modelMaterial',
+    'tronox/model/quality/modelBatch',
     'sap/m/MessageToast',
-	'../../../tools/handler',
     'sap/ui/model/json/JSONModel',
     'sap/viz/ui5/controls/VizFrame',
     'sap/viz/ui5/data/FlattenedDataset',
     'sap/m/Dialog',
     'sap/m/Button',
+    'sap/ui/core/Fragment',
 ],
-function (LayerController,modelResultRecording,MessageToast,handler,JSONModel,VizFrame,FlattenedDataset,Dialog,Button) {
+function (LayerController,modelResultRecording,modelWorkCenter,modelMaterial,modelBatch,MessageToast,JSONModel,VizFrame,FlattenedDataset,Dialog,Button,Fragment) {
 	"use strict";
 	return LayerController.extend("tronox.controller.configurations.workcenters.WorkcenterPanel", {
         PLANT: "1100",
@@ -142,7 +145,86 @@ function (LayerController,modelResultRecording,MessageToast,handler,JSONModel,Vi
                 this.getView().setBusy(false);
             }
         },
-        onShowChart: async function(oEvent) {
+
+
+        /*
+        *DIALOG - CHART
+        */
+        onShowChart: async function(oEvent, oChar) {
+            const oView = this.getView();
+            var oTable = oView.byId("Table");
+            var iRowIndex = 0;  //For First row in the table
+            var oModel = oTable.getModel();
+
+            var length = oEvent.getSource().getModel().oData.tableSec.length
+            var array = oEvent.getSource().getModel().oData.tableSec
+            var datos = [];
+            var model = new sap.ui.model.json.JSONModel();
+
+            array.map(function(item) {
+               if (item.ID_CHARA_MASTE === oChar){
+                    var object = {CD_INSPE_POINT: item.CD_INSPE_POINT,DS_RESUL:item.DS_RESUL}
+                    datos.push(object);
+                }
+            });
+            model.setData(datos);
+            this.getView().setModel(model, "chartModel");
+            this.onShowChartDialog()
+        },
+        onShowChartDialog: async function(oEvent) {
+            const oView = this.getView();
+            const oModel = oView.getModel();
+            const oVizFrame = new VizFrame({
+                uiConfig: { applicationSet: "fiori" },
+                vizType: "line",
+                dataset: new FlattenedDataset({
+                    dimensions: [
+                        { name: "INSPECTION LOTS", value: "{CD_INSPE_POINT}"  }
+                    ],
+                    measures: [
+                       { name: "RESULTS", value: "{DS_RESUL}" }
+                    ],
+                    data: {
+                        path: "/"
+                    }
+                }),
+                feeds: [{
+                    uid: "valueAxis",
+                    type: "Measure",
+                    values: ["RESULTS"]
+                }, {
+                    uid: "categoryAxis",
+                    type: "Dimension",
+                    values: ["INSPECTION LOTS"]
+                }],
+                vizProperties: {
+                    title: { visible: true, text: "SPC Chart" },
+                    plotArea: {dataLabel: {visible: true }}
+                }
+            });
+
+            try {
+                this.getView().setBusy(true);
+                const oModel = oView.getModel("chartModel");
+                oVizFrame.setModel(oModel);
+            } catch (error) {
+                console.error(error);
+            } finally {
+                this.getView().setBusy(false);
+            }
+
+            const oDialog = new Dialog({
+                contentWidth: "80%",
+                contentHeight: "60%",
+                content: [oVizFrame],
+                beginButton: new Button({ text: "Close",press: () => oDialog.close() })
+            });
+
+            oView.addDependent(oDialog);
+            oVizFrame.setWidth("100%");
+            oDialog.open();
+        },
+        onShowChart2: async function(oEvent) {
             const oView = this.getView();
             // const sTitle = oEvent.getSource()._oTitle.getText();
             const oModel = oView.getModel();
@@ -266,5 +348,142 @@ function (LayerController,modelResultRecording,MessageToast,handler,JSONModel,Vi
             // return `background-color: ${sColor};`;
             return "background-color:" + sColor + ";";
         },
+
+
+        /*
+        *DIALOG - WORK CENTER SELECTION
+        */
+        onWorkCenterChange: function(){
+            this.onGetWorkCenterList()
+            //this.onOpenWorkCenterDialog().open();
+        },
+        onGetWorkCenterList: async function() {
+            const oView = this.getView();
+            const oModel = this.getView().getModel();
+            const parameters = { Action: "SELECT"};
+
+            try{
+                this.getView().setBusy(true);
+                const data = await modelWorkCenter.loadWorkCenterList(parameters);
+
+                if (data[0]?.Row?.length === 0) {
+                    MessageToast.show(this.getI18nText("messageError"), { duration: 2000 });
+                    console.error(this.getI18nText("messageError"));
+                } else {
+                    oModel.setProperty("/", data[0]?.Row || []);
+                    this.onOpenWorkCenterDialog().open();
+                }
+
+             } catch (error) {
+                MessageToast.show(this.getI18nText("messageError"), { duration: 2000 });
+                console.error(error);
+                this.getView().setBusy(false);
+            } finally {
+                this.getView().setBusy(false);
+            }
+        },
+        onOpenWorkCenterDialog: function(){
+            if (!this.oDialog) {
+                this.oDialog = sap.ui.xmlfragment("idWorkCenterDialog", "tronox.view.fragments.workCenter", this);
+                this.getView().addDependent(this.oDialog);
+            }
+            return this.oDialog;
+        },
+        onCloseWorkCenterDialog: function() {
+            this.oDialog.close();
+            this.oDialog.destroy();
+            this.oDialog = null;
+        },
+        onWorkCenterSelected:function(event){
+            const oView = this.getView();
+            const oPath = event.getSource().getSelectedContexts()[0].sPath
+            var oWorkCenterPath = [], oParentPath;
+            var myPath = [];
+            this.ROUTEPATH = "";
+
+            oWorkCenterPath = oPath.split("nodes")
+            oWorkCenterPath.forEach(function(item, i){
+                  if(i>0){
+                        myPath.push(myPath[i-1]+"nodes" + item)
+                    }else{
+                         myPath.push(item)
+                    }
+                    this.ROUTEPATH = this.ROUTEPATH == "" ?  oView.getModel().getProperty(myPath[i]).text : this.ROUTEPATH + " > "+ oView.getModel().getProperty(myPath[i]).text;
+                }, this);
+
+            this.WORKCENTER = oView.getModel().getProperty(oPath).text
+        },
+         onSelectWorkCenterDialog: function() {
+            const oView = this.getView();
+            oView.byId("wkInput").setValue(this.ROUTEPATH);
+            this.oDialog.close();
+            this.oDialog.destroy();
+            this.oDialog = null;
+            this.onGetMaterialList(this.WORKCENTER);
+        },
+
+        /*
+        *COMBOBOX - MATERIAL
+        */
+        onGetMaterialList: async function(oWorkCenter) {
+            const oView = this.getView();
+            const oModel = this.getView().getModel();
+            const parameters = { Action: "SELECT"};
+
+            try{
+                this.getView().setBusy(true);
+                const data = await modelMaterial.loadMaterialList(parameters);
+
+                if (data[0]?.Row?.length === 0) {
+                    MessageToast.show(this.getI18nText("messageError"), { duration: 2000 });
+                    console.error(this.getI18nText("messageError"));
+                } else {
+                    oModel.setProperty("/mtsd", data[0]?.Row || []);
+                }
+
+             } catch (error) {
+                MessageToast.show(this.getI18nText("messageError"), { duration: 2000 });
+                console.error(error);
+                this.getView().setBusy(false);
+            } finally {
+                this.getView().setBusy(false);
+            }
+        },
+        onMaterialComboBoxChange:function(oEvent){
+            var oSelectedKey = oEvent.getSource().getSelectedKey();
+            console.log(oSelectedKey)
+            this.onGetBatchList();
+        },
+
+        /*
+        *COMBOBOX - BATCH
+        */
+         onGetBatchList: async function(oMaterial) {
+            const oView = this.getView();
+            const oModel = this.getView().getModel();
+            const parameters = { Action: "SELECT"};
+
+            try{
+                this.getView().setBusy(true);
+                const data = await modelBatch.loadBatchList(parameters);
+
+                if (data[0]?.Row?.length === 0) {
+                    MessageToast.show(this.getI18nText("messageError"), { duration: 2000 });
+                    console.error(this.getI18nText("messageError"));
+                } else {
+                    oModel.setProperty("/batchs", data[0]?.Row || []);
+                }
+
+             } catch (error) {
+                MessageToast.show(this.getI18nText("messageError"), { duration: 2000 });
+                console.error(error);
+                this.getView().setBusy(false);
+            } finally {
+                this.getView().setBusy(false);
+            }
+        },
+        onBatchComboBoxChange:function(oEvent){
+            var oSelectedKey = oEvent.getSource().getSelectedKey();
+        }
     });
 });
